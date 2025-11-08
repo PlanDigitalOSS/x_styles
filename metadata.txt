@@ -1,0 +1,53 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.
+
+# Mandatory items:
+
+[general]
+name=X_STYLES
+qgisMinimumVersion=3.2
+qgisMaximumVersion=3.99
+description=Automatische Zuweisung von Zeichenvorschriften für XPlanGML-Daten
+version=1.0.0
+author=Cornelio Hopmann Lopez
+email=hopmann@gmail.com
+
+about=X_STYLES ist ein QGIS-Plugin zur automatischen Zuweisung von standardisierten Zeichenvorschriften (Styles) für XPlanGML-Dateien.
+    XPlanGML-Dateien beinhalten standardisierte Daten von Plänen der Raumordnung, Bauleitplanung und Landschaftsplanung.
+    Nach dem Import von GML-Daten in QGIS werden den Layern automatisch entsprechende Styles zugeordnet,
+    basierend auf dem XPlanung-Standard. Das Plugin unterstützt Bebauungspläne (BP), Flächennutzungspläne (FP)
+    und Regionale Raumordnungsprogramme (RP). Die Verwaltung der Styles erfolgt über eine externe YAML-Konfigurationsdatei,
+    die einfache Anpassungen ohne Änderung des Quellcodes ermöglicht.
+
+tracker=https://github.com/yourusername/x_styles/issues
+repository=https://github.com/yourusername/x_styles
+# End of mandatory metadata
+
+# Recommended items:
+
+changelog=1.0.0 - Erste stabile Version
+    - Automatische Style-Zuweisung für XPlanGML-Layer
+    - Unterstützung für BP, FP und RP Layer
+    - Konfigurierbare Darstellungsreihenfolge (zIndex)
+    - YAML-basierte Style-Verwaltung
+    - Optionale Layer-Umbenennung mit Geometrie-Suffix
+    - Anpassbare Style-Verzeichnisse für verschiedene Plantypen
+    0.1 - Initiale Entwicklungsversion
+
+# Tags are comma separated with spaces allowed
+tags=xplanung,xplangml,raumplanung,bauleitplanung,stadtplanung,bebauungsplan,flächennutzungsplan,style,symbology
+
+homepage=https://github.com/yourusername/x_styles
+category=Vector
+icon=icons/X_STYLES.PNG
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+

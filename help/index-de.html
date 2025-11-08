@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X_STYLES - Dokumentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c5f2d;
+            border-bottom: 3px solid #2c5f2d;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #4a7c59;
+            margin-top: 30px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #5a8c6a;
+            margin-top: 20px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border-left: 4px solid #2c5f2d;
+        }
+        .note {
+            background-color: #e7f3fe;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .tip {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        ul, ol {
+            margin: 15px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #2c5f2d;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .version {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>X_STYLES - QGIS Plugin</h1>
+    <p class="version">Version 1.0.0</p>
+
+    <h2 id="uebersicht">Übersicht</h2>
+    <p>
+        <strong>X_STYLES</strong> ist ein QGIS-Plugin zur automatischen Zuweisung von standardisierten 
+        Zeichenvorschriften (Styles) für XPlanGML-Dateien. Das Plugin ermöglicht eine sofortige, 
+        standardkonforme Darstellung von Raumplanungsdaten direkt nach dem Import in QGIS.
+    </p>
+
+    <h3>Hauptfunktionen</h3>
+    <ul>
+        <li>Automatische Zuweisung von QML-Styles für XPlanGML-Layer</li>
+        <li>Unterstützung für Bebauungspläne (BP), Flächennutzungspläne (FP) und Regionale Raumordnungsprogramme (RP)</li>
+        <li>Intelligente Erkennung von Punkt-, Linien- und Flächengeometrien</li>
+        <li>Konfigurierbare Darstellungsreihenfolge (z-Index) zur optimalen Lesbarkeit</li>
+        <li>YAML-basierte Konfiguration für einfache Anpassungen ohne Code-Änderungen</li>
+        <li>Optionale Sortierung des Layer-Baums</li>
+        <li>Automatische Layer-Umbenennung mit Geometrie-Suffix</li>
+    </ul>
+
+    <h2 id="installation">Installation</h2>
+    
+    <h3>Installation über QGIS Plugin Manager</h3>
+    <ol>
+        <li>Öffnen Sie QGIS</li>
+        <li>Gehen Sie zu <code>Erweiterungen → Erweiterungen verwalten und installieren...</code></li>
+        <li>Suchen Sie nach "X_STYLES"</li>
+        <li>Klicken Sie auf "Installieren"</li>
+    </ol>
+
+    <h3>Manuelle Installation</h3>
+    <ol>
+        <li>Laden Sie das Plugin-Archiv herunter</li>
+        <li>Entpacken Sie das Archiv in Ihr QGIS-Plugin-Verzeichnis:
+            <ul>
+                <li><strong>Windows:</strong> <code>C:\Users\[Benutzername]\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\</code></li>
+                <li><strong>macOS:</strong> <code>~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/</code></li>
+                <li><strong>Linux:</strong> <code>~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/</code></li>
+            </ul>
+        </li>
+        <li>Starten Sie QGIS neu</li>
+        <li>Aktivieren Sie das Plugin unter <code>Erweiterungen → Erweiterungen verwalten und installieren...</code></li>
+    </ol>
+
+    <h2 id="verwendung">Verwendung</h2>
+
+    <h3>Grundlegende Nutzung</h3>
+    <ol>
+        <li>Laden Sie eine oder mehrere XPlanGML-Dateien in QGIS (über <code>Layer → Layer hinzufügen → Vektorlayer hinzufügen...</code>)</li>
+        <li>Klicken Sie auf das <strong>X_STYLES</strong>-Icon in der Werkzeugleiste</li>
+        <li>Das Plugin wendet automatisch die entsprechenden Styles auf alle erkannten XPlan-Layer an</li>
+        <li>Eine Erfolgsmeldung zeigt an, welche Layer gestylt wurden</li>
+    </ol>
+
+    <div class="tip">
+        <strong>Tipp:</strong> Das Plugin erkennt automatisch den Layer-Typ (BP, FP, RP) anhand des Layer-Namens 
+        und wendet die passenden Styles an.
+    </div>
+
+    <h3>Einstellungen konfigurieren</h3>
+    <p>Über das Dropdown-Menü des X_STYLES-Icons können Sie die Einstellungen öffnen:</p>
+
+    <ol>
+        <li>Klicken Sie auf den Pfeil neben dem X_STYLES-Icon</li>
+        <li>Wählen Sie <code>Settings</code></li>
+        <li>Konfigurieren Sie die folgenden Optionen:</li>
+    </ol>
+
+    <h4>Verfügbare Einstellungen</h4>
+    <table>
+        <tr>
+            <th>Option</th>
+            <th>Beschreibung</th>
+        </tr>
+        <tr>
+            <td><strong>FP Style</strong></td>
+            <td>Aktiviert spezielle Styles für Flächennutzungspläne aus dem FP-Verzeichnis</td>
+        </tr>
+        <tr>
+            <td><strong>RP Style</strong></td>
+            <td>Aktiviert spezielle Styles für Regionale Raumordnungsprogramme aus dem RP-Verzeichnis</td>
+        </tr>
+        <tr>
+            <td><strong>Custom Layer Order</strong></td>
+            <td>Wendet eine benutzerdefinierte Darstellungsreihenfolge basierend auf z-Index an</td>
+        </tr>
+        <tr>
+            <td><strong>Sort Layer Tree</strong></td>
+            <td>Sortiert die Layer im Layerbaum entsprechend der Darstellungsreihenfolge</td>
+        </tr>
+        <tr>
+            <td><strong>Rename Layers</strong></td>
+            <td>Fügt Geometrie-Suffix zu Layer-Namen hinzu (_p für Punkt, _l für Linie, _a für Fläche)</td>
+        </tr>
+        <tr>
+            <td><strong>Base Style Directory</strong></td>
+            <td>Verzeichnis mit den Basis-QML-Dateien und manifest.yaml</td>
+        </tr>
+        <tr>
+            <td><strong>FP Style Directory</strong></td>
+            <td>Optionales Verzeichnis mit spezifischen FP-Styles (überschreibt Basis-Styles)</td>
+        </tr>
+        <tr>
+            <td><strong>RP Style Directory</strong></td>
+            <td>Optionales Verzeichnis mit spezifischen RP-Styles (überschreibt Basis-Styles)</td>
+        </tr>
+    </table>
+
+    <h2 id="konfiguration">Erweiterte Konfiguration</h2>
+
+    <h3>Die manifest.yaml Datei</h3>
+    <p>
+        Das Herzstück der Style-Verwaltung ist die <code>manifest.yaml</code> Datei im Base-Style-Verzeichnis. 
+        Diese Datei definiert die Zuordnung zwischen Layer-Namen und QML-Dateien.
+    </p>
+
+    <h4>Struktur der manifest.yaml</h4>
+    <pre>
+bp_anpflanzungbindungerhaltung:
+    PointGeometry:
+        path: BP_AnpflanzungBindungErhaltung_p.qml
+        zIndex: 115
+    LineGeometry:
+        path: BP_AnpflanzungBindungErhaltung_l.qml
+        zIndex: 120
+    PolygonGeometry:
+        path: BP_AnpflanzungBindungErhaltung_f.qml
+        zIndex: 131
+    </pre>
+
+    <h4>Parameter-Erklärung</h4>
+    <ul>
+        <li><strong>Layer-Schlüssel</strong> (z.B. <code>bp_anpflanzungbindungerhaltung</code>): Teilstring des Layer-Namens (Groß-/Kleinschreibung wird ignoriert)</li>
+        <li><strong>Geometrie-Typ</strong>: <code>PointGeometry</code>, <code>LineGeometry</code> oder <code>PolygonGeometry</code></li>
+        <li><strong>path</strong>: Relativer Pfad zur QML-Datei</li>
+        <li><strong>zIndex</strong>: Darstellungsreihenfolge (niedrige Werte = Vordergrund, hohe Werte = Hintergrund)</li>
+    </ul>
+
+    <h3>z-Index Konventionen</h3>
+    <div class="note">
+        <strong>Empfohlene z-Index Bereiche:</strong>
+        <ul>
+            <li><strong>0-99:</strong> Reserviert für zukünftige Verwendung</li>
+            <li><strong>100-199:</strong> Bebauungspläne (BP)</li>
+            <li><strong>200-299:</strong> Flächennutzungspläne (FP)</li>
+            <li><strong>300-399:</strong> Regionale Raumordnungsprogramme (RP)</li>
+            <li><strong>400-499:</strong> Landschaftsplanung</li>
+            <li><strong>9999:</strong> Keine Darstellung</li>
+        </ul>
+    </div>
+
+    <h3>Innerhalb der Bereiche</h3>
+    <ul>
+        <li><strong>x5:</strong> Schrift/Beschriftungen</li>
+        <li><strong>x10:</strong> Signaturen/Symbole</li>
+        <li><strong>x20-x29:</strong> Linien</li>
+        <li><strong>x30-x39:</strong> Flächen (x30 oben, x39 unten)</li>
+    </ul>
+
+    <h2 id="eigene-styles">Eigene Styles erstellen</h2>
+
+    <h3>QML-Dateien erstellen</h3>
+    <ol>
+        <li>Stylen Sie einen Layer manuell in QGIS wie gewünscht</li>
+        <li>Rechtsklick auf den Layer → <code>Eigenschaften → Symbologie</code></li>
+        <li>Konfigurieren Sie die gewünschte Darstellung</li>
+        <li>Klicken Sie auf <code>Stil → Stil speichern...</code></li>
+        <li>Wählen Sie <code>Als QML-Stil-Datei...</code></li>
+        <li>Speichern Sie die Datei im entsprechenden Style-Verzeichnis</li>
+    </ol>
+
+    <h3>Style in manifest.yaml eintragen</h3>
+    <ol>
+        <li>Öffnen Sie die <code>manifest.yaml</code> im Base-Style-Verzeichnis</li>
+        <li>Fügen Sie einen neuen Eintrag nach dem Schema oben hinzu</li>
+        <li>Speichern Sie die Datei</li>
+        <li>Führen Sie das Plugin erneut aus, um die Änderungen zu testen</li>
+    </ol>
+
+    <div class="warning">
+        <strong>Wichtig:</strong> Der Layer-Schlüssel in der manifest.yaml muss als Teilstring 
+        im Layer-Namen vorkommen. Das Plugin sucht case-insensitive (Groß-/Kleinschreibung wird ignoriert).
+    </div>
+
+    <h2 id="troubleshooting">Fehlerbehebung</h2>
+
+    <h3>Plugin wendet keine Styles an</h3>
+    <ul>
+        <li>Überprüfen Sie, ob die Layer tatsächlich XPlan-Layer sind</li>
+        <li>Prüfen Sie die Layer-Namen - sie müssen Schlüsselwörter aus der manifest.yaml enthalten</li>
+        <li>Kontrollieren Sie, ob die manifest.yaml im Base-Style-Verzeichnis vorhanden ist</li>
+        <li>Öffnen Sie die Log-Meldungen (Ansicht → Bedienfelder → Protokollmeldungen) und suchen Sie nach "X_STYLES"</li>
+    </ul>
+
+    <h3>Falsche Styles werden angewendet</h3>
+    <ul>
+        <li>Prüfen Sie die Reihenfolge der Einträge in der manifest.yaml - das erste Match wird verwendet</li>
+        <li>Stellen Sie sicher, dass die Geometrie-Typen korrekt zugeordnet sind</li>
+        <li>Überprüfen Sie die Pfade zu den QML-Dateien auf Tippfehler</li>
+    </ul>
+
+    <h3>Layer werden nicht in der richtigen Reihenfolge angezeigt</h3>
+    <ul>
+        <li>Aktivieren Sie "Custom Layer Order" in den Einstellungen</li>
+        <li>Überprüfen Sie die z-Index-Werte in der manifest.yaml</li>
+        <li>Optional: Aktivieren Sie "Sort Layer Tree" für zusätzliche Sortierung im Layerbaum</li>
+    </ul>
+
+    <h3>YAML-Fehler</h3>
+    <div class="warning">
+        <strong>YAML ist einrückungsempfindlich!</strong> Verwenden Sie Leerzeichen (keine Tabs) und 
+        achten Sie auf konsistente Einrückung (4 Leerzeichen pro Ebene empfohlen).
+    </div>
+
+    <h2 id="beispiel">Beispiel-Workflow</h2>
+
+    <h3>Szenario: Flächennutzungsplan darstellen</h3>
+    <ol>
+        <li>XPlanGML-Datei eines Flächennutzungsplans in QGIS laden</li>
+        <li>Alle Layer werden zunächst mit Zufallsfarben dargestellt</li>
+        <li>X_STYLES-Plugin öffnen → Settings</li>
+        <li>"FP Style" aktivieren (falls spezielle FP-Styles vorhanden)</li>
+        <li>"Custom Layer Order" aktivieren</li>
+        <li>"Sort Layer Tree" aktivieren (optional)</li>
+        <li>Einstellungen speichern</li>
+        <li>X_STYLES-Plugin ausführen (Hauptbutton klicken)</li>
+        <li>Alle FP-Layer erhalten nun standardisierte Styles</li>
+        <li>Die Darstellungsreihenfolge ist optimiert (Punkte vor Linien vor Flächen)</li>
+        <li>Der Layerbaum ist entsprechend sortiert</li>
+    </ol>
+
+    <h2 id="technische-details">Technische Details</h2>
+
+    <h3>Systemanforderungen</h3>
+    <ul>
+        <li>QGIS Version 3.2 oder höher</li>
+        <li>Python 3.x (im Lieferumfang von QGIS enthalten)</li>
+        <li>PyYAML Bibliothek (normalerweise in QGIS enthalten)</li>
+    </ul>
+
+    <h3>Verarbeitungsablauf</h3>
+    <ol>
+        <li>Plugin liest die manifest.yaml Konfiguration</li>
+        <li>Alle geladenen Vector-Layer werden durchsucht</li>
+        <li>Für jeden Layer wird geprüft, ob der Name einen Schlüssel aus der manifest.yaml enthält</li>
+        <li>Bei einem Match wird der Geometrie-Typ des Layers ermittelt</li>
+        <li>Die entsprechende QML-Datei wird geladen und auf den Layer angewendet</li>
+        <li>Der Layer wird gemäß z-Index einsortiert</li>
+        <li>Optional: Layer werden im Layerbaum neu sortiert</li>
+        <li>Optional: Layer werden mit Geometrie-Suffix umbenannt</li>
+        <li>Die Kartenansicht wird aktualisiert</li>
+    </ol>
+
+    <h3>Dateistruktur des Plugins</h3>
+    <pre>
+x_styles/
+├── __init__.py
+├── mainPlugin.py
+├── metadata.txt
+├── x_styles_master_dialog.py
+├── x_styles_master_dialog_base.ui
+├── icons/
+│   └── X_STYLES.PNG
+├── styles/
+│   ├── base/
+│   │   ├── manifest.yaml
+│   │   └── *.qml (QML-Style-Dateien)
+│   ├── fp/ (optional)
+│   │   └── *.qml
+│   └── rp/ (optional)
+│       └── *.qml
+└── help/
+    └── index-de.html
+    </pre>
+
+    <h2 id="lizenz">Lizenz</h2>
+    <p>
+        Dieses Plugin wird unter der <strong>GNU General Public License Version 2</strong> veröffentlicht.
+        Sie können es frei verwenden, modifizieren und weitergeben.
+    </p>
+
+    <h2 id="support">Support und Kontakt</h2>
+    <ul>
+        <li><strong>E-Mail:</strong> hopmann@gmail.com</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/yourusername/x_styles">https://github.com/yourusername/x_styles</a></li>
+        <li><strong>Issue Tracker:</strong> <a href="https://github.com/yourusername/x_styles/issues">https://github.com/yourusername/x_styles/issues</a></li>
+    </ul>
+
+    <h2 id="mitwirken">Mitwirken</h2>
+    <p>
+        Beiträge zum Projekt sind willkommen! Sie können:
+    </p>
+    <ul>
+        <li>Fehler melden über den Issue Tracker</li>
+        <li>Neue Styles für weitere XPlan-Klassen beisteuern</li>
+        <li>Die Dokumentation verbessern</li>
+        <li>Übersetzungen beisteuern</li>
+        <li>Pull Requests mit Verbesserungen einreichen</li>
+    </ul>
+
+    <h2 id="danksagungen">Danksagungen</h2>
+    <p>
+        Dieses Plugin wurde mit dem <a href="http://g-sherman.github.io/Qgis-Plugin-Builder/">QGIS Plugin Builder</a> erstellt.
+    </p>
+    <p>
+        XPlanung-Standard: <a href="https://www.xleitstelle.de/">Leitstelle XPlanung/XBau Hamburg</a>
+    </p>
+
+    <hr>
+    <p style="text-align: center; color: #666; font-size: 0.9em;">
+        © 2024 Cornelio Hopmann Lopez | X_STYLES v1.0.0
+    </p>
+</body>
+</html>

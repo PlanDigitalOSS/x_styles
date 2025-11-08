@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X_STYLES - Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c5f2d;
+            border-bottom: 3px solid #2c5f2d;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #4a7c59;
+            margin-top: 30px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #5a8c6a;
+            margin-top: 20px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border-left: 4px solid #2c5f2d;
+        }
+        .note {
+            background-color: #e7f3fe;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .tip {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        ul, ol {
+            margin: 15px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #2c5f2d;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .version {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>X_STYLES - QGIS Plugin</h1>
+    <p class="version">Version 1.0.0</p>
+
+    <h2 id="overview">Overview</h2>
+    <p>
+        <strong>X_STYLES</strong> is a QGIS plugin for automatic assignment of standardized styles 
+        to XPlanGML files. The plugin enables immediate, standards-compliant display of spatial 
+        planning data directly after import into QGIS.
+    </p>
+
+    <h3>Main Features</h3>
+    <ul>
+        <li>Automatic assignment of QML styles for XPlanGML layers</li>
+        <li>Support for building plans (BP), land use plans (FP), and regional spatial planning programs (RP)</li>
+        <li>Intelligent detection of point, line, and polygon geometries</li>
+        <li>Configurable display order (z-index) for optimal readability</li>
+        <li>YAML-based configuration for easy customization without code changes</li>
+        <li>Optional sorting of layer tree</li>
+        <li>Automatic layer renaming with geometry suffix</li>
+    </ul>
+
+    <h2 id="installation">Installation</h2>
+    
+    <h3>Installation via QGIS Plugin Manager</h3>
+    <ol>
+        <li>Open QGIS</li>
+        <li>Go to <code>Plugins → Manage and Install Plugins...</code></li>
+        <li>Search for "X_STYLES"</li>
+        <li>Click "Install"</li>
+    </ol>
+
+    <h3>Manual Installation</h3>
+    <ol>
+        <li>Download the plugin archive</li>
+        <li>Extract the archive to your QGIS plugin directory:
+            <ul>
+                <li><strong>Windows:</strong> <code>C:\Users\[Username]\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\</code></li>
+                <li><strong>macOS:</strong> <code>~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/</code></li>
+                <li><strong>Linux:</strong> <code>~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/</code></li>
+            </ul>
+        </li>
+        <li>Restart QGIS</li>
+        <li>Enable the plugin under <code>Plugins → Manage and Install Plugins...</code></li>
+    </ol>
+
+    <h2 id="usage">Usage</h2>
+
+    <h3>Basic Usage</h3>
+    <ol>
+        <li>Load one or more XPlanGML files into QGIS (via <code>Layer → Add Layer → Add Vector Layer...</code>)</li>
+        <li>Click the <strong>X_STYLES</strong> icon in the toolbar</li>
+        <li>The plugin automatically applies the appropriate styles to all recognized XPlan layers</li>
+        <li>A success message shows which layers were styled</li>
+    </ol>
+
+    <div class="tip">
+        <strong>Tip:</strong> The plugin automatically detects the layer type (BP, FP, RP) based on the layer name 
+        and applies the appropriate styles.
+    </div>
+
+    <h3>Configure Settings</h3>
+    <p>Via the dropdown menu of the X_STYLES icon, you can open the settings:</p>
+
+    <ol>
+        <li>Click the arrow next to the X_STYLES icon</li>
+        <li>Select <code>Settings</code></li>
+        <li>Configure the following options:</li>
+    </ol>
+
+    <h4>Available Settings</h4>
+    <table>
+        <tr>
+            <th>Option</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><strong>FP Style</strong></td>
+            <td>Enables special styles for land use plans from the FP directory</td>
+        </tr>
+        <tr>
+            <td><strong>RP Style</strong></td>
+            <td>Enables special styles for regional spatial planning programs from the RP directory</td>
+        </tr>
+        <tr>
+            <td><strong>Custom Layer Order</strong></td>
+            <td>Applies a custom display order based on z-index</td>
+        </tr>
+        <tr>
+            <td><strong>Sort Layer Tree</strong></td>
+            <td>Sorts the layers in the layer tree according to display order</td>
+        </tr>
+        <tr>
+            <td><strong>Rename Layers</strong></td>
+            <td>Adds geometry suffix to layer names (_p for point, _l for line, _a for area)</td>
+        </tr>
+        <tr>
+            <td><strong>Base Style Directory</strong></td>
+            <td>Directory with base QML files and manifest.yaml</td>
+        </tr>
+        <tr>
+            <td><strong>FP Style Directory</strong></td>
+            <td>Optional directory with specific FP styles (overrides base styles)</td>
+        </tr>
+        <tr>
+            <td><strong>RP Style Directory</strong></td>
+            <td>Optional directory with specific RP styles (overrides base styles)</td>
+        </tr>
+    </table>
+
+    <h2 id="configuration">Advanced Configuration</h2>
+
+    <h3>The manifest.yaml File</h3>
+    <p>
+        The heart of style management is the <code>manifest.yaml</code> file in the base style directory. 
+        This file defines the mapping between layer names and QML files.
+    </p>
+
+    <h4>Structure of manifest.yaml</h4>
+    <pre>
+bp_anpflanzungbindungerhaltung:
+    PointGeometry:
+        path: BP_AnpflanzungBindungErhaltung_p.qml
+        zIndex: 115
+    LineGeometry:
+        path: BP_AnpflanzungBindungErhaltung_l.qml
+        zIndex: 120
+    PolygonGeometry:
+        path: BP_AnpflanzungBindungErhaltung_f.qml
+        zIndex: 131
+    </pre>
+
+    <h4>Parameter Explanation</h4>
+    <ul>
+        <li><strong>Layer Key</strong> (e.g., <code>bp_anpflanzungbindungerhaltung</code>): Substring of the layer name (case-insensitive)</li>
+        <li><strong>Geometry Type</strong>: <code>PointGeometry</code>, <code>LineGeometry</code>, or <code>PolygonGeometry</code></li>
+        <li><strong>path</strong>: Relative path to the QML file</li>
+        <li><strong>zIndex</strong>: Display order (low values = foreground, high values = background)</li>
+    </ul>
+
+    <h3>z-Index Conventions</h3>
+    <div class="note">
+        <strong>Recommended z-Index Ranges:</strong>
+        <ul>
+            <li><strong>0-99:</strong> Reserved for future use</li>
+            <li><strong>100-199:</strong> Building plans (BP)</li>
+            <li><strong>200-299:</strong> Land use plans (FP)</li>
+            <li><strong>300-399:</strong> Regional spatial planning programs (RP)</li>
+            <li><strong>400-499:</strong> Landscape planning</li>
+            <li><strong>9999:</strong> No display</li>
+        </ul>
+    </div>
+
+    <h2 id="troubleshooting">Troubleshooting</h2>
+
+    <h3>Plugin Does Not Apply Styles</h3>
+    <ul>
+        <li>Check if the layers are actually XPlan layers</li>
+        <li>Verify layer names contain keywords from manifest.yaml</li>
+        <li>Check if manifest.yaml exists in the base style directory</li>
+        <li>Open the log messages (View → Panels → Log Messages) and search for "X_STYLES"</li>
+    </ul>
+
+    <h3>Wrong Styles Are Applied</h3>
+    <ul>
+        <li>Check the order of entries in manifest.yaml - the first match is used</li>
+        <li>Ensure geometry types are correctly assigned</li>
+        <li>Check paths to QML files for typos</li>
+    </ul>
+
+    <div class="warning">
+        <strong>YAML is indentation-sensitive!</strong> Use spaces (not tabs) and 
+        ensure consistent indentation (4 spaces per level recommended).
+    </div>
+
+    <h2 id="license">License</h2>
+    <p>
+        This plugin is released under the <strong>GNU General Public License Version 2</strong>.
+        You are free to use, modify, and distribute it.
+    </p>
+
+    <h2 id="support">Support and Contact</h2>
+    <ul>
+        <li><strong>Email:</strong> hopmann@gmail.com</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/yourusername/x_styles">https://github.com/yourusername/x_styles</a></li>
+        <li><strong>Issue Tracker:</strong> <a href="https://github.com/yourusername/x_styles/issues">https://github.com/yourusername/x_styles/issues</a></li>
+    </ul>
+
+    <hr>
+    <p style="text-align: center; color: #666; font-size: 0.9em;">
+        © 2024 Cornelio Hopmann Lopez | X_STYLES v1.0.0
+    </p>
+</body>
+</html>

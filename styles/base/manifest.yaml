@@ -1,0 +1,714 @@
+# manifest.yaml
+# Stand 29.09.2024
+#
+# Konfiguration des Plugins
+# Voraussetzung ist eine geladene XPlan-GML Datei.
+# Das Plugin ordnet jedem Layer aus der XPlan-GML eine Zeichenvorschrift unter 
+# Berücksichtigung der Art der Geometrie (Punkt, Linie und Fläche) zu.
+# Für jede Klasse ist der (Teil-)Name(Gross- und Kleinschreibung wird nicht berücksichtigt),
+# die Art der Geometrie und die Zeichvorschrift als qml-Datei eingetragen.
+#
+# Die Darstellungsreihenfolge wird durch den zIndex festgelegt. Kleine Zahlen definieren Vordergrund, große liegen optisch darunter.
+# Eine Beschränkung für den zIndex gibt es nicht.
+# Der Bereich von 0 bis 99 wird für spätere Zwecke freigehalten.
+# Der Bereich von 100 bis 199 soll für Bebauungspläne freigehalten, 
+# die Flächennutzungspläne sollen im Bereich von 200 bis 299 dargestellt werden.
+# Die Werte von 300 bis 399 dienen den Regionalen Raumordnungsgrogrammen.
+# für die Landschaftsplanung sind die Werte von 400 bis 499 vorgesehen.
+#
+# Innerhalb der hunderter-Gruppen kann zur Orientierung der folgende Vorschlag dienen:
+# Schrift: 5
+# Signaturen 10
+# Linien 20-29
+# Flächen 30 - 39 (30 oben, 40 unten)
+# (als Beispiel innerhalb eines Flächennutzungsplanes Bebauung 35, entspricht 235)
+# Darstellung nicht erwünscht 9999 (hier ist auch eine qml-Datei erforderlich, die "keine" Darstellung definiert)
+#
+# Diese Konfiguration dient der planübergreifenden Darstellung, deshalb sind zIndex-Werte abweichend vom obigen Vorschlag definiert.
+# Um Signaturen aus dem Bereich der punktförmigen Darstellungen der RROP-Klassen auch bei gleichzeitiger Überlagerung mit Inhalten
+# aus FP_Klassen nicht optisch abzudecken, wurde beispielsweise der zIndex der Klasse rp_zentralerort (punktförmig) entsprechend
+# niedrig angegeben.
+#
+#
+# Klasse BP (Bebauungsplan)
+
+bp_anpflanzungbindungerhaltung:
+    PointGeometry:
+        path: BP_AnpflanzungBindungErhaltung_p.qml
+        zIndex: 115
+    LineGeometry:
+        path: BP_AnpflanzungBindungErhaltung_l.qml
+        zIndex: 120
+    PolygonGeometry:
+        path: BP_AnpflanzungBindungErhaltung_f.qml
+        zIndex: 131
+bp_baugrenze:
+    LineGeometry:
+        path: BP_Baugrenze_l.qml
+        zIndex: 131
+bp_bereichohneeinausfahrtlinie:
+    LineGeometry:
+        path: BP_BereichOhneEinAusfahrtLinie_l.qml
+        zIndex: 120     
+bp_besonderernutzungszweckflaeche:
+    PolygonGeometry:
+        path: BP_BesondererNutzungszweckFlaeche_f.qml
+        zIndex: 131     
+bp_freiflaeche:
+    PolygonGeometry:
+        path: BP_FreiFlaeche_f.qml
+        zIndex: 233
+bp_gebaeudeflaeche:
+    PolygonGeometry:
+        path: BP_GebaeudeFlaeche_f.qml
+        zIndex: 233        
+bp_generischesobjekt:
+    PolygonGeometry:
+        path: BP_GenerischesObjekt_l.qml
+        zIndex: 221
+bp_immissionsschutz:
+    PointGeometry:
+        path: BP_Immissionsschutz_p.qml
+        zIndex: 115
+    PolygonGeometry:
+        path: BP_Immissionsschutz_l.qml
+        zIndex: 221
+bp_nebenanlagenflaeche:
+    PolygonGeometry:
+        path: BP_Nebenanlagen_f.qml
+        zIndex: 231        
+bp_nutzungsartengrenze:
+    LineGeometry:
+        path: BP_NutzungsartenGrenze_l.qml
+        zIndex: 220
+bp_strassenverkehrsflaeche:
+    PolygonGeometry:
+        path: BP_Strassenverkehrsflaeche_f.qml
+        zIndex: 231        
+bp_ueberbaubaregrundstuecksflaeche:
+    PolygonGeometry:
+        path: BP_UeberbaubareGrundstuecksFlaeche_f.qml
+        zIndex: 231
+bp_verkehrsflaechebesondererzweckbestimmung:
+    PolygonGeometry:
+        path: BP_VerkehrsflaecheBesondererZweckbestimmung_f.qml
+        zIndex: 231       
+bp_wegerecht:
+    LineGeometry:
+        path: BP_Wegerecht_l.qml
+        zIndex: 220
+    PolygonGeometry:
+        path: BP_Wegerecht_f.qml
+        zIndex: 231
+#
+# Klasse FP (Flächennutzungsplan)
+#
+fp_plan:
+    PolygonGeometry:
+        path: FP_Plan_f.qml
+        zIndex: 9000
+fp_bereich:
+    PolygonGeometry: 
+        path: FP_Bereich_f.qml
+        zIndex: 9000        
+fp_abgrabung:
+    PointGeometry:
+        path: FP_Abgrabung_p.qml
+        zIndex: 215    
+    LineGeometry:
+        path: FP_Abgrabung_l.qml
+        zIndex: 225    
+    PolygonGeometry:
+        path: FP_Abgrabung_f.qml
+        zIndex: 232
+fp_anpassungklimawandel:
+    LineGeometry:
+        path: FP_AnpassungKlimawandel_l.qml
+        zIndex: 222       
+fp_aufschuettung:
+    PointGeometry:
+        path: FP_Aufschuettung_p.qml
+        zIndex: 215
+    LineGeometry:
+        path: FP_Aufschuettung_l.qml
+        zIndex: 222        
+    PolygonGeometry:
+        path: FP_Aufschuettung_f.qml
+        zIndex: 233
+fp_ausgleichsflaeche:      
+    PolygonGeometry:
+        path: FP_AusgleichsFlaeche_f.qml
+        zIndex: 234
+fp_bebauung:
+    PolygonGeometry:
+        path: FP_BebauungsFlaeche_f.qml
+        zIndex: 235 
+# fp_bodenschutz
+# fp_denkmalschutzrecht
+fp_flaecheohnedarstellung:
+    PolygonGeometry:
+        path: FP_FlaecheOhneDarstellung_f.qml
+        zIndex: 235        
+fp_gemeinbedarf:
+    PointGeometry:
+        path: FP_Gemeinbedarf_p.qml
+        zIndex: 213    
+    PolygonGeometry:
+        path: FP_Gemeinbedarf_f.qml
+        zIndex: 235    
+fp_generischesobjekt:
+    PointGeometry:
+        path: FP_GenerischesObjekt_p.qml
+        zIndex: 210
+    LineGeometry:
+        path: FP_GenerischesObjekt_l.qml
+        zIndex: 222        
+    PolygonGeometry:
+        path: FP_GenerischesObjekt_f.qml
+        zIndex: 235
+fp_gewaesser:
+    PointGeometry:
+        path: FP_Gewaesser_p.qml
+        zIndex: 213
+    LineGeometry:
+        path: FP_Gewaesser_l.qml
+        zIndex: 222        
+    PolygonGeometry:
+        path: FP_Gewaesser_f.qml
+        zIndex: 236
+# fp_grenze        
+fp_gruen:
+    PointGeometry:
+        path: FP_Gruen_p.qml
+        zIndex: 212
+    LineGeometry:
+        path: FP_Gruen_l.qml
+        zIndex: 222
+    PolygonGeometry:
+        path: FP_Gruen_f.qml
+        zIndex: 235
+# fp_hochwasserschutz
+fp_keinezentrabwasserbeseitigungflaeche:
+    PolygonGeometry:
+        path: FP_KeineZentrAbwasserBeseitigungFlaeche_f.qml
+        zIndex: 231        
+fp_kennzeichnung:
+    PointGeometry:
+        path: FP_Kennzeichnung_p.qml
+        zIndex: 212
+    LineGeometry:
+        path: FP_Kennzeichnung_l.qml
+        zIndex: 222
+    PolygonGeometry:
+        path: FP_Kennzeichnung_f.qml
+        zIndex: 233
+fp_landwirtschaft:
+    PointGeometry:
+        path: FP_Landwirtschaft_p.qml
+        zIndex: 212
+    PolygonGeometry:
+        path: FP_Landwirtschaft_f.qml
+        zIndex: 238
+# fp_luftverkehrsrecht Klasse so_luftverkehrsrecht
+# fp_naturlandschaft        
+fp_nutzungsbeschraenkungsflaeche:
+    PolygonGeometry:
+        path: FP_NutzungsbeschraenkungsFlaeche_f.qml
+        zIndex: 233
+# fp_plan ist ganz oben
+# fp_rohstoff
+# fp_schienenverkehrsrecht Klasse so_schienenverkehrsrecht
+# fp_schutzgebietnaturschutzrecht
+# fp_schutzgebietsonstigesrecht
+# fp_schutzgebietwasserrecht        
+fp_schutzpflegeentwicklung:
+    PointGeometry:
+        path: FP_SchutzPflegeEntwicklung_p.qml
+        zIndex: 212
+    LineGeometry:
+        path: FP_SchutzPflegeEntwicklung_l.qml
+        zIndex: 222        
+    PolygonGeometry:
+        path: FP_SchutzPflegeEntwicklung_f.qml
+        zIndex: 232    
+# fp_sonstigesrecht
+fp_spielsportanlage:
+    PointGeometry:
+        path: FP_SpielSportanlage_p.qml
+        zIndex: 212
+    PolygonGeometry:
+        path: FP_SpielSportanlage_f.qml
+        zIndex: 232
+fp_strassenverkehr:
+    PolygonGeometry:
+        path: FP_Strassenverkehr_f.qml
+        zIndex: 235
+    LineGeometry:
+        path: FP_Strassenverkehr_l.qml
+        zIndex: 222        
+    PointGeometry:
+        path: FP_Strassenverkehr_p.qml
+        zIndex: 212   
+fp_textlichedarstellungsflaeche:
+    PolygonGeometry:
+        path: FP_TextlicheDarstellungsFlaeche_f.qml
+        zIndex: 232
+fp_unverbindlichevormerkung:
+    PointGeometry:
+        path: FP_UnverbindlicheVormerkung_p.qml
+        zIndex: 212
+    PolygonGeometry:
+        path: FP_UnverbindlicheVormerkung_f.qml
+        zIndex: 232    
+fp_verentsorgung:
+    PointGeometry:
+        path: FP_VerEntsorgung_p.qml
+        zIndex: 212    
+    LineGeometry:
+        path: FP_VerEntsorgung_l.qml
+        zIndex: 222    
+    PolygonGeometry:
+        path: FP_VerEntsorgung_f.qml
+        zIndex: 232    
+fp_vorbehalteflaeche:
+    PolygonGeometry:
+        path: FP_Vorbehalteflaeche_f.qml
+        zIndex: 238
+fp_waldflaeche:
+    PolygonGeometry:
+        path: FP_WaldFlaeche_f.qml
+        zIndex: 238    
+# fp_wasserrecht ist in Klasse so_wasserrecht
+fp_wasserwirtschaft:
+    PointGeometry:
+        path: FP_Wasserwirtschaft_p.qml
+        zIndex: 212
+    LineGeometry:
+        path: FP_Wasserwirtschaft_l.qml
+        zIndex: 222        
+    PolygonGeometry:
+        path: FP_Wasserwirtschaft_f.qml
+        zIndex: 234
+fp_zentralerversorgungsbereich:
+    PolygonGeometry:
+        path: FP_ZentralerVersorgungsbereich_f.qml
+        zIndex: 232
+# Klasse LP (Landschaftsplan)
+lp_erholungfreizeit:
+    PointGeometry:
+        path: LP_ErholungFreizeit_p.qml
+        zIndex: 212        
+# Klasse RP (Raumordnungsplan)   
+rp_bereich:
+    PolygonGeometry:
+        path: RP_Bereich_f.qml
+        zIndex: 335
+rp_bodenschutz:
+    PointGeometry:
+        path: RP_Bodenschutz_p.qml
+        zIndex: 310
+    PolygonGeometry:
+        path: RP_Bodenschutz_f.qml
+        zIndex: 335
+rp_einzelhandel:
+    PolygonGeometry:
+        path: RP_Einzelhandel_f.qml
+        zIndex: 331        
+rp_energieversorgung:
+    PointGeometry:
+        path: RP_Energieversorgung_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_Energieversorgung_l.qml
+        zIndex: 322
+    PolygonGeometry:
+        path: RP_Energieversorgung_f.qml
+        zIndex: 335
+rp_entsorgung:
+    PointGeometry:
+        path: RP_Entsorgung_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_Entsorgung_l.qml
+        zIndex: 322
+    PolygonGeometry:
+        path: RP_Entsorgung_f.qml
+        zIndex: 335
+rp_erholung:
+    PointGeometry:
+        path: RP_Erholung_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_Erholungung_l.qml
+        zIndex: 322
+    PolygonGeometry:
+        path: RP_Erholung_f.qml
+        zIndex: 335
+rp_erneuerbareenergie:
+    PointGeometry:
+        path: RP_ErneuerbareEnergie_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_ErneuerbareEnergie_l.qml
+        zIndex: 322        
+    PolygonGeometry:
+        path: RP_ErneuerbareEnergie_f.qml
+        zIndex: 335
+rp_forstwirtschaft:
+    PolygonGeometry:
+        path: RP_Forstwirtschaft_f.qml
+        zIndex: 338
+    LineGeometry:
+        path: RP_Forstwirtschaft_l.qml
+        zIndex: 322        
+rp_freiraum:
+    PointGeometry:
+        path: RP_Freiraum_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_Freiraum_l.qml
+        zIndex: 320
+    PolygonGeometry:
+        path: RP_Freiraum_f.qml
+        zIndex: 338
+rp_funktionszuweisung:
+    PointGeometry:
+        path: RP_Funktionszuweisung_p.qml
+        zIndex: 312    
+rp_generischesobjekt:
+    LineGeometry:
+        path: RP_GenerischesObjekt_l.qml
+        zIndex: 338        
+rp_gewaesser:
+    PointGeometry:
+        path: RP_Gewaesser_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_Gewaesser_l.qml
+        zIndex: 322
+    PolygonGeometry:
+        path: RP_Gewaesser_f.qml
+        zIndex: 338
+rp_grenze:
+    LineGeometry:
+        path: RP_Grenze_l.qml
+        zIndex: 322
+    PolygonGeometry:
+        path: RP_Grenze_f.qml
+        zIndex: 335
+rp_hochwasserschutz:
+    PointGeometry:
+        path: RP_Hochwasserschutz_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_Hochwasserschutz_l.qml
+        zIndex: 322
+    PolygonGeometry:
+        path: RP_Hochwasserschutz_f.qml
+        zIndex: 335
+rp_industriegewerbe:
+    PointGeometry:
+        path: RP_IndustrieGewerbe_p.qml
+        zIndex: 312
+    PolygonGeometry:
+        path: RP_IndustrieGewerbe_f.qml
+        zIndex: 338
+rp_kommunikation:
+    LineGeometry:
+        path: RP_Kommunikation_l.qml
+        zIndex: 322       
+rp_kulturlandschaft:
+    PointGeometry:
+        path: RP_Kulturlandschaft_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_Kulturlandschaft_l.qml
+        zIndex: 322    
+    PolygonGeometry:
+        path: RP_Kulturlandschaft_f.qml
+        zIndex: 335
+rp_laermschutzbauschutz:
+    LineGeometry:
+        path: RP_LaermschutzBauschutz_l.qml
+        zIndex: 322    
+    PolygonGeometry:
+        path: RP_LaermschutzBauschutz_f.qml
+        zIndex: 335       
+rp_landwirtschaft:
+    LineGeometry:
+        path: RP_Landwirtschaft_l.qml
+        zIndex: 322
+    PolygonGeometry:
+        path: RP_Landwirtschaft_f.qml
+        zIndex: 336
+rp_luftverkehr:
+    PointGeometry:
+        path: RP_Luftverkehr_p.qml
+        zIndex: 312
+    PolygonGeometry:
+        path: RP_Luftverkehr_f.qml
+        zIndex: 336
+rp_naturschutzrechtlichesschutzgebiet:
+    PointGeometry:
+        path: RP_NaturschutzrechtlichesSchutzgebiet_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_NaturschutzrechtlichesSchutzgebiet_l.qml
+        zIndex: 322
+    PolygonGeometry:
+        path: RP_NaturschutzrechtlichesSchutzgebiet_f.qml
+        zIndex: 334
+rp_naturlandschaft:
+    PointGeometry:
+        path: RP_NaturLandschaft_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_NaturLandschaft_l.qml
+        zIndex: 322
+    PolygonGeometry:
+        path: RP_NaturLandschaft_f.qml
+        zIndex: 334
+rp_plan:
+    PolygonGeometry:
+        path: RP_Plan_f.qml
+        zIndex: 339
+rp_planungsraum:
+    PolygonGeometry:
+        path: RP_Planungsraum_f.qml
+        zIndex: 339
+rp_radwegwanderweg:
+    PointGeometry:
+        path: RP_RadwegWanderweg_p.qml
+        zIndex: 310
+    LineGeometry:
+        path: RP_RadwegWanderweg_l.qml
+        zIndex: 320
+rp_raumkategorie:
+    LineGeometry:
+        path: RP_Raumkategorie_l.qml
+        zIndex: 320
+    PolygonGeometry:
+        path: RP_Raumkategorie_f.qml
+        zIndex: 333        
+rp_rohstoff:
+    PointGeometry:
+        path: RP_Rohstoff_p.qml
+        zIndex: 119
+    PolygonGeometry:
+        path: RP_Rohstoff_f.qml
+        zIndex: 333
+rp_schienenverkehr:
+    PointGeometry:
+        path: RP_Schienenverkehr_p.qml
+        zIndex: 310
+    LineGeometry:
+        path: RP_Schienenverkehr_l.qml
+        zIndex: 320
+rp_siedlung:
+    PolygonGeometry:
+        path: RP_Siedlung_f.qml
+        zIndex: 334        
+rp_sonstverkehr:
+    PointGeometry:
+        path: RP_SonstVerkehr_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_SonstVerkehr_l.qml
+        zIndex: 320        
+    PolygonGeometry:
+        path: RP_SonstVerkehr_f.qml
+        zIndex: 334
+rp_sperrgebiet:
+    PolygonGeometry:
+        path: RP_Sperrgebiet_f.qml
+        zIndex: 334
+rp_sportanlage:
+    PointGeometry:
+        path: RP_Sportanlage_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_Sportanlage_l.qml
+        zIndex: 322
+    PolygonGeometry:
+        path: RP_Sportanlage_f.qml
+        zIndex: 332
+rp_strassenverkehr:
+    PointGeometry:
+        path: RP_Strassenverkehr_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_Strassenverkehr_l.qml
+        zIndex: 322
+    PolygonGeometry:
+        path: RP_Strassenverkehr_f.qml
+        zIndex: 334    
+rp_wasserschutz:
+    PointGeometry:
+        path: RP_Wasserschutz_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_Wasserschutz_l.qml
+        zIndex: 322
+    PolygonGeometry:
+        path: RP_Wasserschutz_f.qml
+        zIndex: 334
+rp_wasserverkehr:
+    PointGeometry:
+        path: RP_Wasserverkehr_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_Wasserverkehr_l.qml
+        zIndex: 322
+    PolygonGeometry:
+        path: RP_Wasserverkehr_f.qml
+        zIndex: 336
+rp_wasserwirtschaft:
+    PointGeometry:
+        path: RP_Wasserwirtschaft_p.qml
+        zIndex: 312
+    LineGeometry:
+        path: RP_Wasserwirtschaft_l.qml
+        zIndex: 322
+    PolygonGeometry:
+        path: RP_Wasserwirtschaft_f.qml
+        zIndex: 332
+rp_wohnensiedlung:
+    PointGeometry:
+        path: RP_WohnenSiedlung_p.qml
+        zIndex: 312
+    PolygonGeometry:
+        path: RP_WohnenSiedlung_f.qml
+        zIndex: 334
+rp_zentralerort:
+    PointGeometry:
+        path: RP_ZentralerOrt_p.qml
+        zIndex: 112
+    PolygonGeometry:
+        path: RP_ZentralerOrt_f.qml
+        zIndex: 334
+# Klasse SO (Sonstiger Plan)  
+so_bodenschutzrecht:
+    PointGeometry:
+        path: SO_Bodenschutzrecht_p.qml
+        zIndex: 212
+    LineGeometry:
+        path: SO_Bodenschutzrecht_l.qml
+        zIndex: 222        
+    PolygonGeometry:
+        path: SO_Bodenschutzrecht_f.qml
+        zIndex: 233        
+so_denkmalschutzrecht:
+    PointGeometry:
+        path: SO_Denkmalschutzrecht_p.qml
+        zIndex: 212
+    LineGeometry:
+        path: SO_Denkmalschutzrecht_l.qml
+        zIndex: 222
+    PolygonGeometry:
+        path: SO_Denkmalschutzrecht_f.qml
+        zIndex: 231    
+so_gebiet:
+    PolygonGeometry:
+        path: SO_Gebiet_f.qml
+        zIndex: 231
+so_gewaesser:
+    PointGeometry:
+        path: SO_Gewaesser_p.qml
+        zIndex: 212
+    LineGeometry:
+        path: SO_Gewaesser_l.qml
+        zIndex: 222
+    PolygonGeometry:
+        path: SO_Gewaesser_f.qml
+        zIndex: 231        
+so_grenze:
+    LineGeometry:
+        path: SO_Grenze_l.qml
+        zIndex: 222           
+so_luftverkehrsrecht:
+    PointGeometry:
+        path: SO_Luftverkehrsrecht_p.qml
+        zIndex: 212
+    LineGeometry:
+        path: SO_Luftverkehrsrecht_l.qml
+        zIndex: 222        
+    PolygonGeometry:
+        path: SO_Luftverkehrsrecht_f.qml
+        zIndex: 231    
+so_schienenverkehrsrecht:
+    PointGeometry:
+        path: SO_Schienenverkehrsrecht_p.qml
+        zIndex: 212
+    LineGeometry:
+        path: SO_Schienenverkehrsrecht_l.qml
+        zIndex: 222       
+    PolygonGeometry:
+        path: SO_Schienenverkehrsrecht_f.qml
+        zIndex: 236    
+so_schutzgebietnaturschutzrecht:
+    PointGeometry:
+        path: SO_SchutzgebietNaturschutzrecht_p.qml
+        zIndex: 215
+    LineGeometry:
+        path: SO_SchutzgebietNaturschutzrecht_l.qml
+        zIndex: 222        
+    PolygonGeometry:
+        path: SO_SchutzgebietNaturschutzrecht_f.qml
+        zIndex: 231   
+so_schutzgebietsonstigesrecht:
+    LineGeometry:
+        path: SO_SchutzgebietSonstigesRecht_l.qml
+        zIndex: 222
+    PolygonGeometry:
+        path: SO_SchutzgebietSonstigesRecht_f.qml
+        zIndex: 231        
+so_schutzgebietwasserrecht:
+    PointGeometry:
+        path: SO_SchutzgebietWasserrecht_p.qml
+        zIndex: 215
+    LineGeometry:
+        path: SO_SchutzgebietWasserrecht_l.qml
+        zIndex: 222        
+    PolygonGeometry:
+        path: SO_SchutzgebietWasserrecht_f.qml
+        zIndex: 231
+so_sonstigesrecht:
+    PointGeometry:
+        path: SO_SonstigesRecht_p.qml
+        zIndex: 212
+    LineGeometry:
+        path: SO_SonstigesRecht_l.qml
+        zIndex: 222
+    PolygonGeometry:
+        path: SO_SonstigesRecht_f.qml
+        zIndex: 231        
+so_strassenverkehrsrecht:
+    PointGeometry:
+        path: SO_Strassenverkehrsrecht_p.qml
+        zIndex: 215
+    LineGeometry:
+        path: SO_Strassenverkehrsrecht_l.qml
+        zIndex: 222
+    PolygonGeometry:
+        path: SO_Strassenverkehrsrecht_f.qml
+        zIndex: 232        
+so_wasserrecht:
+    PointGeometry:
+        path: SO_Wasserrecht_p.qml
+        zIndex: 215
+    LineGeometry:
+        path: SO_Wasserrecht_l.qml
+        zIndex: 222    
+    PolygonGeometry:
+        path: SO_Wasserrecht_f.qml
+        zIndex: 234    
+# Klasse XP
+# Präsentationsobjekte    
+xp_ppo:
+    PointGeometry:
+        path: XP_PPO.qml
+        zIndex: 111
+xp_pto:
+    PointGeometry:
+        path: XP_PTO.qml
+        zIndex: 110
