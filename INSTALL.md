@@ -17,21 +17,21 @@
 **macOS:**
 ```bash
 cd ~/Library/Application\ Support/QGIS/QGIS3/profiles/default/python/plugins/
-git clone https://github.com/yourusername/x_styles.git
+git clone https://github.com/PlanDigitalOSS/x_styles.git
 # Oder ZIP herunterladen und entpacken
 ```
 
 **Linux:**
 ```bash
 cd ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/
-git clone https://github.com/yourusername/x_styles.git
+git clone https://github.com/PlanDigitalOSS/x_styles.git
 # Oder ZIP herunterladen und entpacken
 ```
 
 **Windows:**
 ```cmd
 cd %APPDATA%\QGIS\QGIS3\profiles\default\python\plugins\
-git clone https://github.com/yourusername/x_styles.git
+git clone https://github.com/PlanDigitalOSS/x_styles.git
 REM Oder ZIP herunterladen und entpacken
 ```
 
@@ -58,21 +58,21 @@ Nach der manuellen Installation:
 **macOS:**
 ```bash
 cd ~/Library/Application\ Support/QGIS/QGIS3/profiles/default/python/plugins/
-git clone https://github.com/yourusername/x_styles.git
+git clone https://github.com/PlanDigitalOSS/x_styles.git
 # Or download and extract ZIP
 ```
 
 **Linux:**
 ```bash
 cd ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/
-git clone https://github.com/yourusername/x_styles.git
+git clone https://github.com/PlanDigitalOSS/x_styles.git
 # Or download and extract ZIP
 ```
 
 **Windows:**
 ```cmd
 cd %APPDATA%\QGIS\QGIS3\profiles\default\python\plugins\
-git clone https://github.com/yourusername/x_styles.git
+git clone https://github.com/PlanDigitalOSS/x_styles.git
 REM Or download and extract ZIP
 ```
 
@@ -156,8 +156,7 @@ Nach der Installation sollten Sie sehen / After installation you should see:
 ### Weitere Hilfe / More help
 
 - 📖 **Dokumentation / Documentation**: [help/index-de.html](help/index-de.html) oder [help/index-en.html](help/index-en.html)
-- 🐛 **Bug melden / Report bug**: [GitHub Issues](https://github.com/yourusername/x_styles/issues)
-- 📧 **E-Mail**: hopmann@gmail.com
+- 🐛 **Bug melden / Report bug**: [GitHub Issues](https://github.com/PlanDigitalOSS/x_styles/issues)
 
 ---
 

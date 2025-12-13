@@ -15,7 +15,7 @@ qgisMaximumVersion=3.99
 description=Automatische Zuweisung von Zeichenvorschriften für XPlanGML-Daten
 version=1.0.0
 author=Cornelio Hopmann Lopez
-email=hopmann@gmail.com
+email=plandigitaloss@proton.me
 
 about=X_STYLES ist ein QGIS-Plugin zur automatischen Zuweisung von standardisierten Zeichenvorschriften (Styles) für XPlanGML-Dateien.
     XPlanGML-Dateien beinhalten standardisierte Daten von Plänen der Raumordnung, Bauleitplanung und Landschaftsplanung.
@@ -24,8 +24,8 @@ about=X_STYLES ist ein QGIS-Plugin zur automatischen Zuweisung von standardisier
     und Regionale Raumordnungsprogramme (RP). Die Verwaltung der Styles erfolgt über eine externe YAML-Konfigurationsdatei,
     die einfache Anpassungen ohne Änderung des Quellcodes ermöglicht.
 
-tracker=https://github.com/yourusername/x_styles/issues
-repository=https://github.com/yourusername/x_styles
+tracker=https://github.com/PlanDigitalOSS/x_styles/issues
+repository=https://github.com/PlanDigitalOSS/x_styles
 # End of mandatory metadata
 
 # Recommended items:
@@ -42,7 +42,7 @@ changelog=1.0.0 - Erste stabile Version
 # Tags are comma separated with spaces allowed
 tags=xplanung,xplangml,raumplanung,bauleitplanung,stadtplanung,bebauungsplan,flächennutzungsplan,style,symbology
 
-homepage=https://github.com/yourusername/x_styles
+homepage=https://github.com/PlanDigitalOSS/x_styles
 category=Vector
 icon=icons/X_STYLES.PNG
 # experimental flag

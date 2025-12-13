@@ -90,7 +90,7 @@ Einfache Konfiguration der Style-Verzeichnisse und Optionen
 
 ```bash
 # 1. Repository klonen oder ZIP herunterladen
-git clone https://github.com/yourusername/x_styles.git
+git clone https://github.com/PlanDigitalOSS/x_styles.git
 
 # 2. In QGIS Plugin-Verzeichnis kopieren
 # macOS:
@@ -233,7 +233,7 @@ x_styles/
 
 ```bash
 # 1. Repository klonen
-git clone https://github.com/yourusername/x_styles.git
+git clone https://github.com/PlanDigitalOSS/x_styles.git
 cd x_styles
 
 # 2. Symlink zu QGIS Plugin-Verzeichnis erstellen (macOS/Linux)
@@ -282,7 +282,7 @@ Beiträge sind herzlich willkommen! Es gibt viele Wege zu helfen:
 
 ### Fehler melden
 
-Gefunden einen Bug? [Erstellen Sie ein Issue](https://github.com/yourusername/x_styles/issues)
+Gefunden einen Bug? [Erstellen Sie ein Issue](https://github.com/PlanDigitalOSS/x_styles/issues)
 
 ### Neue Styles beisteuern
 
@@ -346,9 +346,9 @@ Siehe [LICENSE](LICENSE) Datei für vollständige Details.
 
 **Cornelio Hopmann Lopez**
 
-- 📧 Email: hopmann@gmail.com
-- 🐙 GitHub: [yourusername/x_styles](https://github.com/yourusername/x_styles)
-- 🐛 Issues: [Issue Tracker](https://github.com/yourusername/x_styles/issues)
+- 📧 Email: plandigitaloss@proton.me
+- 🐙 GitHub: [PlanDigitalOSS/x_styles](https://github.com/PlanDigitalOSS/x_styles)
+- 🐛 Issues: [Issue Tracker](https://github.com/PlanDigitalOSS/x_styles/issues)
 
 ## 🙏 Danksagungen
 
