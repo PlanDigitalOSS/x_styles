@@ -1,5 +1,9 @@
 # X_STYLES Plugin - Hilfe-Dokumentation
 
+> **Sprache / Language:** 🇩🇪 Deutsch | [🇬🇧 English](README-en.md)
+
+---
+
 Dieses Verzeichnis enthält die HTML-Hilfe-Dateien für das X_STYLES QGIS-Plugin.
 
 ## Dateien

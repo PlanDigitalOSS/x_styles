@@ -1,5 +1,9 @@
 # Hilfe-Integration testen
 
+> **Sprache / Language:** 🇩🇪 Deutsch | [🇬🇧 English](TESTING-en.md)
+
+---
+
 ## So rufen Sie die Hilfe auf:
 
 1. **Im QGIS Plugin:**

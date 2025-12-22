@@ -1,12 +1,29 @@
 # X_STYLES - QGIS Plugin für XPlanGML
 
+> **Sprache / Language:** 🇩🇪 Deutsch | [🇬🇧 English](README-en.md)
+
+---
+
 [![QGIS](https://img.shields.io/badge/QGIS-3.2+-green.svg)](https://qgis.org)
-[![License](https://img.shields.io/badge/license-GPL--2.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](metadata.txt)
 
 > **Automatische Zuweisung von standardisierten Zeichenvorschriften für XPlanGML-Daten in QGIS**
 
 ![X_STYLES Logo](icons/X_STYLES.PNG)
+
+## 🌐 Documentation / Dokumentation
+
+**Available in / Verfügbar in:**
+- 🇩🇪 **[Deutsch](README.md)** (Sie lesen dies)
+- 🇬🇧 **[English](README-en.md)**
+
+**Quick Links / Schnellzugriff:**
+- Installation: [Deutsch](INSTALL-de.md) | [English](INSTALL-en.md)
+- Contributing: [Deutsch](CONTRIBUTING.md) | [English](CONTRIBUTING-en.md)
+- Complete Documentation: [Deutsch](DOCUMENTATION_OVERVIEW.md) | [English](DOCUMENTATION_OVERVIEW-en.md)
+
+---
 
 ## 📋 Inhaltsverzeichnis
 
@@ -324,20 +341,23 @@ git push origin feature/meine-neue-funktion
 
 ## 📄 Lizenz
 
-Dieses Projekt ist unter der **GNU General Public License v2.0** lizenziert.
+Dieses Projekt ist unter der **GNU General Public License v3.0** lizenziert.
 
 ```
 Copyright (C) 2024 Cornelio Hopmann Lopez
 
-This program is free software; you can redistribute it and/or modify
+This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
+the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 
 Siehe [LICENSE](LICENSE) Datei für vollständige Details.

@@ -1,6 +1,30 @@
 # X_STYLES - Dokumentations-Übersicht
 
+> **Sprache / Language:** 🇩🇪 Deutsch | [🇬🇧 English](DOCUMENTATION_OVERVIEW-en.md)
+
+---
+
 Dieses Dokument bietet einen Überblick über alle Dokumentationsdateien im Projekt.
+
+## 🌐 Sprachversionen / Language Versions
+
+Alle wichtigen Dokumentationsdateien sind in beiden Sprachen verfügbar:
+
+| Deutsch (German) | English | Beschreibung |
+|------------------|---------|--------------|
+| [README.md](README.md) | [README-en.md](README-en.md) | Hauptdokumentation |
+| [INSTALL-de.md](INSTALL-de.md) | [INSTALL-en.md](INSTALL-en.md) | Installationsanleitung |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | [CONTRIBUTING-en.md](CONTRIBUTING-en.md) | Beitragsrichtlinien |
+| [CHANGELOG.md](CHANGELOG.md) | [CHANGELOG-en.md](CHANGELOG-en.md) | Versionshistorie |
+| [DOCUMENTATION_OVERVIEW.md](DOCUMENTATION_OVERVIEW.md) | [DOCUMENTATION_OVERVIEW-en.md](DOCUMENTATION_OVERVIEW-en.md) | Dokumentations-Übersicht |
+| [help/README.md](help/README.md) | [help/README-en.md](help/README-en.md) | Hilfe-Verzeichnis Guide |
+| [help/TESTING.md](help/TESTING.md) | [help/TESTING-en.md](help/TESTING-en.md) | Test-Anleitung |
+| [styles/README.md](styles/README.md) | [styles/README-en.md](styles/README-en.md) | Styles-Anleitung |
+
+**HTML-Hilfe** (bereits zweisprachig):
+- [help/index-de.html](help/index-de.html) | [help/index-en.html](help/index-en.html)
+
+---
 
 ## 📚 Hauptdokumentation
 
@@ -57,9 +81,9 @@ Dieses Dokument bietet einen Überblick über alle Dokumentationsdateien im Proj
 
 ## 🛠️ Entwickler-Dokumentation
 
-### CONTRIBUTING.md
-**Zweck:** Leitfaden für Beiträge zum Projekt  
-**Zielgruppe:** Entwickler, die zum Projekt beitragen möchten  
+### CONTRIBUTING.md / CONTRIBUTING-en.md
+**Zweck:** Leitfaden für Beiträge zum Projekt
+**Zielgruppe:** Entwickler, die zum Projekt beitragen möchten
 **Inhalt:**
 - Arten von Beiträgen
 - Entwicklungsumgebung einrichten
@@ -67,19 +91,20 @@ Dieses Dokument bietet einen Überblick über alle Dokumentationsdateien im Proj
 - Coding-Standards (Python, YAML, QML)
 - Testing-Richtlinien
 - Dokumentations-Pflege
+- Zweisprachiges Update-Protokoll
 
-### CHANGELOG.md
-**Zweck:** Versions-Historie  
-**Zielgruppe:** Alle Benutzer, Entwickler  
+### CHANGELOG.md / CHANGELOG-en.md
+**Zweck:** Versions-Historie
+**Zielgruppe:** Alle Benutzer, Entwickler
 **Inhalt:**
 - Änderungen pro Version
 - Keep a Changelog Format
 - Semantic Versioning
 - Geplante Features (Unreleased)
 
-### INSTALL.md
-**Zweck:** Detaillierte Installations-Anleitung  
-**Zielgruppe:** Benutzer (alle Erfahrungsstufen)  
+### INSTALL-de.md / INSTALL-en.md
+**Zweck:** Detaillierte Installations-Anleitung
+**Zielgruppe:** Benutzer (alle Erfahrungsstufen)
 **Inhalt:**
 - Schnellinstallation (Plugin Manager)
 - Manuelle Installation (alle OS)
@@ -100,9 +125,9 @@ Dieses Dokument bietet einen Überblick über alle Dokumentationsdateien im Proj
 
 ## 📁 Verzeichnis-spezifische Dokumentation
 
-### help/README.md
-**Zweck:** Dokumentation des help/ Verzeichnisses  
-**Zielgruppe:** Entwickler, Dokumentations-Autoren  
+### help/README.md / help/README-en.md
+**Zweck:** Dokumentation des help/ Verzeichnisses
+**Zielgruppe:** Entwickler, Dokumentations-Autoren
 **Inhalt:**
 - Dateistruktur erklärt
 - Wie HTML-Hilfe funktioniert
@@ -111,18 +136,18 @@ Dieses Dokument bietet einen Überblick über alle Dokumentationsdateien im Proj
 - Stil und Format
 - Link-Verwaltung
 
-### help/TESTING.md
-**Zweck:** Test-Anleitung für Hilfe-Integration  
-**Zielgruppe:** Entwickler, Tester  
+### help/TESTING.md / help/TESTING-en.md
+**Zweck:** Test-Anleitung für Hilfe-Integration
+**Zielgruppe:** Entwickler, Tester
 **Inhalt:**
 - Hilfe-Aufruf testen
 - Erwartetes Verhalten
 - Manuelle Vorschau
 - Integration-Details
 
-### styles/README.md
-**Zweck:** Dokumentation des styles/ Verzeichnisses  
-**Zielgruppe:** Style-Autoren, Entwickler  
+### styles/README.md / styles/README-en.md
+**Zweck:** Dokumentation des styles/ Verzeichnisses
+**Zielgruppe:** Style-Autoren, Entwickler
 **Inhalt:**
 - Verzeichnisstruktur
 - Namenskonventionen
@@ -134,18 +159,18 @@ Dieses Dokument bietet einen Überblick über alle Dokumentationsdateien im Proj
 
 ## 🎯 Verwendungs-Matrix
 
-| Datei | Endbenutzer | Entwickler | GitHub | QGIS |
-|-------|-------------|------------|--------|------|
-| README.md | ✅ | ✅ | ✅ | ❌ |
-| metadata.txt | ❌ | ✅ | ❌ | ✅ |
-| help/index-de.html | ✅ | ✅ | ❌ | ✅ |
-| help/index-en.html | ✅ | ✅ | ❌ | ✅ |
-| CONTRIBUTING.md | ❌ | ✅ | ✅ | ❌ |
-| CHANGELOG.md | ✅ | ✅ | ✅ | ❌ |
-| INSTALL.md | ✅ | ✅ | ✅ | ❌ |
-| help/README.md | ❌ | ✅ | ❌ | ❌ |
-| help/TESTING.md | ❌ | ✅ | ❌ | ❌ |
-| styles/README.md | ⚠️ | ✅ | ❌ | ❌ |
+| Datei (DE) | Datei (EN) | Endbenutzer | Entwickler | GitHub | QGIS |
+|------------|------------|-------------|------------|--------|------|
+| README.md | README-en.md | ✅ | ✅ | ✅ | ❌ |
+| metadata.txt | - | ❌ | ✅ | ❌ | ✅ |
+| help/index-de.html | help/index-en.html | ✅ | ✅ | ❌ | ✅ |
+| CONTRIBUTING.md | CONTRIBUTING-en.md | ❌ | ✅ | ✅ | ❌ |
+| CHANGELOG.md | CHANGELOG-en.md | ✅ | ✅ | ✅ | ❌ |
+| INSTALL-de.md | INSTALL-en.md | ✅ | ✅ | ✅ | ❌ |
+| help/README.md | help/README-en.md | ❌ | ✅ | ❌ | ❌ |
+| help/TESTING.md | help/TESTING-en.md | ❌ | ✅ | ❌ | ❌ |
+| styles/README.md | styles/README-en.md | ⚠️ | ✅ | ❌ | ❌ |
+| DOCUMENTATION_OVERVIEW.md | DOCUMENTATION_OVERVIEW-en.md | ❌ | ✅ | ✅ | ❌ |
 
 **Legende:**
 - ✅ Primäre Zielgruppe
@@ -155,78 +180,79 @@ Dieses Dokument bietet einen Überblick über alle Dokumentationsdateien im Proj
 ## 📝 Wartungs-Checkliste
 
 ### Bei neuen Features:
-- [ ] README.md aktualisieren (Features-Sektion)
+- [ ] README.md und README-en.md aktualisieren (Features-Sektion)
 - [ ] help/index-de.html aktualisieren
 - [ ] help/index-en.html aktualisieren
-- [ ] CHANGELOG.md - neuen Eintrag unter [Unreleased]
+- [ ] CHANGELOG.md und CHANGELOG-en.md - neuen Eintrag unter [Unreleased]
 - [ ] Code-Kommentare hinzufügen/aktualisieren
 
 ### Bei neuen Styles:
-- [ ] styles/README.md prüfen/aktualisieren
+- [ ] styles/README.md und styles/README-en.md prüfen/aktualisieren
 - [ ] manifest.yaml dokumentieren
-- [ ] Beispiel in help/index-de.html (optional)
+- [ ] Beispiel in help/index-de.html und help/index-en.html (optional)
 
 ### Bei Releases:
 - [ ] metadata.txt - Version erhöhen
-- [ ] CHANGELOG.md - [Unreleased] → [X.Y.Z]
-- [ ] README.md - Version-Badge aktualisieren
+- [ ] CHANGELOG.md und CHANGELOG-en.md - [Unreleased] → [X.Y.Z]
+- [ ] README.md und README-en.md - Version-Badge aktualisieren
 - [ ] help/index-de.html - Version aktualisieren
 - [ ] help/index-en.html - Version aktualisieren
 - [ ] Git-Tag erstellen: `git tag -a vX.Y.Z -m "Version X.Y.Z"`
 
 ### Bei Breaking Changes:
-- [ ] CHANGELOG.md - deutlich markieren
-- [ ] README.md - Migration-Guide
+- [ ] CHANGELOG.md und CHANGELOG-en.md - deutlich markieren
+- [ ] README.md und README-en.md - Migration-Guide
 - [ ] help/ - Upgrade-Anleitung
 - [ ] metadata.txt - qgisMinimumVersion prüfen
 
 ## 🔍 Wo finde ich was?
 
 ### "Wie installiere ich das Plugin?"
-→ **INSTALL.md** oder **README.md** (Installation-Sektion)
+→ **INSTALL-de.md** / **INSTALL-en.md** oder **README.md** / **README-en.md** (Installation-Sektion)
 
 ### "Wie benutze ich das Plugin?"
-→ **help/index-de.html** (in QGIS via Dropdown → Hilfe)
+→ **help/index-de.html** / **help/index-en.html** (in QGIS via Dropdown → Hilfe/Help)
 
 ### "Wie kann ich beitragen?"
-→ **CONTRIBUTING.md**
+→ **CONTRIBUTING.md** / **CONTRIBUTING-en.md**
 
 ### "Was ist neu in dieser Version?"
-→ **CHANGELOG.md**
+→ **CHANGELOG.md** / **CHANGELOG-en.md**
 
 ### "Wie erstelle ich eigene Styles?"
-→ **styles/README.md** oder **help/index-de.html** (Eigene Styles erstellen)
+→ **styles/README.md** / **styles/README-en.md** oder **help/index-de.html** / **help/index-en.html** (Eigene Styles erstellen)
 
 ### "Wie funktioniert die manifest.yaml?"
-→ **help/index-de.html** (Erweiterte Konfiguration)
+→ **help/index-de.html** / **help/index-en.html** (Erweiterte Konfiguration)
 
 ### "Wie teste ich das Plugin?"
-→ **CONTRIBUTING.md** (Testing-Sektion)
+→ **CONTRIBUTING.md** / **CONTRIBUTING-en.md** (Testing-Sektion)
 
 ### "Welche QGIS-Version brauche ich?"
-→ **metadata.txt** oder **INSTALL.md**
+→ **metadata.txt** oder **INSTALL-de.md** / **INSTALL-en.md**
 
 ## 📊 Statistik
 
 Gesamt-Dokumentation:
-- **9 Markdown-Dateien**
-- **3 HTML-Dateien**
+- **16 Markdown-Dateien** (8 Deutsch + 8 Englisch)
+- **3 HTML-Dateien** (Deutsch + Englisch + Fallback)
 - **1 Metadaten-Datei**
-- **Ca. 2000+ Zeilen Dokumentation**
-- **Deutsch + Englisch**
+- **Ca. 4000+ Zeilen Dokumentation**
+- **Vollständig zweisprachig (Deutsch + Englisch)**
 
 ## 🌐 Sprachen
 
 - **Deutsch (primär):**
-  - README.md (gemischt DE/EN)
+  - README.md, CONTRIBUTING.md, CHANGELOG.md, INSTALL-de.md
   - help/index-de.html
   - metadata.txt
-  - Alle andere Markdown-Dateien (gemischt)
+  - Alle deutschen Markdown-Dateien
 
 - **Englisch (sekundär):**
+  - README-en.md, CONTRIBUTING-en.md, CHANGELOG-en.md, INSTALL-en.md
   - help/index-en.html
+  - Alle englischen Markdown-Dateien (mit -en Suffix)
   - Code-Kommentare (teilweise)
-  - CONTRIBUTING.md (gemischt)
 
 ## ✅ Vollständigkeits-Check
 
@@ -241,16 +267,17 @@ Gesamt-Dokumentation:
 - [x] About-Beschreibung vorhanden
 
 ### Best Practices:
-- [x] CONTRIBUTING.md
-- [x] INSTALL.md
+- [x] CONTRIBUTING.md (zweisprachig)
+- [x] INSTALL.md (zweisprachig)
 - [x] .gitignore
 - [x] Mehrsprachige Hilfe
 - [x] Entwickler-Dokumentation
 - [x] Code-Kommentare
 - [x] Beispiele in Dokumentation
+- [x] Vollständig zweisprachige Dokumentationsstruktur
 
 ---
 
-**Status: ✅ Dokumentation vollständig (außer LICENSE)**
+**Status: ✅ Dokumentation vollständig und zweisprachig**
 
-**Nächster Schritt: Schritt 4 - LICENSE Datei hinzufügen**
+**Nächster Schritt: Beide Sprachversionen mit dem Update-Protokoll in CONTRIBUTING.md synchron halten**

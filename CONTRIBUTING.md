@@ -1,5 +1,9 @@
 # Beitragen zu X_STYLES
 
+> **Sprache / Language:** 🇩🇪 Deutsch | [🇬🇧 English](CONTRIBUTING-en.md)
+
+---
+
 Vielen Dank für Ihr Interesse, zu X_STYLES beizutragen! Wir freuen uns über jeden Beitrag, egal ob groß oder klein.
 
 ## 🎯 Arten von Beiträgen
@@ -250,11 +254,52 @@ Vor jedem PR:
 
 Bei Code-Änderungen:
 
-- [ ] `README.md` aktualisieren (falls nötig)
+- [ ] `README.md` und `README-en.md` aktualisieren (falls nötig)
 - [ ] `help/index-de.html` aktualisieren
 - [ ] `help/index-en.html` aktualisieren
 - [ ] `metadata.txt` Version erhöhen (bei Releases)
-- [ ] CHANGELOG aktualisieren (bei Releases)
+- [ ] CHANGELOG und CHANGELOG-en.md aktualisieren (bei Releases)
+
+## 🌐 Zweisprachige Dokumentation Update-Protokoll
+
+Bei der Aktualisierung JEDER Dokumentationsdatei:
+
+### Dokument-Paare zusammen pflegen:
+
+- README.md ↔ README-en.md
+- INSTALL-de.md ↔ INSTALL-en.md
+- CONTRIBUTING.md ↔ CONTRIBUTING-en.md
+- CHANGELOG.md ↔ CHANGELOG-en.md
+- DOCUMENTATION_OVERVIEW.md ↔ DOCUMENTATION_OVERVIEW-en.md
+- help/README.md ↔ help/README-en.md
+- help/TESTING.md ↔ help/TESTING-en.md
+- styles/README.md ↔ styles/README-en.md
+
+### Update-Reihenfolge:
+
+1. Änderungen zuerst in deutscher Version durchführen (primäre Sprache)
+2. Änderungen in englische Version übersetzen
+3. DOCUMENTATION_OVERVIEW.md aktualisieren, falls Struktur geändert
+4. Cross-Referenzen in beiden Sprachen verifizieren
+
+### Commit-Message-Format:
+
+```bash
+docs: update [Beschreibung] (de+en)
+
+- README.md und README-en.md aktualisiert
+- [weitere Dateien]
+- [Änderungen beschreiben]
+```
+
+### Update-Checkliste:
+
+- [ ] Änderungen in deutscher Version durchgeführt (primär)
+- [ ] Änderungen in englische Version übersetzt
+- [ ] Language-Switcher-Links funktionieren
+- [ ] Cross-Referenzen in beiden Sprachen aktualisiert
+- [ ] Code-Beispiele getestet (falls geändert)
+- [ ] Commit-Message zeigt an: `docs: ... (de+en)`
 
 ## 🤔 Fragen?
 

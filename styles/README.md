@@ -1,5 +1,9 @@
 # Styles Dokumentation
 
+> **Sprache / Language:** 🇩🇪 Deutsch | [🇬🇧 English](README-en.md)
+
+---
+
 Dieses Verzeichnis enthält die QML-Style-Dateien für XPlanGML-Layer.
 
 ## Verzeichnisstruktur

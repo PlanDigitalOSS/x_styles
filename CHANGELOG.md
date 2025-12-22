@@ -1,5 +1,9 @@
 # Changelog
 
+> **Sprache / Language:** 🇩🇪 Deutsch | [🇬🇧 English](CHANGELOG-en.md)
+
+---
+
 Alle wichtigen Änderungen an diesem Projekt werden in dieser Datei dokumentiert.
 
 Das Format basiert auf [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
