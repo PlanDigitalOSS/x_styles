@@ -712,3 +712,7 @@ xp_pto:
     PointGeometry:
         path: XP_PTO.qml
         zIndex: 110
+xp_lpo:
+    LineGeometry:
+        path: XP_LPO_l.qml
+        zIndex: 222        
