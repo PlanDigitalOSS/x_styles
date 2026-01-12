@@ -121,9 +121,6 @@ dmypy.json
 # Compiled resources (if you use pyrcc)
 # *_rc.py
 
-# Test data
-test_data/
-*.gml.aux.xml
 
 # Package files
 *.zip
