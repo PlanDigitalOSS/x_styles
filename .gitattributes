@@ -1,1 +1,11 @@
 test_data/ export-ignore
+.github/ export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
+RELEASE_v1.1.0.md export-ignore
+CONTRIBUTING.md export-ignore
+CONTRIBUTING-en.md export-ignore
+DOCUMENTATION_OVERVIEW.md export-ignore
+DOCUMENTATION_OVERVIEW-en.md export-ignore
+INSTALL-de.md export-ignore
+INSTALL-en.md export-ignore
