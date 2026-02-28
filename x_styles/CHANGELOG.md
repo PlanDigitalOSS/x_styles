@@ -17,6 +17,27 @@ und dieses Projekt hält sich an [Semantic Versioning](https://semver.org/lang/d
 - Batch-Processing für mehrere Projekte
 - REST-API Integration für Online-Style-Repository
 
+## [1.1.0] - 2026-01-29
+
+### Hinzugefügt
+- GitHub Actions Workflow für automatisierte Releases
+- Automatische Veröffentlichung auf plugins.qgis.org via qgis-plugin-ci
+- Neuer Style für XP_LPO Liniengeometrien (XP_LPO_l.qml)
+- Testdaten für Flächennutzungspläne (Rhauderfehn, Westoverledingen)
+
+### Geändert
+- Ausschluss von test_data aus Plugin-Exporten (.gitattributes)
+- Korrektur der Signaturen für Hallenbad und Sportstätten
+- Aktualisierung von XP_PPO und FP_Plan Styles
+
+### Behoben
+- Überlagerung von Kirche und Camping Signaturen beseitigt
+
+### Technisch
+- Integration mit GitHub Releases
+- Konfiguration der OSGeo-Authentifizierung für automatische Uploads
+- Aktualisierung manifest.yaml mit XP_LPO Eintrag
+
 ## [1.0.0] - 2024-11-07
 
 ### Hinzugefügt
@@ -90,6 +111,7 @@ Das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/):
 
 ---
 
-[Unreleased]: https://github.com/yourusername/x_styles/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/yourusername/x_styles/releases/tag/v1.0.0
-[0.1]: https://github.com/yourusername/x_styles/releases/tag/v0.1
+[Unreleased]: https://github.com/PlanDigitalOSS/x_styles/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/PlanDigitalOSS/x_styles/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/PlanDigitalOSS/x_styles/releases/tag/v1.0.0
+[0.1]: https://github.com/PlanDigitalOSS/x_styles/releases/tag/v0.1

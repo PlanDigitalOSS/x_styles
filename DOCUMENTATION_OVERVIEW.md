@@ -6,6 +6,21 @@
 
 Dieses Dokument bietet einen Überblick über alle Dokumentationsdateien im Projekt.
 
+## 📁 Projekt-Struktur
+
+Das Projekt verwendet eine zweistufige Struktur:
+
+- **Repository Root** (`x_styles/`): Enthält die Projekt-Dokumentation (README, INSTALL, CONTRIBUTING, etc.)
+- **Plugin-Verzeichnis** (`x_styles/x_styles/`): Enthält die eigentlichen QGIS Plugin-Dateien
+
+Diese Trennung ermöglicht es:
+- Entwicklerdokumentation im Repository-Root zu behalten
+- Das Plugin-Verzeichnis `x_styles/` direkt in QGIS zu kopieren
+- Die `.qgis-plugin-ci` Konfiguration verweist auf das Plugin-Verzeichnis
+
+**Wichtig:** Wenn in diesem Dokument von `help/`, `styles/` oder `icons/` die Rede ist,
+befinden sich diese Verzeichnisse im Plugin-Verzeichnis `x_styles/x_styles/`.
+
 ## 🌐 Sprachversionen / Language Versions
 
 Alle wichtigen Dokumentationsdateien sind in beiden Sprachen verfügbar:
@@ -17,12 +32,12 @@ Alle wichtigen Dokumentationsdateien sind in beiden Sprachen verfügbar:
 | [CONTRIBUTING.md](CONTRIBUTING.md) | [CONTRIBUTING-en.md](CONTRIBUTING-en.md) | Beitragsrichtlinien |
 | [CHANGELOG.md](CHANGELOG.md) | [CHANGELOG-en.md](CHANGELOG-en.md) | Versionshistorie |
 | [DOCUMENTATION_OVERVIEW.md](DOCUMENTATION_OVERVIEW.md) | [DOCUMENTATION_OVERVIEW-en.md](DOCUMENTATION_OVERVIEW-en.md) | Dokumentations-Übersicht |
-| [help/README.md](help/README.md) | [help/README-en.md](help/README-en.md) | Hilfe-Verzeichnis Guide |
-| [help/TESTING.md](help/TESTING.md) | [help/TESTING-en.md](help/TESTING-en.md) | Test-Anleitung |
-| [styles/README.md](styles/README.md) | [styles/README-en.md](styles/README-en.md) | Styles-Anleitung |
+| [x_styles/help/README.md](x_styles/help/README.md) | [x_styles/help/README-en.md](x_styles/help/README-en.md) | Hilfe-Verzeichnis Guide |
+| [x_styles/help/TESTING.md](x_styles/help/TESTING.md) | [x_styles/help/TESTING-en.md](x_styles/help/TESTING-en.md) | Test-Anleitung |
+| [x_styles/styles/README.md](x_styles/styles/README.md) | [x_styles/styles/README-en.md](x_styles/styles/README-en.md) | Styles-Anleitung |
 
 **HTML-Hilfe** (bereits zweisprachig):
-- [help/index-de.html](help/index-de.html) | [help/index-en.html](help/index-en.html)
+- [x_styles/help/index-de.html](x_styles/help/index-de.html) | [x_styles/help/index-en.html](x_styles/help/index-en.html)
 
 ---
 

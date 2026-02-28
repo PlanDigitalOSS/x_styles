@@ -6,11 +6,11 @@
 
 [![QGIS](https://img.shields.io/badge/QGIS-3.2+-green.svg)](https://qgis.org)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](metadata.txt)
+[![Version](https://img.shields.io/badge/version-1.1.0-orange.svg)](metadata.txt)
 
 > **Automatische Zuweisung von standardisierten Zeichenvorschriften für XPlanGML-Daten in QGIS**
 
-![X_STYLES Logo](icons/X_STYLES.PNG)
+![X_STYLES Logo](x_styles/icons/X_STYLES.PNG)
 
 ## 🌐 Documentation / Dokumentation
 
@@ -221,23 +221,43 @@ Empfohlene Bereiche für optimale Darstellung:
 ### Projektstruktur
 
 ```
-x_styles/
-├── __init__.py                 # Plugin-Initialisierung
-├── mainPlugin.py               # Hauptlogik
-├── metadata.txt                # Plugin-Metadaten
-├── x_styles_master_dialog.py   # Dialog-Klasse
-├── x_styles_master_dialog_base.ui  # UI-Definition
-├── icons/
-│   └── X_STYLES.PNG           # Plugin-Icon
-├── styles/
-│   ├── base/
-│   │   ├── manifest.yaml      # Style-Konfiguration
-│   │   └── *.qml              # QML-Style-Dateien
-│   ├── fp/                    # FP-spezifische Styles
-│   └── rp/                    # RP-spezifische Styles
-└── help/
-    ├── index-de.html          # Deutsche Hilfe
-    └── index-en.html          # Englische Hilfe
+x_styles/                          # Repository Root
+├── README.md                      # Projekt-Dokumentation
+├── README-en.md
+├── INSTALL-de.md
+├── INSTALL-en.md
+├── CONTRIBUTING.md
+├── CONTRIBUTING-en.md
+├── DOCUMENTATION_OVERVIEW.md
+├── DOCUMENTATION_OVERVIEW-en.md
+├── .qgis-plugin-ci               # Verweist auf x_styles/ Unterverzeichnis
+└── x_styles/                      # QGIS Plugin-Verzeichnis
+    ├── __init__.py                # Plugin-Initialisierung
+    ├── mainPlugin.py              # Hauptlogik
+    ├── metadata.txt               # Plugin-Metadaten
+    ├── x_styles_master_dialog.py  # Dialog-Klasse
+    ├── x_styles_master_dialog_base.ui  # UI-Definition
+    ├── LICENSE
+    ├── CHANGELOG.md
+    ├── CHANGELOG-en.md
+    ├── icons/
+    │   └── X_STYLES.PNG          # Plugin-Icon
+    ├── styles/
+    │   ├── README.md
+    │   ├── README-en.md
+    │   ├── base/
+    │   │   ├── manifest.yaml     # Style-Konfiguration
+    │   │   └── *.qml             # QML-Style-Dateien (204 Dateien)
+    │   ├── fp/                   # FP-spezifische Styles (2 Dateien)
+    │   └── rp/                   # RP-spezifische Styles (9 Dateien)
+    └── help/
+        ├── README.md
+        ├── README-en.md
+        ├── TESTING.md
+        ├── TESTING-en.md
+        ├── index.html
+        ├── index-de.html         # Deutsche Hilfe
+        └── index-en.html         # Englische Hilfe
 ```
 
 ### Systemanforderungen
@@ -387,7 +407,7 @@ Siehe [LICENSE](LICENSE) Datei für vollständige Details.
 
 <p align="center">
   Entwickelt mit ❤️ für die QGIS Community<br>
-  <sub>© 2024 Cornelio Hopmann Lopez | X_STYLES v1.0.0</sub>
+  <sub>© 2024 Cornelio Hopmann Lopez | X_STYLES v1.1.0</sub>
 </p>
 
 

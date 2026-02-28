@@ -31,7 +31,7 @@
 Öffnen Sie die Dateien direkt im Browser:
 
 ```bash
-cd /Users/cornelio.hopmann.lopez/sources/mine/x_styles/help
+cd x_styles/help
 open index-de.html  # macOS
 ```
 

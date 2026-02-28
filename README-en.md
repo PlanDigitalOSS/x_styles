@@ -10,7 +10,7 @@
 
 > **Automatic assignment of standardized cartographic rules for XPlanGML data in QGIS**
 
-![X_STYLES Logo](icons/X_STYLES.PNG)
+![X_STYLES Logo](x_styles/icons/X_STYLES.PNG)
 
 ## 🌐 Documentation / Dokumentation
 
@@ -221,23 +221,43 @@ Recommended ranges for optimal display:
 ### Project Structure
 
 ```
-x_styles/
-├── __init__.py                 # Plugin initialization
-├── mainPlugin.py               # Main logic
-├── metadata.txt                # Plugin metadata
-├── x_styles_master_dialog.py   # Dialog class
-├── x_styles_master_dialog_base.ui  # UI definition
-├── icons/
-│   └── X_STYLES.PNG           # Plugin icon
-├── styles/
-│   ├── base/
-│   │   ├── manifest.yaml      # Style configuration
-│   │   └── *.qml              # QML style files
-│   ├── fp/                    # FP-specific styles
-│   └── rp/                    # RP-specific styles
-└── help/
-    ├── index-de.html          # German help
-    └── index-en.html          # English help
+x_styles/                          # Repository Root
+├── README.md                      # Project documentation
+├── README-en.md
+├── INSTALL-de.md
+├── INSTALL-en.md
+├── CONTRIBUTING.md
+├── CONTRIBUTING-en.md
+├── DOCUMENTATION_OVERVIEW.md
+├── DOCUMENTATION_OVERVIEW-en.md
+├── .qgis-plugin-ci               # Points to x_styles/ subdirectory
+└── x_styles/                      # QGIS Plugin directory
+    ├── __init__.py                # Plugin initialization
+    ├── mainPlugin.py              # Main logic
+    ├── metadata.txt               # Plugin metadata
+    ├── x_styles_master_dialog.py  # Dialog class
+    ├── x_styles_master_dialog_base.ui  # UI definition
+    ├── LICENSE
+    ├── CHANGELOG.md
+    ├── CHANGELOG-en.md
+    ├── icons/
+    │   └── X_STYLES.PNG          # Plugin icon
+    ├── styles/
+    │   ├── README.md
+    │   ├── README-en.md
+    │   ├── base/
+    │   │   ├── manifest.yaml     # Style configuration
+    │   │   └── *.qml             # QML style files (204 files)
+    │   ├── fp/                   # FP-specific styles (2 files)
+    │   └── rp/                   # RP-specific styles (9 files)
+    └── help/
+        ├── README.md
+        ├── README-en.md
+        ├── TESTING.md
+        ├── TESTING-en.md
+        ├── index.html
+        ├── index-de.html         # German help
+        └── index-en.html         # English help
 ```
 
 ### System Requirements

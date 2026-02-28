@@ -6,6 +6,21 @@
 
 This document provides an overview of all documentation files in the project.
 
+## 📁 Project Structure
+
+The project uses a two-level structure:
+
+- **Repository Root** (`x_styles/`): Contains project documentation (README, INSTALL, CONTRIBUTING, etc.)
+- **Plugin Directory** (`x_styles/x_styles/`): Contains the actual QGIS plugin files
+
+This separation allows:
+- Keeping developer documentation at the repository root
+- Copying the plugin directory `x_styles/` directly to QGIS
+- The `.qgis-plugin-ci` configuration points to the plugin directory
+
+**Important:** When this document refers to `help/`, `styles/`, or `icons/`,
+these directories are located in the plugin directory `x_styles/x_styles/`.
+
 ## 🌐 Language Versions / Sprachversionen
 
 All major documentation files are available in both languages:
@@ -17,12 +32,12 @@ All major documentation files are available in both languages:
 | [CONTRIBUTING.md](CONTRIBUTING.md) | [CONTRIBUTING-en.md](CONTRIBUTING-en.md) | Contributing guidelines |
 | [CHANGELOG.md](CHANGELOG.md) | [CHANGELOG-en.md](CHANGELOG-en.md) | Version history |
 | [DOCUMENTATION_OVERVIEW.md](DOCUMENTATION_OVERVIEW.md) | [DOCUMENTATION_OVERVIEW-en.md](DOCUMENTATION_OVERVIEW-en.md) | Documentation overview |
-| [help/README.md](help/README.md) | [help/README-en.md](help/README-en.md) | Help directory guide |
-| [help/TESTING.md](help/TESTING.md) | [help/TESTING-en.md](help/TESTING-en.md) | Testing guide |
-| [styles/README.md](styles/README.md) | [styles/README-en.md](styles/README-en.md) | Styles guide |
+| [x_styles/help/README.md](x_styles/help/README.md) | [x_styles/help/README-en.md](x_styles/help/README-en.md) | Help directory guide |
+| [x_styles/help/TESTING.md](x_styles/help/TESTING.md) | [x_styles/help/TESTING-en.md](x_styles/help/TESTING-en.md) | Testing guide |
+| [x_styles/styles/README.md](x_styles/styles/README.md) | [x_styles/styles/README-en.md](x_styles/styles/README-en.md) | Styles guide |
 
 **HTML Help** (already bilingual):
-- [help/index-de.html](help/index-de.html) | [help/index-en.html](help/index-en.html)
+- [x_styles/help/index-de.html](x_styles/help/index-de.html) | [x_styles/help/index-en.html](x_styles/help/index-en.html)
 
 ---
 
