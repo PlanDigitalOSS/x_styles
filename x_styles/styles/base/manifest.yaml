@@ -494,6 +494,9 @@ rp_rohstoff:
     PointGeometry:
         path: RP_Rohstoff_p.qml
         zIndex: 119
+    LineGeometry:
+        path: RP_Rohstoff_l.qml
+        zIndex: 320        
     PolygonGeometry:
         path: RP_Rohstoff_f.qml
         zIndex: 333
