@@ -41,7 +41,11 @@ bp_anpflanzungbindungerhaltung:
         zIndex: 120
     PolygonGeometry:
         path: BP_AnpflanzungBindungErhaltung_f.qml
-        zIndex: 131
+        zIndex: 231
+bp_baugebietsteilflaeche:
+    PolygonGeometry:
+        path: BP_BaugebietsTeilFlaeche_f.qml
+        zIndex: 231
 bp_baugrenze:
     LineGeometry:
         path: BP_Baugrenze_l.qml
@@ -53,7 +57,7 @@ bp_bereichohneeinausfahrtlinie:
 bp_besonderernutzungszweckflaeche:
     PolygonGeometry:
         path: BP_BesondererNutzungszweckFlaeche_f.qml
-        zIndex: 131     
+        zIndex: 231     
 bp_freiflaeche:
     PolygonGeometry:
         path: BP_FreiFlaeche_f.qml
@@ -70,9 +74,12 @@ bp_immissionsschutz:
     PointGeometry:
         path: BP_Immissionsschutz_p.qml
         zIndex: 115
-    PolygonGeometry:
+    LineGeometry:
         path: BP_Immissionsschutz_l.qml
-        zIndex: 221
+        zIndex: 121
+    PolygonGeometry:
+        path: BP_Immissionsschutz_f.qml
+        zIndex: 231        
 bp_nebenanlagenflaeche:
     PolygonGeometry:
         path: BP_Nebenanlagen_f.qml
@@ -81,14 +88,30 @@ bp_nutzungsartengrenze:
     LineGeometry:
         path: BP_NutzungsartenGrenze_l.qml
         zIndex: 220
+bp_schutzpflegeentwicklungsflaeche:
+    PolygonGeometry:
+        path: BP_SchutzPflegeEntwicklungsFlaeche_f.qml
+        zIndex: 231
+bp_strassenkoerper:
+    PolygonGeometry:
+        path: BP_Strassenkoerper_f.qml
+        zIndex: 231        
 bp_strassenverkehrsflaeche:
     PolygonGeometry:
         path: BP_Strassenverkehrsflaeche_f.qml
+        zIndex: 231
+bp_textlichefestsetzungsflaeche:
+    PolygonGeometry:
+        path: BP_TextlicheFestsetzungsFlaeche_f.qml
         zIndex: 231        
 bp_ueberbaubaregrundstuecksflaeche:
     PolygonGeometry:
         path: BP_UeberbaubareGrundstuecksFlaeche_f.qml
         zIndex: 231
+bp_verentsorgung:
+    LineGeometry:
+        path: BP_VerEntsorgung_l.qml
+        zIndex: 220        
 bp_verkehrsflaechebesondererzweckbestimmung:
     PolygonGeometry:
         path: BP_VerkehrsflaecheBesondererZweckbestimmung_f.qml
@@ -139,11 +162,14 @@ fp_ausgleichsflaeche:
     PolygonGeometry:
         path: FP_AusgleichsFlaeche_f.qml
         zIndex: 234
-fp_bebauung:
+fp_bebauungsflaeche:
     PolygonGeometry:
         path: FP_BebauungsFlaeche_f.qml
         zIndex: 235 
-# fp_bodenschutz
+fp_bodenschaetze:
+    PolygonGeometry:
+        path: FP_Bodenschaetze_f.qml
+        zIndex: 236
 # fp_denkmalschutzrecht
 fp_flaecheohnedarstellung:
     PolygonGeometry:
@@ -216,6 +242,10 @@ fp_nutzungsbeschraenkungsflaeche:
         path: FP_NutzungsbeschraenkungsFlaeche_f.qml
         zIndex: 233
 # fp_plan ist ganz oben
+fp_privilegiertesvorhaben:
+    PointGeometry:
+        path: FP_PrivilegiertesVorhaben_p.qml
+        zIndex: 212
 # fp_rohstoff
 # fp_schienenverkehrsrecht Klasse so_schienenverkehrsrecht
 # fp_schutzgebietnaturschutzrecht
@@ -257,6 +287,9 @@ fp_unverbindlichevormerkung:
     PointGeometry:
         path: FP_UnverbindlicheVormerkung_p.qml
         zIndex: 212
+    LineGeometry:
+        path: FP_UnverbindlicheVormerkung_l.qml
+        zIndex: 222        
     PolygonGeometry:
         path: FP_UnverbindlicheVormerkung_f.qml
         zIndex: 232    
