@@ -3,8 +3,8 @@
 """
 # Einbinden der Bibliotheken
 import os
-from PyQt5 import QtCore
 from qgis.core import *
+from qgis.PyQt.QtCore import QSettings
 from qgis.PyQt.QtGui import *
 from qgis.PyQt.QtWidgets import *
 from .x_styles_master_dialog import *
@@ -21,7 +21,7 @@ class mainplugin:
         self.icon_dir = os.path.join(self.plugin_dir, "icons")
         self.default_styles_dir = os.path.join(self.plugin_dir, "styles")
         
-        qs = QtCore.QSettings()
+        qs = QSettings()
         svgpaths = qs.value( "svg/searchPathsForSVG", "", type=str )
 
         if isinstance(svgpaths, str):
@@ -150,7 +150,8 @@ class mainplugin:
         # show the dialog
         self.dlg.show()
         # Run the dialog event loop
-        result = self.dlg.exec_()
+        dialog_exec = getattr(self.dlg, "exec", None)
+        result = dialog_exec() if dialog_exec is not None else self.dlg.exec_()
 
     def run(self):
        

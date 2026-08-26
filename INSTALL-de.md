@@ -16,23 +16,42 @@
 
 ### Methode 2: Manuelle Installation
 
-**macOS:**
+**macOS (QGIS 3):**
 ```bash
 cd ~/Library/Application\ Support/QGIS/QGIS3/profiles/default/python/plugins/
 git clone https://github.com/PlanDigitalOSS/x_styles.git
 # Oder ZIP herunterladen und entpacken
 ```
 
-**Linux:**
+**macOS (QGIS 4):**
+```bash
+cd ~/Library/Application\ Support/QGIS/QGIS4/profiles/default/python/plugins/
+git clone https://github.com/PlanDigitalOSS/x_styles.git
+```
+
+**Linux (QGIS 3):**
 ```bash
 cd ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/
 git clone https://github.com/PlanDigitalOSS/x_styles.git
 # Oder ZIP herunterladen und entpacken
 ```
 
-**Windows:**
+**Linux (QGIS 4):**
+```bash
+cd ~/.local/share/QGIS/QGIS4/profiles/default/python/plugins/
+git clone https://github.com/PlanDigitalOSS/x_styles.git
+```
+
+**Windows (QGIS 3):**
 ```cmd
 cd %APPDATA%\QGIS\QGIS3\profiles\default\python\plugins\
+git clone https://github.com/PlanDigitalOSS/x_styles.git
+REM Oder ZIP herunterladen und entpacken
+```
+
+**Windows (QGIS 4):**
+```cmd
+cd %APPDATA%\QGIS\QGIS4\profiles\default\python\plugins\
 git clone https://github.com/PlanDigitalOSS/x_styles.git
 REM Oder ZIP herunterladen und entpacken
 ```
@@ -47,7 +66,7 @@ Nach der manuellen Installation:
 
 ## Systemvoraussetzungen
 
-- **QGIS**: Version 3.2 oder höher
+- **QGIS**: Version 3.2 bis 4.x
 - **Python**: 3.x (im QGIS enthalten)
 - **Betriebssystem**: Windows, macOS, Linux
 

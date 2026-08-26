@@ -62,7 +62,7 @@ See "Pull Requests" section below.
 
 ### Prerequisites
 
-- QGIS 3.2 or higher
+- QGIS 3.2 through 4.x
 - Git
 - Python 3.x (included in QGIS)
 - Text editor or IDE (VSCode, PyCharm recommended)
@@ -80,14 +80,17 @@ cd x_styles
 git remote add upstream https://github.com/PlanDigitalOSS/x_styles.git
 
 # 4. Create symlink to QGIS plugin directory
-# macOS:
+# macOS (QGIS 3 / QGIS 4):
 ln -s $(pwd) ~/Library/Application\ Support/QGIS/QGIS3/profiles/default/python/plugins/x_styles
+ln -s $(pwd) ~/Library/Application\ Support/QGIS/QGIS4/profiles/default/python/plugins/x_styles
 
-# Linux:
+# Linux (QGIS 3 / QGIS 4):
 ln -s $(pwd) ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/x_styles
+ln -s $(pwd) ~/.local/share/QGIS/QGIS4/profiles/default/python/plugins/x_styles
 
 # Windows (as Administrator):
 # mklink /D "%APPDATA%\QGIS\QGIS3\profiles\default\python\plugins\x_styles" "C:\Path\to\x_styles"
+# mklink /D "%APPDATA%\QGIS\QGIS4\profiles\default\python\plugins\x_styles" "C:\Path\to\x_styles"
 
 # 5. Open QGIS and enable plugin
 
