@@ -13,7 +13,7 @@ name=X_STYLES
 qgisMinimumVersion=3.2
 qgisMaximumVersion=4.99
 description=Automatische Zuweisung von Zeichenvorschriften für XPlanGML-Daten
-version=1.2.0
+version=1.2.1
 author=Cornelio Hopmann Lopez
 email=plandigitaloss@proton.me
 
@@ -30,7 +30,10 @@ repository=https://github.com/PlanDigitalOSS/x_styles
 
 # Recommended items:
 
-changelog=1.2.0 - Kompatibilität mit QGIS 3.2 bis 4.x
+changelog=1.2.1 - Fehlerbehebungen für QGIS 4
+    - Umstellung auf QGIS-4-kompatible Scoped Enums
+    - Qt-5/Qt-6-kompatibler QAction-Import
+    1.2.0 - Kompatibilität mit QGIS 3.2 bis 4.x
     - QGIS-PyQt-Kompatibilitätsschicht für Qt 5 und Qt 6
     1.0.0 - Erste stabile Version
     - Automatische Style-Zuweisung für XPlanGML-Layer

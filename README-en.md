@@ -6,7 +6,7 @@
 
 [![QGIS](https://img.shields.io/badge/QGIS-3.2--4.x-green.svg)](https://qgis.org)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.2.0-orange.svg)](metadata.txt)
+[![Version](https://img.shields.io/badge/version-1.2.1-orange.svg)](metadata.txt)
 
 > **Automatic assignment of standardized cartographic rules for XPlanGML data in QGIS**
 

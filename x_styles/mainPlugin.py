@@ -5,9 +5,14 @@
 import os
 from qgis.core import *
 from qgis.PyQt.QtCore import QSettings
-from qgis.PyQt.QtGui import *
-from qgis.PyQt.QtWidgets import *
+from qgis.PyQt.QtGui import QIcon
+from qgis.PyQt.QtWidgets import QMenu
 from .x_styles_master_dialog import *
+
+try:
+    from qgis.PyQt.QtGui import QAction
+except ImportError:
+    from qgis.PyQt.QtWidgets import QAction
 
 BASEDIR = os.path.dirname( str(__file__) )
 import yaml
@@ -165,14 +170,14 @@ class mainplugin:
             try:
                 styleMapper = yaml.safe_load(stream)
                 # Uncomment to see which styles are in the manifest
-                # QgsMessageLog.logMessage(json.dumps(styleMapper), 'X_STYLES', Qgis.Info)
+                # QgsMessageLog.logMessage(json.dumps(styleMapper), 'X_STYLES', Qgis.MessageLevel.Info)
             except yaml.YAMLError as exc:
-                QgsMessageLog.logMessage(exc, 'X_STYLES', Qgis.Error)
+                QgsMessageLog.logMessage(exc, 'X_STYLES', Qgis.MessageLevel.Error)
 
         geomMapper = {
-            QgsWkbTypes.PointGeometry: 'PointGeometry',
-            QgsWkbTypes.LineGeometry: 'LineGeometry',
-            QgsWkbTypes.PolygonGeometry: 'PolygonGeometry'
+            QgsWkbTypes.GeometryType.PointGeometry: 'PointGeometry',
+            QgsWkbTypes.GeometryType.LineGeometry: 'LineGeometry',
+            QgsWkbTypes.GeometryType.PolygonGeometry: 'PolygonGeometry'
         }
        
 
@@ -193,11 +198,11 @@ class mainplugin:
         for zIndex in sorted(zIndexOrder.keys()):
             for layer in zIndexOrder[zIndex]:
                 custom_order.append(layer)
-                QgsMessageLog.logMessage("Layer: {} - Idx: {} - zIndex: {} ".format(layer.id(), idx, zIndex), 'X_STYLES', Qgis.Info)
+                QgsMessageLog.logMessage("Layer: {} - Idx: {} - zIndex: {} ".format(layer.id(), idx, zIndex), 'X_STYLES', Qgis.MessageLevel.Info)
                 if self.settings["sort_layer_tree"]:
                     myLayer = layerTreeRoot.findLayer(layer.id())
                     myClone = myLayer.clone()
-                    # QgsMessageLog.logMessage("MyParent: {} ".format(parent.id()), 'X_STYLES', Qgis.Info)
+                    # QgsMessageLog.logMessage("MyParent: {} ".format(parent.id()), 'X_STYLES', Qgis.MessageLevel.Info)
                     layerTreeRoot.insertChildNode(idx, myClone)
                     layerTreeRoot.removeChildNode(myLayer)
                 idx = idx + 1
@@ -207,7 +212,7 @@ class mainplugin:
             root.setCustomLayerOrder( custom_order )
 
         self.iface.mapCanvas().refreshAllLayers()
-        QgsMessageLog.logMessage("refresh all done", 'X_STYLES', Qgis.Info)
+        QgsMessageLog.logMessage("refresh all done", 'X_STYLES', Qgis.MessageLevel.Info)
 
     def layers(self):
         return QgsProject.instance().mapLayers().values()
@@ -244,7 +249,7 @@ class mainplugin:
         for layer in layers:
             # layer = _layer.layer()
             # check for vectorlayer
-            if layer.type() != QgsMapLayer.VectorLayer:
+            if layer.type() != QgsMapLayer.LayerType.VectorLayer:
                 continue
 
             if self.settings["rename_layers"]:
@@ -252,7 +257,7 @@ class mainplugin:
             
             name = layer.name().lower()
             msg = "Layer: {} {}".format(layer.name(), layer.id())
-            QgsMessageLog.logMessage(msg, 'X_STYLES', Qgis.Info)
+            QgsMessageLog.logMessage(msg, 'X_STYLES', Qgis.MessageLevel.Info)
             geometryType = getattr(layer, "geometryType", None)
 
             layerFound = False
@@ -283,9 +288,9 @@ class mainplugin:
                 zIndexOrder[defaultZIndex] = layerBucket
 
         if loaded:
-            self.iface.messageBar().pushMessage("Hinweis", "Mindestens ein Stil wurde geladen. Layer: %s" % ", ".join(loaded), level=Qgis.Success, duration=5)
+            self.iface.messageBar().pushMessage("Hinweis", "Mindestens ein Stil wurde geladen. Layer: %s" % ", ".join(loaded), level=Qgis.MessageLevel.Success, duration=5)
         else:
-            self.iface.messageBar().pushMessage("Hinweis", "Keine Layer für Stile gefunden.", level=Qgis.Warning, duration=5)
+            self.iface.messageBar().pushMessage("Hinweis", "Keine Layer für Stile gefunden.", level=Qgis.MessageLevel.Warning, duration=5)
 
         return zIndexOrder
     
@@ -293,11 +298,11 @@ class mainplugin:
 def get_geometry_suffix(layer):
     geom_type = layer.geometryType()
 
-    if geom_type == 2:  # Flächen
+    if geom_type == QgsWkbTypes.GeometryType.PolygonGeometry:  # Flächen
         return "_a"
-    elif geom_type == 1:  # Linien
+    elif geom_type == QgsWkbTypes.GeometryType.LineGeometry:  # Linien
         return "_l"
-    elif geom_type == 0:  # Punkte
+    elif geom_type == QgsWkbTypes.GeometryType.PointGeometry:  # Punkte
         return "_p"
     else:
         return ""

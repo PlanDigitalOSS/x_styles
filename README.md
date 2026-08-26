@@ -6,7 +6,7 @@
 
 [![QGIS](https://img.shields.io/badge/QGIS-3.2--4.x-green.svg)](https://qgis.org)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.2.0-orange.svg)](metadata.txt)
+[![Version](https://img.shields.io/badge/version-1.2.1-orange.svg)](metadata.txt)
 
 > **Automatische Zuweisung von standardisierten Zeichenvorschriften für XPlanGML-Daten in QGIS**
 
@@ -412,5 +412,4 @@ Siehe [LICENSE](LICENSE) Datei für vollständige Details.
   Entwickelt mit ❤️ für die QGIS Community<br>
   <sub>© 2024 Cornelio Hopmann Lopez | X_STYLES v1.1.0</sub>
 </p>
-
 
