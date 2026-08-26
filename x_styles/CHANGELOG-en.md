@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+- Used QGIS 4-compatible scoped enums for message levels, layer types, and geometry types.
+- Made the `QAction` import compatible with Qt 5 and Qt 6.
+
 ### Changed
 - Added support for QGIS 3.2 through 4.x through the QGIS PyQt compatibility shim for Qt 5 and Qt 6.
 

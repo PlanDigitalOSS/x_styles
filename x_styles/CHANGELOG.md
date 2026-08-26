@@ -11,6 +11,10 @@ und dieses Projekt hält sich an [Semantic Versioning](https://semver.org/lang/d
 
 ## [Unreleased]
 
+### Behoben
+- QGIS-4-kompatible Scoped Enums für Meldungslevel, Layer-Typen und Geometrietypen verwendet.
+- Den `QAction`-Import für Qt 5 und Qt 6 kompatibel gemacht.
+
 ### Geändert
 - Unterstützung für QGIS 3.2 bis 4.x durch die QGIS-PyQt-Kompatibilitätsschicht für Qt 5 und Qt 6.
 
