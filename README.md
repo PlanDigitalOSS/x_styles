@@ -4,9 +4,9 @@
 
 ---
 
-[![QGIS](https://img.shields.io/badge/QGIS-3.2+-green.svg)](https://qgis.org)
+[![QGIS](https://img.shields.io/badge/QGIS-3.2--4.x-green.svg)](https://qgis.org)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.1.0-orange.svg)](metadata.txt)
+[![Version](https://img.shields.io/badge/version-1.2.0-orange.svg)](metadata.txt)
 
 > **Automatische Zuweisung von standardisierten Zeichenvorschriften für XPlanGML-Daten in QGIS**
 
@@ -110,14 +110,17 @@ Einfache Konfiguration der Style-Verzeichnisse und Optionen
 git clone https://github.com/PlanDigitalOSS/x_styles.git
 
 # 2. In QGIS Plugin-Verzeichnis kopieren
-# macOS:
+# macOS (QGIS 3 / QGIS 4):
 cp -r x_styles ~/Library/Application\ Support/QGIS/QGIS3/profiles/default/python/plugins/
+cp -r x_styles ~/Library/Application\ Support/QGIS/QGIS4/profiles/default/python/plugins/
 
-# Linux:
+# Linux (QGIS 3 / QGIS 4):
 cp -r x_styles ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/
+cp -r x_styles ~/.local/share/QGIS/QGIS4/profiles/default/python/plugins/
 
 # Windows:
 # Nach: C:\Users\<Benutzername>\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\
+# bzw. C:\Users\<Benutzername>\AppData\Roaming\QGIS\QGIS4\profiles\default\python\plugins\
 
 # 3. QGIS neu starten
 # 4. Plugin unter Erweiterungen aktivieren
@@ -409,6 +412,5 @@ Siehe [LICENSE](LICENSE) Datei für vollständige Details.
   Entwickelt mit ❤️ für die QGIS Community<br>
   <sub>© 2024 Cornelio Hopmann Lopez | X_STYLES v1.1.0</sub>
 </p>
-
 
 

@@ -11,6 +11,9 @@ und dieses Projekt hält sich an [Semantic Versioning](https://semver.org/lang/d
 
 ## [Unreleased]
 
+### Geändert
+- Unterstützung für QGIS 3.2 bis 4.x durch die QGIS-PyQt-Kompatibilitätsschicht für Qt 5 und Qt 6.
+
 ### Geplant
 - Automatische Aktualisierung von Styles bei Layer-Änderungen
 - Import/Export von Style-Konfigurationen

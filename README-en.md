@@ -4,9 +4,9 @@
 
 ---
 
-[![QGIS](https://img.shields.io/badge/QGIS-3.2+-green.svg)](https://qgis.org)
+[![QGIS](https://img.shields.io/badge/QGIS-3.2--4.x-green.svg)](https://qgis.org)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](metadata.txt)
+[![Version](https://img.shields.io/badge/version-1.2.0-orange.svg)](metadata.txt)
 
 > **Automatic assignment of standardized cartographic rules for XPlanGML data in QGIS**
 
@@ -110,14 +110,17 @@ Simple configuration of style directories and options
 git clone https://github.com/PlanDigitalOSS/x_styles.git
 
 # 2. Copy to QGIS plugin directory
-# macOS:
+# macOS (QGIS 3 / QGIS 4):
 cp -r x_styles ~/Library/Application\ Support/QGIS/QGIS3/profiles/default/python/plugins/
+cp -r x_styles ~/Library/Application\ Support/QGIS/QGIS4/profiles/default/python/plugins/
 
-# Linux:
+# Linux (QGIS 3 / QGIS 4):
 cp -r x_styles ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/
+cp -r x_styles ~/.local/share/QGIS/QGIS4/profiles/default/python/plugins/
 
 # Windows:
 # To: C:\Users\<Username>\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\
+# or: C:\Users\<Username>\AppData\Roaming\QGIS\QGIS4\profiles\default\python\plugins\
 
 # 3. Restart QGIS
 # 4. Enable plugin under Plugins
