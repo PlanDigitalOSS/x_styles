@@ -155,8 +155,7 @@ class mainplugin:
         # show the dialog
         self.dlg.show()
         # Run the dialog event loop
-        dialog_exec = getattr(self.dlg, "exec", None)
-        result = dialog_exec() if dialog_exec is not None else self.dlg.exec_()
+        result = self.dlg.exec()
 
     def run(self):
        
