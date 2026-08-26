@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 ## [Unreleased]
 
 ### Fixed
+- Used the Qt 6-compatible `QDialog.exec()` dialog call.
 - Used QGIS 4-compatible scoped enums for message levels, layer types, and geometry types.
 - Made the `QAction` import compatible with Qt 5 and Qt 6.
 
