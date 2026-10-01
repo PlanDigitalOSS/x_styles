@@ -64,10 +64,13 @@ class mainplugin:
 
         self.action_dropdown.triggered.connect(self.run)
 
-        # QMenu 
-        menu = QMenu()
-        menu.addActions([self.action_show_dialog, self.action_help])
-        self.action_dropdown.setMenu(menu)
+        # QMenu
+        # Kept as self.menu: QAction.setMenu() does not take ownership, so a
+        # local variable here gets garbage-collected and the dropdown arrow
+        # ends up with nothing to show (observed silently under PyQt6).
+        self.menu = QMenu()
+        self.menu.addActions([self.action_show_dialog, self.action_help])
+        self.action_dropdown.setMenu(self.menu)
 
         # add toolbar button and menu item
         self.iface.addToolBarIcon(self.action_dropdown)
