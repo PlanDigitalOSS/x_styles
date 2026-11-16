@@ -768,7 +768,7 @@
   </selection>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style fontSize="10" previewBkgrdColor="255,255,255,255" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" forcedBold="0" fontLetterSpacing="0" useSubstitutions="0" fontFamily="MS Shell Dlg 2" legendString="Aa" capitalization="0" fontStrikeout="0" forcedItalic="0" textOrientation="horizontal" fontKerning="1" fontItalic="0" namedStyle="Standard" allowHtml="0" fontWeight="50" isExpression="0" textColor="0,0,0,255" textOpacity="1" fieldName="aufschrift" fontWordSpacing="0" fontSizeUnit="Point" multilineHeightUnit="Percentage" blendMode="0" fontUnderline="0">
+      <text-style fontSize="10" previewBkgrdColor="255,255,255,255" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" forcedBold="0" fontLetterSpacing="0" useSubstitutions="0" fontFamily="Arial" legendString="Aa" capitalization="0" fontStrikeout="0" forcedItalic="0" textOrientation="horizontal" fontKerning="1" fontItalic="0" namedStyle="Standard" allowHtml="0" fontWeight="50" isExpression="0" textColor="0,0,0,255" textOpacity="1" fieldName="aufschrift" fontWordSpacing="0" fontSizeUnit="Point" multilineHeightUnit="Percentage" blendMode="0" fontUnderline="0">
         <families/>
         <text-buffer bufferSizeUnits="MM" bufferJoinStyle="128" bufferNoFill="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0" bufferOpacity="1" bufferSize="1" bufferColor="255,255,255,255" bufferDraw="0"/>
         <text-mask maskSizeUnits="MM" maskJoinStyle="128" maskOpacity="1" maskedSymbolLayers="" maskEnabled="0" maskSize="1.5" maskSize2="1.5" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskType="0"/>
@@ -905,7 +905,7 @@
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
     <DiagramCategory spacing="5" minScaleDenominator="0" rotationOffset="270" minimumSize="0" backgroundAlpha="255" barWidth="5" sizeType="MM" labelPlacementMethod="XHeight" scaleBasedVisibility="0" width="15" showAxis="1" enabled="0" diagramOrientation="Up" sizeScale="3x:0,0,0,0,0,0" maxScaleDenominator="1e+08" backgroundColor="#ffffff" scaleDependency="Area" penWidth="0" height="15" lineSizeType="MM" direction="0" opacity="1" lineSizeScale="3x:0,0,0,0,0,0" spacingUnitScale="3x:0,0,0,0,0,0" penColor="#000000" penAlpha="255" spacingUnit="MM">
-      <fontProperties strikethrough="0" underline="0" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" bold="0" italic="0" style=""/>
+      <fontProperties strikethrough="0" underline="0" description="Arial,7.8,-1,5,50,0,0,0,0,0" bold="0" italic="0" style=""/>
       <attribute color="#000000" colorOpacity="1" label="" field=""/>
       <axisSymbol>
         <symbol frame_rate="10" force_rhr="0" type="line" alpha="1" name="" clip_to_extent="1" is_animated="0">

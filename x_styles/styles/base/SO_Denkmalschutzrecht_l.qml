@@ -247,7 +247,7 @@
     <rules key="{2d15fbfe-49b6-46d5-9a4e-1d9cb283490a}">
       <rule key="{fb806098-df02-410b-aca3-222b1e3812bf}" filter="&quot;artDerFestlegung&quot; ILIKE '%9999%'">
         <settings calloutType="simple">
-          <text-style textOrientation="horizontal" fontWeight="50" textColor="0,0,0,255" namedStyle="Standard" isExpression="0" fieldName="xplan_name" fontFamily="MS Shell Dlg 2" fontKerning="1" previewBkgrdColor="0,0,0,255" fontStrikeout="0" blendMode="0" useSubstitutions="0" fontSizeUnit="Point" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontItalic="0" legendString="Aa" multilineHeight="1" capitalization="0" fontLetterSpacing="0" textOpacity="1" fontWordSpacing="0" fontUnderline="0" fontSize="10" allowHtml="0">
+          <text-style textOrientation="horizontal" fontWeight="50" textColor="0,0,0,255" namedStyle="Standard" isExpression="0" fieldName="xplan_name" fontFamily="Arial" fontKerning="1" previewBkgrdColor="0,0,0,255" fontStrikeout="0" blendMode="0" useSubstitutions="0" fontSizeUnit="Point" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontItalic="0" legendString="Aa" multilineHeight="1" capitalization="0" fontLetterSpacing="0" textOpacity="1" fontWordSpacing="0" fontUnderline="0" fontSize="10" allowHtml="0">
             <families/>
             <text-buffer bufferNoFill="1" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferJoinStyle="128" bufferSize="1" bufferBlendMode="0" bufferOpacity="1" bufferDraw="0" bufferColor="255,255,255,255"/>
             <text-mask maskSize="0" maskOpacity="1" maskEnabled="0" maskJoinStyle="128" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskedSymbolLayers="" maskSizeUnits="MM" maskType="0"/>
@@ -358,7 +358,7 @@
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
     <DiagramCategory penWidth="0" penColor="#000000" backgroundAlpha="255" minimumSize="0" barWidth="5" spacingUnit="MM" backgroundColor="#ffffff" scaleBasedVisibility="0" direction="1" height="15" scaleDependency="Area" width="15" sizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" penAlpha="255" spacingUnitScale="3x:0,0,0,0,0,0" lineSizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" showAxis="0" maxScaleDenominator="1e+08" spacing="0" lineSizeType="MM" diagramOrientation="Up" opacity="1" rotationOffset="270" enabled="0" sizeType="MM">
-      <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+      <fontProperties description="Arial,8.25,-1,5,50,0,0,0,0,0" style=""/>
       <attribute field="" color="#000000" label=""/>
       <axisSymbol>
         <symbol alpha="1" name="" force_rhr="0" type="line" clip_to_extent="1">

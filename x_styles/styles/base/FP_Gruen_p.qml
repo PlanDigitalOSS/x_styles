@@ -1494,7 +1494,7 @@
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
     <DiagramCategory minimumSize="0" labelPlacementMethod="XHeight" penAlpha="255" diagramOrientation="Up" barWidth="5" spacingUnitScale="3x:0,0,0,0,0,0" width="15" penColor="#000000" height="15" lineSizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" opacity="1" backgroundAlpha="255" direction="1" lineSizeType="MM" minScaleDenominator="0" scaleBasedVisibility="0" spacing="0" penWidth="0" enabled="0" sizeType="MM" showAxis="0" spacingUnit="MM" maxScaleDenominator="1e+08" rotationOffset="270" backgroundColor="#ffffff" sizeScale="3x:0,0,0,0,0,0">
-      <fontProperties underline="0" italic="0" style="" bold="0" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" strikethrough="0"/>
+      <fontProperties underline="0" italic="0" style="" bold="0" description="Arial,7.8,-1,5,50,0,0,0,0,0" strikethrough="0"/>
       <attribute field="" colorOpacity="1" label="" color="#000000"/>
       <axisSymbol>
         <symbol alpha="1" force_rhr="0" type="line" clip_to_extent="1" name="" frame_rate="10" is_animated="0">

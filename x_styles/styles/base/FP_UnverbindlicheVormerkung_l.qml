@@ -1,194 +1,194 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis autoRefreshMode="Disabled" labelsEnabled="0" symbologyReferenceScale="-1" styleCategories="AllStyleCategories" autoRefreshTime="0" minScale="100000000" readOnly="0" maxScale="0" simplifyMaxScale="1" simplifyDrawingHints="1" version="3.34.13-Prizren" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" simplifyDrawingTol="1" simplifyLocal="1">
+<qgis labelsEnabled="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" symbologyReferenceScale="-1" styleCategories="AllStyleCategories" simplifyDrawingHints="1" simplifyAlgorithm="0" autoRefreshMode="Disabled" version="3.34.13-Prizren" maxScale="0" simplifyLocal="1" minScale="100000000" autoRefreshTime="0" readOnly="0" simplifyDrawingTol="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal startField="" durationField="ogc_fid" durationUnit="min" limitMode="0" accumulate="0" endField="" enabled="0" fixedDuration="0" mode="0" startExpression="" endExpression="">
+  <temporal startExpression="" accumulate="0" limitMode="0" fixedDuration="0" startField="" endExpression="" durationUnit="min" mode="0" durationField="ogc_fid" endField="" enabled="0">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation respectLayerSymbol="1" zoffset="0" showMarkerSymbolInSurfacePlots="0" binding="Centroid" zscale="1" symbology="Line" type="IndividualFeatures" extrusionEnabled="0" clamping="Terrain" extrusion="0">
+  <elevation extrusionEnabled="0" extrusion="0" type="IndividualFeatures" zoffset="0" showMarkerSymbolInSurfacePlots="0" symbology="Line" respectLayerSymbol="1" binding="Centroid" clamping="Terrain" zscale="1">
     <data-defined-properties>
       <Option type="Map">
-        <Option value="" name="name" type="QString"/>
+        <Option type="QString" value="" name="name"/>
         <Option name="properties"/>
-        <Option value="collection" name="type" type="QString"/>
+        <Option type="QString" value="collection" name="type"/>
       </Option>
     </data-defined-properties>
     <profileLineSymbol>
-      <symbol name="" clip_to_extent="1" force_rhr="0" alpha="1" type="line" frame_rate="10" is_animated="0">
+      <symbol clip_to_extent="1" type="line" frame_rate="10" alpha="1" is_animated="0" name="" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option value="" name="name" type="QString"/>
+            <Option type="QString" value="" name="name"/>
             <Option name="properties"/>
-            <Option value="collection" name="type" type="QString"/>
+            <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer id="{4bf7b3f4-d7e0-453c-9055-279a7b3806e3}" enabled="1" class="SimpleLine" pass="0" locked="0">
+        <layer class="SimpleLine" id="{4bf7b3f4-d7e0-453c-9055-279a7b3806e3}" locked="0" pass="0" enabled="1">
           <Option type="Map">
-            <Option value="0" name="align_dash_pattern" type="QString"/>
-            <Option value="square" name="capstyle" type="QString"/>
-            <Option value="5;2" name="customdash" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale" type="QString"/>
-            <Option value="MM" name="customdash_unit" type="QString"/>
-            <Option value="0" name="dash_pattern_offset" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale" type="QString"/>
-            <Option value="MM" name="dash_pattern_offset_unit" type="QString"/>
-            <Option value="0" name="draw_inside_polygon" type="QString"/>
-            <Option value="bevel" name="joinstyle" type="QString"/>
-            <Option value="232,113,141,255" name="line_color" type="QString"/>
-            <Option value="solid" name="line_style" type="QString"/>
-            <Option value="0.6" name="line_width" type="QString"/>
-            <Option value="MM" name="line_width_unit" type="QString"/>
-            <Option value="0" name="offset" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
-            <Option value="MM" name="offset_unit" type="QString"/>
-            <Option value="0" name="ring_filter" type="QString"/>
-            <Option value="0" name="trim_distance_end" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale" type="QString"/>
-            <Option value="MM" name="trim_distance_end_unit" type="QString"/>
-            <Option value="0" name="trim_distance_start" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale" type="QString"/>
-            <Option value="MM" name="trim_distance_start_unit" type="QString"/>
-            <Option value="0" name="tweak_dash_pattern_on_corners" type="QString"/>
-            <Option value="0" name="use_custom_dash" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="width_map_unit_scale" type="QString"/>
+            <Option type="QString" value="0" name="align_dash_pattern"/>
+            <Option type="QString" value="square" name="capstyle"/>
+            <Option type="QString" value="5;2" name="customdash"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale"/>
+            <Option type="QString" value="MM" name="customdash_unit"/>
+            <Option type="QString" value="0" name="dash_pattern_offset"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale"/>
+            <Option type="QString" value="MM" name="dash_pattern_offset_unit"/>
+            <Option type="QString" value="0" name="draw_inside_polygon"/>
+            <Option type="QString" value="bevel" name="joinstyle"/>
+            <Option type="QString" value="232,113,141,255" name="line_color"/>
+            <Option type="QString" value="solid" name="line_style"/>
+            <Option type="QString" value="0.6" name="line_width"/>
+            <Option type="QString" value="MM" name="line_width_unit"/>
+            <Option type="QString" value="0" name="offset"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+            <Option type="QString" value="MM" name="offset_unit"/>
+            <Option type="QString" value="0" name="ring_filter"/>
+            <Option type="QString" value="0" name="trim_distance_end"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale"/>
+            <Option type="QString" value="MM" name="trim_distance_end_unit"/>
+            <Option type="QString" value="0" name="trim_distance_start"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale"/>
+            <Option type="QString" value="MM" name="trim_distance_start_unit"/>
+            <Option type="QString" value="0" name="tweak_dash_pattern_on_corners"/>
+            <Option type="QString" value="0" name="use_custom_dash"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="width_map_unit_scale"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" value="" name="name"/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </profileLineSymbol>
     <profileFillSymbol>
-      <symbol name="" clip_to_extent="1" force_rhr="0" alpha="1" type="fill" frame_rate="10" is_animated="0">
+      <symbol clip_to_extent="1" type="fill" frame_rate="10" alpha="1" is_animated="0" name="" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option value="" name="name" type="QString"/>
+            <Option type="QString" value="" name="name"/>
             <Option name="properties"/>
-            <Option value="collection" name="type" type="QString"/>
+            <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer id="{f26fbbb7-cb04-4a73-80c8-30433e9d8d72}" enabled="1" class="SimpleFill" pass="0" locked="0">
+        <layer class="SimpleFill" id="{f26fbbb7-cb04-4a73-80c8-30433e9d8d72}" locked="0" pass="0" enabled="1">
           <Option type="Map">
-            <Option value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale" type="QString"/>
-            <Option value="232,113,141,255" name="color" type="QString"/>
-            <Option value="bevel" name="joinstyle" type="QString"/>
-            <Option value="0,0" name="offset" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
-            <Option value="MM" name="offset_unit" type="QString"/>
-            <Option value="166,81,101,255" name="outline_color" type="QString"/>
-            <Option value="solid" name="outline_style" type="QString"/>
-            <Option value="0.2" name="outline_width" type="QString"/>
-            <Option value="MM" name="outline_width_unit" type="QString"/>
-            <Option value="solid" name="style" type="QString"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
+            <Option type="QString" value="232,113,141,255" name="color"/>
+            <Option type="QString" value="bevel" name="joinstyle"/>
+            <Option type="QString" value="0,0" name="offset"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+            <Option type="QString" value="MM" name="offset_unit"/>
+            <Option type="QString" value="166,81,101,255" name="outline_color"/>
+            <Option type="QString" value="solid" name="outline_style"/>
+            <Option type="QString" value="0.2" name="outline_width"/>
+            <Option type="QString" value="MM" name="outline_width_unit"/>
+            <Option type="QString" value="solid" name="style"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" value="" name="name"/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </profileFillSymbol>
     <profileMarkerSymbol>
-      <symbol name="" clip_to_extent="1" force_rhr="0" alpha="1" type="marker" frame_rate="10" is_animated="0">
+      <symbol clip_to_extent="1" type="marker" frame_rate="10" alpha="1" is_animated="0" name="" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option value="" name="name" type="QString"/>
+            <Option type="QString" value="" name="name"/>
             <Option name="properties"/>
-            <Option value="collection" name="type" type="QString"/>
+            <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer id="{ab70caf4-8ab1-4c83-8461-cc5844251377}" enabled="1" class="SimpleMarker" pass="0" locked="0">
+        <layer class="SimpleMarker" id="{ab70caf4-8ab1-4c83-8461-cc5844251377}" locked="0" pass="0" enabled="1">
           <Option type="Map">
-            <Option value="0" name="angle" type="QString"/>
-            <Option value="square" name="cap_style" type="QString"/>
-            <Option value="232,113,141,255" name="color" type="QString"/>
-            <Option value="1" name="horizontal_anchor_point" type="QString"/>
-            <Option value="bevel" name="joinstyle" type="QString"/>
-            <Option value="diamond" name="name" type="QString"/>
-            <Option value="0,0" name="offset" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
-            <Option value="MM" name="offset_unit" type="QString"/>
-            <Option value="166,81,101,255" name="outline_color" type="QString"/>
-            <Option value="solid" name="outline_style" type="QString"/>
-            <Option value="0.2" name="outline_width" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
-            <Option value="MM" name="outline_width_unit" type="QString"/>
-            <Option value="diameter" name="scale_method" type="QString"/>
-            <Option value="3" name="size" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
-            <Option value="MM" name="size_unit" type="QString"/>
-            <Option value="1" name="vertical_anchor_point" type="QString"/>
+            <Option type="QString" value="0" name="angle"/>
+            <Option type="QString" value="square" name="cap_style"/>
+            <Option type="QString" value="232,113,141,255" name="color"/>
+            <Option type="QString" value="1" name="horizontal_anchor_point"/>
+            <Option type="QString" value="bevel" name="joinstyle"/>
+            <Option type="QString" value="diamond" name="name"/>
+            <Option type="QString" value="0,0" name="offset"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+            <Option type="QString" value="MM" name="offset_unit"/>
+            <Option type="QString" value="166,81,101,255" name="outline_color"/>
+            <Option type="QString" value="solid" name="outline_style"/>
+            <Option type="QString" value="0.2" name="outline_width"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale"/>
+            <Option type="QString" value="MM" name="outline_width_unit"/>
+            <Option type="QString" value="diameter" name="scale_method"/>
+            <Option type="QString" value="3" name="size"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="size_map_unit_scale"/>
+            <Option type="QString" value="MM" name="size_unit"/>
+            <Option type="QString" value="1" name="vertical_anchor_point"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" value="" name="name"/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 symbollevels="0" referencescale="-1" forceraster="0" enableorderby="0" type="singleSymbol">
+  <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1">
     <symbols>
-      <symbol name="0" clip_to_extent="1" force_rhr="0" alpha="1" type="line" frame_rate="10" is_animated="0">
+      <symbol clip_to_extent="1" type="line" frame_rate="10" alpha="1" is_animated="0" name="0" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option value="" name="name" type="QString"/>
+            <Option type="QString" value="" name="name"/>
             <Option name="properties"/>
-            <Option value="collection" name="type" type="QString"/>
+            <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer id="{1e9a404b-5432-4011-a0e1-2e80dae10ca5}" enabled="1" class="SimpleLine" pass="0" locked="0">
+        <layer class="SimpleLine" id="{1e9a404b-5432-4011-a0e1-2e80dae10ca5}" locked="0" pass="0" enabled="1">
           <Option type="Map">
-            <Option value="0" name="align_dash_pattern" type="QString"/>
-            <Option value="square" name="capstyle" type="QString"/>
-            <Option value="5;2" name="customdash" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale" type="QString"/>
-            <Option value="MapUnit" name="customdash_unit" type="QString"/>
-            <Option value="0" name="dash_pattern_offset" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale" type="QString"/>
-            <Option value="MapUnit" name="dash_pattern_offset_unit" type="QString"/>
-            <Option value="0" name="draw_inside_polygon" type="QString"/>
-            <Option value="bevel" name="joinstyle" type="QString"/>
-            <Option value="229,182,54,255" name="line_color" type="QString"/>
-            <Option value="solid" name="line_style" type="QString"/>
-            <Option value="5" name="line_width" type="QString"/>
-            <Option value="MapUnit" name="line_width_unit" type="QString"/>
-            <Option value="0" name="offset" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
-            <Option value="MapUnit" name="offset_unit" type="QString"/>
-            <Option value="0" name="ring_filter" type="QString"/>
-            <Option value="0" name="trim_distance_end" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale" type="QString"/>
-            <Option value="MapUnit" name="trim_distance_end_unit" type="QString"/>
-            <Option value="0" name="trim_distance_start" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale" type="QString"/>
-            <Option value="MapUnit" name="trim_distance_start_unit" type="QString"/>
-            <Option value="0" name="tweak_dash_pattern_on_corners" type="QString"/>
-            <Option value="0" name="use_custom_dash" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="width_map_unit_scale" type="QString"/>
+            <Option type="QString" value="0" name="align_dash_pattern"/>
+            <Option type="QString" value="square" name="capstyle"/>
+            <Option type="QString" value="5;2" name="customdash"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale"/>
+            <Option type="QString" value="MapUnit" name="customdash_unit"/>
+            <Option type="QString" value="0" name="dash_pattern_offset"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale"/>
+            <Option type="QString" value="MapUnit" name="dash_pattern_offset_unit"/>
+            <Option type="QString" value="0" name="draw_inside_polygon"/>
+            <Option type="QString" value="bevel" name="joinstyle"/>
+            <Option type="QString" value="100,120,142,255" name="line_color"/>
+            <Option type="QString" value="dash" name="line_style"/>
+            <Option type="QString" value="5" name="line_width"/>
+            <Option type="QString" value="MapUnit" name="line_width_unit"/>
+            <Option type="QString" value="0" name="offset"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+            <Option type="QString" value="MapUnit" name="offset_unit"/>
+            <Option type="QString" value="0" name="ring_filter"/>
+            <Option type="QString" value="0" name="trim_distance_end"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale"/>
+            <Option type="QString" value="MapUnit" name="trim_distance_end_unit"/>
+            <Option type="QString" value="0" name="trim_distance_start"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale"/>
+            <Option type="QString" value="MapUnit" name="trim_distance_start_unit"/>
+            <Option type="QString" value="0" name="tweak_dash_pattern_on_corners"/>
+            <Option type="QString" value="0" name="use_custom_dash"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="width_map_unit_scale"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" value="" name="name"/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -200,49 +200,49 @@
   <selection mode="Default">
     <selectionColor invalid="1"/>
     <selectionSymbol>
-      <symbol name="" clip_to_extent="1" force_rhr="0" alpha="1" type="line" frame_rate="10" is_animated="0">
+      <symbol clip_to_extent="1" type="line" frame_rate="10" alpha="1" is_animated="0" name="" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option value="" name="name" type="QString"/>
+            <Option type="QString" value="" name="name"/>
             <Option name="properties"/>
-            <Option value="collection" name="type" type="QString"/>
+            <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer id="{18e7381a-64ae-4bf8-8a0c-f04c6d5a7f5f}" enabled="1" class="SimpleLine" pass="0" locked="0">
+        <layer class="SimpleLine" id="{18e7381a-64ae-4bf8-8a0c-f04c6d5a7f5f}" locked="0" pass="0" enabled="1">
           <Option type="Map">
-            <Option value="0" name="align_dash_pattern" type="QString"/>
-            <Option value="square" name="capstyle" type="QString"/>
-            <Option value="5;2" name="customdash" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale" type="QString"/>
-            <Option value="MM" name="customdash_unit" type="QString"/>
-            <Option value="0" name="dash_pattern_offset" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale" type="QString"/>
-            <Option value="MM" name="dash_pattern_offset_unit" type="QString"/>
-            <Option value="0" name="draw_inside_polygon" type="QString"/>
-            <Option value="bevel" name="joinstyle" type="QString"/>
-            <Option value="35,35,35,255" name="line_color" type="QString"/>
-            <Option value="solid" name="line_style" type="QString"/>
-            <Option value="0.26" name="line_width" type="QString"/>
-            <Option value="MM" name="line_width_unit" type="QString"/>
-            <Option value="0" name="offset" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
-            <Option value="MM" name="offset_unit" type="QString"/>
-            <Option value="0" name="ring_filter" type="QString"/>
-            <Option value="0" name="trim_distance_end" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale" type="QString"/>
-            <Option value="MM" name="trim_distance_end_unit" type="QString"/>
-            <Option value="0" name="trim_distance_start" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale" type="QString"/>
-            <Option value="MM" name="trim_distance_start_unit" type="QString"/>
-            <Option value="0" name="tweak_dash_pattern_on_corners" type="QString"/>
-            <Option value="0" name="use_custom_dash" type="QString"/>
-            <Option value="3x:0,0,0,0,0,0" name="width_map_unit_scale" type="QString"/>
+            <Option type="QString" value="0" name="align_dash_pattern"/>
+            <Option type="QString" value="square" name="capstyle"/>
+            <Option type="QString" value="5;2" name="customdash"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale"/>
+            <Option type="QString" value="MM" name="customdash_unit"/>
+            <Option type="QString" value="0" name="dash_pattern_offset"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale"/>
+            <Option type="QString" value="MM" name="dash_pattern_offset_unit"/>
+            <Option type="QString" value="0" name="draw_inside_polygon"/>
+            <Option type="QString" value="bevel" name="joinstyle"/>
+            <Option type="QString" value="35,35,35,255" name="line_color"/>
+            <Option type="QString" value="solid" name="line_style"/>
+            <Option type="QString" value="0.26" name="line_width"/>
+            <Option type="QString" value="MM" name="line_width_unit"/>
+            <Option type="QString" value="0" name="offset"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+            <Option type="QString" value="MM" name="offset_unit"/>
+            <Option type="QString" value="0" name="ring_filter"/>
+            <Option type="QString" value="0" name="trim_distance_end"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale"/>
+            <Option type="QString" value="MM" name="trim_distance_end_unit"/>
+            <Option type="QString" value="0" name="trim_distance_start"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale"/>
+            <Option type="QString" value="MM" name="trim_distance_start_unit"/>
+            <Option type="QString" value="0" name="tweak_dash_pattern_on_corners"/>
+            <Option type="QString" value="0" name="use_custom_dash"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="width_map_unit_scale"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" value="" name="name"/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -251,7 +251,7 @@
   </selection>
   <customproperties>
     <Option type="Map">
-      <Option value="0" name="embeddedWidgets/count" type="int"/>
+      <Option type="int" value="0" name="embeddedWidgets/count"/>
       <Option name="variableNames"/>
       <Option name="variableValues"/>
     </Option>
@@ -259,53 +259,54 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory lineSizeType="MM" labelPlacementMethod="XHeight" diagramOrientation="Up" barWidth="5" opacity="1" sizeType="MM" penAlpha="255" scaleDependency="Area" lineSizeScale="3x:0,0,0,0,0,0" height="15" spacingUnit="MM" direction="0" rotationOffset="270" backgroundAlpha="255" minimumSize="0" minScaleDenominator="0" penColor="#000000" enabled="0" spacing="5" backgroundColor="#ffffff" showAxis="1" maxScaleDenominator="1e+08" scaleBasedVisibility="0" width="15" spacingUnitScale="3x:0,0,0,0,0,0" penWidth="0" sizeScale="3x:0,0,0,0,0,0">
-      <fontProperties underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" bold="0"/>
+  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+    <DiagramCategory scaleDependency="Area" minimumSize="0" showAxis="1" penColor="#000000" backgroundColor="#ffffff" direction="0" lineSizeType="MM" labelPlacementMethod="XHeight" barWidth="5" backgroundAlpha="255" penWidth="0" penAlpha="255" spacingUnitScale="3x:0,0,0,0,0,0" minScaleDenominator="0" width="15" diagramOrientation="Up" maxScaleDenominator="1e+08" height="15" spacingUnit="MM" scaleBasedVisibility="0" sizeType="MM" rotationOffset="270" spacing="5" lineSizeScale="3x:0,0,0,0,0,0" opacity="1" enabled="0" sizeScale="3x:0,0,0,0,0,0">
+      <fontProperties bold="0" italic="0" strikethrough="0" underline="0" description="Arial,7.8,-1,5,50,0,0,0,0,0" style=""/>
+      <attribute color="#000000" field="" label="" colorOpacity="1"/>
       <axisSymbol>
-        <symbol name="" clip_to_extent="1" force_rhr="0" alpha="1" type="line" frame_rate="10" is_animated="0">
+        <symbol clip_to_extent="1" type="line" frame_rate="10" alpha="1" is_animated="0" name="" force_rhr="0">
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" value="" name="name"/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
-          <layer id="{230c9abe-1f02-4227-a443-43324d1b0cab}" enabled="1" class="SimpleLine" pass="0" locked="0">
+          <layer class="SimpleLine" id="{230c9abe-1f02-4227-a443-43324d1b0cab}" locked="0" pass="0" enabled="1">
             <Option type="Map">
-              <Option value="0" name="align_dash_pattern" type="QString"/>
-              <Option value="square" name="capstyle" type="QString"/>
-              <Option value="5;2" name="customdash" type="QString"/>
-              <Option value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale" type="QString"/>
-              <Option value="MM" name="customdash_unit" type="QString"/>
-              <Option value="0" name="dash_pattern_offset" type="QString"/>
-              <Option value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale" type="QString"/>
-              <Option value="MM" name="dash_pattern_offset_unit" type="QString"/>
-              <Option value="0" name="draw_inside_polygon" type="QString"/>
-              <Option value="bevel" name="joinstyle" type="QString"/>
-              <Option value="35,35,35,255" name="line_color" type="QString"/>
-              <Option value="solid" name="line_style" type="QString"/>
-              <Option value="0.26" name="line_width" type="QString"/>
-              <Option value="MM" name="line_width_unit" type="QString"/>
-              <Option value="0" name="offset" type="QString"/>
-              <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
-              <Option value="MM" name="offset_unit" type="QString"/>
-              <Option value="0" name="ring_filter" type="QString"/>
-              <Option value="0" name="trim_distance_end" type="QString"/>
-              <Option value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale" type="QString"/>
-              <Option value="MM" name="trim_distance_end_unit" type="QString"/>
-              <Option value="0" name="trim_distance_start" type="QString"/>
-              <Option value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale" type="QString"/>
-              <Option value="MM" name="trim_distance_start_unit" type="QString"/>
-              <Option value="0" name="tweak_dash_pattern_on_corners" type="QString"/>
-              <Option value="0" name="use_custom_dash" type="QString"/>
-              <Option value="3x:0,0,0,0,0,0" name="width_map_unit_scale" type="QString"/>
+              <Option type="QString" value="0" name="align_dash_pattern"/>
+              <Option type="QString" value="square" name="capstyle"/>
+              <Option type="QString" value="5;2" name="customdash"/>
+              <Option type="QString" value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale"/>
+              <Option type="QString" value="MM" name="customdash_unit"/>
+              <Option type="QString" value="0" name="dash_pattern_offset"/>
+              <Option type="QString" value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale"/>
+              <Option type="QString" value="MM" name="dash_pattern_offset_unit"/>
+              <Option type="QString" value="0" name="draw_inside_polygon"/>
+              <Option type="QString" value="bevel" name="joinstyle"/>
+              <Option type="QString" value="35,35,35,255" name="line_color"/>
+              <Option type="QString" value="solid" name="line_style"/>
+              <Option type="QString" value="0.26" name="line_width"/>
+              <Option type="QString" value="MM" name="line_width_unit"/>
+              <Option type="QString" value="0" name="offset"/>
+              <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+              <Option type="QString" value="MM" name="offset_unit"/>
+              <Option type="QString" value="0" name="ring_filter"/>
+              <Option type="QString" value="0" name="trim_distance_end"/>
+              <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale"/>
+              <Option type="QString" value="MM" name="trim_distance_end_unit"/>
+              <Option type="QString" value="0" name="trim_distance_start"/>
+              <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale"/>
+              <Option type="QString" value="MM" name="trim_distance_start_unit"/>
+              <Option type="QString" value="0" name="tweak_dash_pattern_on_corners"/>
+              <Option type="QString" value="0" name="use_custom_dash"/>
+              <Option type="QString" value="3x:0,0,0,0,0,0" name="width_map_unit_scale"/>
             </Option>
             <data_defined_properties>
               <Option type="Map">
-                <Option value="" name="name" type="QString"/>
+                <Option type="QString" value="" name="name"/>
                 <Option name="properties"/>
-                <Option value="collection" name="type" type="QString"/>
+                <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
           </layer>
@@ -313,12 +314,12 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings dist="0" placement="2" priority="0" showAll="1" obstacle="0" linePlacementFlags="18" zIndex="0">
+  <DiagramLayerSettings zIndex="0" linePlacementFlags="18" dist="0" placement="2" obstacle="0" priority="0" showAll="1">
     <properties>
       <Option type="Map">
-        <Option value="" name="name" type="QString"/>
+        <Option type="QString" value="" name="name"/>
         <Option name="properties"/>
-        <Option value="collection" name="type" type="QString"/>
+        <Option type="QString" value="collection" name="type"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
@@ -326,234 +327,234 @@
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
-  <legend showLabelLegend="0" type="default-vector"/>
+  <legend type="default-vector" showLabelLegend="0"/>
   <referencedLayers/>
   <fieldConfiguration>
-    <field name="ogc_fid" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="ogc_fid">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="id" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="id">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="description" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="description">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="descriptionreference_href" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="descriptionreference_href">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="descriptionreference_title" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="descriptionreference_title">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="descriptionreference_nilreason" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="descriptionreference_nilreason">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="identifier_codespace" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="identifier_codespace">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="identifier" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="identifier">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="uuid" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="uuid">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="text" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="text">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="rechtsstand" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="rechtsstand">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="gesetzlichegrundlage_codespace" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="gesetzlichegrundlage_codespace">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="gesetzlichegrundlage" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="gesetzlichegrundlage">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="gliederung1" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="gliederung1">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="gliederung2" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="gliederung2">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="ebene" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="ebene">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="gehoertzubereich_owns" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="gehoertzubereich_owns">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="gehoertzubereich_href" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="gehoertzubereich_href">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="gehoertzubereich_title" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="gehoertzubereich_title">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="gehoertzubereich_nilreason" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="gehoertzubereich_nilreason">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="gehoertzubereich_fp_bereich_pkid" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="gehoertzubereich_fp_bereich_pkid">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="startbedingung_pkid" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="startbedingung_pkid">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="endebedingung_pkid" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="endebedingung_pkid">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="aufschrift" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="aufschrift">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="rechtscharakter" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="rechtscharakter">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="spezifischepraegung_codespace" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="spezifischepraegung_codespace">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="spezifischepraegung" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="spezifischepraegung">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="vongenehmigungausgenommen" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="vongenehmigungausgenommen">
       <editWidget type="CheckBox">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="flaechenschluss" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="flaechenschluss">
       <editWidget type="CheckBox">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="flussrichtung" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="flussrichtung">
       <editWidget type="CheckBox">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="nordwinkel_uom" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="nordwinkel_uom">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="nordwinkel" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="nordwinkel">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="vormerkung" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="vormerkung">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -562,220 +563,220 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias name="" field="ogc_fid" index="0"/>
-    <alias name="" field="id" index="1"/>
-    <alias name="" field="description" index="2"/>
-    <alias name="" field="descriptionreference_href" index="3"/>
-    <alias name="" field="descriptionreference_title" index="4"/>
-    <alias name="" field="descriptionreference_nilreason" index="5"/>
-    <alias name="" field="identifier_codespace" index="6"/>
-    <alias name="" field="identifier" index="7"/>
-    <alias name="" field="uuid" index="8"/>
-    <alias name="" field="text" index="9"/>
-    <alias name="" field="rechtsstand" index="10"/>
-    <alias name="" field="gesetzlichegrundlage_codespace" index="11"/>
-    <alias name="" field="gesetzlichegrundlage" index="12"/>
-    <alias name="" field="gliederung1" index="13"/>
-    <alias name="" field="gliederung2" index="14"/>
-    <alias name="" field="ebene" index="15"/>
-    <alias name="" field="gehoertzubereich_owns" index="16"/>
-    <alias name="" field="gehoertzubereich_href" index="17"/>
-    <alias name="" field="gehoertzubereich_title" index="18"/>
-    <alias name="" field="gehoertzubereich_nilreason" index="19"/>
-    <alias name="" field="gehoertzubereich_fp_bereich_pkid" index="20"/>
-    <alias name="" field="startbedingung_pkid" index="21"/>
-    <alias name="" field="endebedingung_pkid" index="22"/>
-    <alias name="" field="aufschrift" index="23"/>
-    <alias name="" field="rechtscharakter" index="24"/>
-    <alias name="" field="spezifischepraegung_codespace" index="25"/>
-    <alias name="" field="spezifischepraegung" index="26"/>
-    <alias name="" field="vongenehmigungausgenommen" index="27"/>
-    <alias name="" field="flaechenschluss" index="28"/>
-    <alias name="" field="flussrichtung" index="29"/>
-    <alias name="" field="nordwinkel_uom" index="30"/>
-    <alias name="" field="nordwinkel" index="31"/>
-    <alias name="" field="vormerkung" index="32"/>
+    <alias field="ogc_fid" index="0" name=""/>
+    <alias field="id" index="1" name=""/>
+    <alias field="description" index="2" name=""/>
+    <alias field="descriptionreference_href" index="3" name=""/>
+    <alias field="descriptionreference_title" index="4" name=""/>
+    <alias field="descriptionreference_nilreason" index="5" name=""/>
+    <alias field="identifier_codespace" index="6" name=""/>
+    <alias field="identifier" index="7" name=""/>
+    <alias field="uuid" index="8" name=""/>
+    <alias field="text" index="9" name=""/>
+    <alias field="rechtsstand" index="10" name=""/>
+    <alias field="gesetzlichegrundlage_codespace" index="11" name=""/>
+    <alias field="gesetzlichegrundlage" index="12" name=""/>
+    <alias field="gliederung1" index="13" name=""/>
+    <alias field="gliederung2" index="14" name=""/>
+    <alias field="ebene" index="15" name=""/>
+    <alias field="gehoertzubereich_owns" index="16" name=""/>
+    <alias field="gehoertzubereich_href" index="17" name=""/>
+    <alias field="gehoertzubereich_title" index="18" name=""/>
+    <alias field="gehoertzubereich_nilreason" index="19" name=""/>
+    <alias field="gehoertzubereich_fp_bereich_pkid" index="20" name=""/>
+    <alias field="startbedingung_pkid" index="21" name=""/>
+    <alias field="endebedingung_pkid" index="22" name=""/>
+    <alias field="aufschrift" index="23" name=""/>
+    <alias field="rechtscharakter" index="24" name=""/>
+    <alias field="spezifischepraegung_codespace" index="25" name=""/>
+    <alias field="spezifischepraegung" index="26" name=""/>
+    <alias field="vongenehmigungausgenommen" index="27" name=""/>
+    <alias field="flaechenschluss" index="28" name=""/>
+    <alias field="flussrichtung" index="29" name=""/>
+    <alias field="nordwinkel_uom" index="30" name=""/>
+    <alias field="nordwinkel" index="31" name=""/>
+    <alias field="vormerkung" index="32" name=""/>
   </aliases>
   <splitPolicies>
-    <policy policy="Duplicate" field="ogc_fid"/>
-    <policy policy="Duplicate" field="id"/>
-    <policy policy="Duplicate" field="description"/>
-    <policy policy="Duplicate" field="descriptionreference_href"/>
-    <policy policy="Duplicate" field="descriptionreference_title"/>
-    <policy policy="Duplicate" field="descriptionreference_nilreason"/>
-    <policy policy="Duplicate" field="identifier_codespace"/>
-    <policy policy="Duplicate" field="identifier"/>
-    <policy policy="Duplicate" field="uuid"/>
-    <policy policy="Duplicate" field="text"/>
-    <policy policy="Duplicate" field="rechtsstand"/>
-    <policy policy="Duplicate" field="gesetzlichegrundlage_codespace"/>
-    <policy policy="Duplicate" field="gesetzlichegrundlage"/>
-    <policy policy="Duplicate" field="gliederung1"/>
-    <policy policy="Duplicate" field="gliederung2"/>
-    <policy policy="Duplicate" field="ebene"/>
-    <policy policy="Duplicate" field="gehoertzubereich_owns"/>
-    <policy policy="Duplicate" field="gehoertzubereich_href"/>
-    <policy policy="Duplicate" field="gehoertzubereich_title"/>
-    <policy policy="Duplicate" field="gehoertzubereich_nilreason"/>
-    <policy policy="Duplicate" field="gehoertzubereich_fp_bereich_pkid"/>
-    <policy policy="Duplicate" field="startbedingung_pkid"/>
-    <policy policy="Duplicate" field="endebedingung_pkid"/>
-    <policy policy="Duplicate" field="aufschrift"/>
-    <policy policy="Duplicate" field="rechtscharakter"/>
-    <policy policy="Duplicate" field="spezifischepraegung_codespace"/>
-    <policy policy="Duplicate" field="spezifischepraegung"/>
-    <policy policy="Duplicate" field="vongenehmigungausgenommen"/>
-    <policy policy="Duplicate" field="flaechenschluss"/>
-    <policy policy="Duplicate" field="flussrichtung"/>
-    <policy policy="Duplicate" field="nordwinkel_uom"/>
-    <policy policy="Duplicate" field="nordwinkel"/>
-    <policy policy="Duplicate" field="vormerkung"/>
+    <policy field="ogc_fid" policy="Duplicate"/>
+    <policy field="id" policy="Duplicate"/>
+    <policy field="description" policy="Duplicate"/>
+    <policy field="descriptionreference_href" policy="Duplicate"/>
+    <policy field="descriptionreference_title" policy="Duplicate"/>
+    <policy field="descriptionreference_nilreason" policy="Duplicate"/>
+    <policy field="identifier_codespace" policy="Duplicate"/>
+    <policy field="identifier" policy="Duplicate"/>
+    <policy field="uuid" policy="Duplicate"/>
+    <policy field="text" policy="Duplicate"/>
+    <policy field="rechtsstand" policy="Duplicate"/>
+    <policy field="gesetzlichegrundlage_codespace" policy="Duplicate"/>
+    <policy field="gesetzlichegrundlage" policy="Duplicate"/>
+    <policy field="gliederung1" policy="Duplicate"/>
+    <policy field="gliederung2" policy="Duplicate"/>
+    <policy field="ebene" policy="Duplicate"/>
+    <policy field="gehoertzubereich_owns" policy="Duplicate"/>
+    <policy field="gehoertzubereich_href" policy="Duplicate"/>
+    <policy field="gehoertzubereich_title" policy="Duplicate"/>
+    <policy field="gehoertzubereich_nilreason" policy="Duplicate"/>
+    <policy field="gehoertzubereich_fp_bereich_pkid" policy="Duplicate"/>
+    <policy field="startbedingung_pkid" policy="Duplicate"/>
+    <policy field="endebedingung_pkid" policy="Duplicate"/>
+    <policy field="aufschrift" policy="Duplicate"/>
+    <policy field="rechtscharakter" policy="Duplicate"/>
+    <policy field="spezifischepraegung_codespace" policy="Duplicate"/>
+    <policy field="spezifischepraegung" policy="Duplicate"/>
+    <policy field="vongenehmigungausgenommen" policy="Duplicate"/>
+    <policy field="flaechenschluss" policy="Duplicate"/>
+    <policy field="flussrichtung" policy="Duplicate"/>
+    <policy field="nordwinkel_uom" policy="Duplicate"/>
+    <policy field="nordwinkel" policy="Duplicate"/>
+    <policy field="vormerkung" policy="Duplicate"/>
   </splitPolicies>
   <defaults>
-    <default applyOnUpdate="0" field="ogc_fid" expression=""/>
-    <default applyOnUpdate="0" field="id" expression=""/>
-    <default applyOnUpdate="0" field="description" expression=""/>
-    <default applyOnUpdate="0" field="descriptionreference_href" expression=""/>
-    <default applyOnUpdate="0" field="descriptionreference_title" expression=""/>
-    <default applyOnUpdate="0" field="descriptionreference_nilreason" expression=""/>
-    <default applyOnUpdate="0" field="identifier_codespace" expression=""/>
-    <default applyOnUpdate="0" field="identifier" expression=""/>
-    <default applyOnUpdate="0" field="uuid" expression=""/>
-    <default applyOnUpdate="0" field="text" expression=""/>
-    <default applyOnUpdate="0" field="rechtsstand" expression=""/>
-    <default applyOnUpdate="0" field="gesetzlichegrundlage_codespace" expression=""/>
-    <default applyOnUpdate="0" field="gesetzlichegrundlage" expression=""/>
-    <default applyOnUpdate="0" field="gliederung1" expression=""/>
-    <default applyOnUpdate="0" field="gliederung2" expression=""/>
-    <default applyOnUpdate="0" field="ebene" expression=""/>
-    <default applyOnUpdate="0" field="gehoertzubereich_owns" expression=""/>
-    <default applyOnUpdate="0" field="gehoertzubereich_href" expression=""/>
-    <default applyOnUpdate="0" field="gehoertzubereich_title" expression=""/>
-    <default applyOnUpdate="0" field="gehoertzubereich_nilreason" expression=""/>
-    <default applyOnUpdate="0" field="gehoertzubereich_fp_bereich_pkid" expression=""/>
-    <default applyOnUpdate="0" field="startbedingung_pkid" expression=""/>
-    <default applyOnUpdate="0" field="endebedingung_pkid" expression=""/>
-    <default applyOnUpdate="0" field="aufschrift" expression=""/>
-    <default applyOnUpdate="0" field="rechtscharakter" expression=""/>
-    <default applyOnUpdate="0" field="spezifischepraegung_codespace" expression=""/>
-    <default applyOnUpdate="0" field="spezifischepraegung" expression=""/>
-    <default applyOnUpdate="0" field="vongenehmigungausgenommen" expression=""/>
-    <default applyOnUpdate="0" field="flaechenschluss" expression=""/>
-    <default applyOnUpdate="0" field="flussrichtung" expression=""/>
-    <default applyOnUpdate="0" field="nordwinkel_uom" expression=""/>
-    <default applyOnUpdate="0" field="nordwinkel" expression=""/>
-    <default applyOnUpdate="0" field="vormerkung" expression=""/>
+    <default field="ogc_fid" expression="" applyOnUpdate="0"/>
+    <default field="id" expression="" applyOnUpdate="0"/>
+    <default field="description" expression="" applyOnUpdate="0"/>
+    <default field="descriptionreference_href" expression="" applyOnUpdate="0"/>
+    <default field="descriptionreference_title" expression="" applyOnUpdate="0"/>
+    <default field="descriptionreference_nilreason" expression="" applyOnUpdate="0"/>
+    <default field="identifier_codespace" expression="" applyOnUpdate="0"/>
+    <default field="identifier" expression="" applyOnUpdate="0"/>
+    <default field="uuid" expression="" applyOnUpdate="0"/>
+    <default field="text" expression="" applyOnUpdate="0"/>
+    <default field="rechtsstand" expression="" applyOnUpdate="0"/>
+    <default field="gesetzlichegrundlage_codespace" expression="" applyOnUpdate="0"/>
+    <default field="gesetzlichegrundlage" expression="" applyOnUpdate="0"/>
+    <default field="gliederung1" expression="" applyOnUpdate="0"/>
+    <default field="gliederung2" expression="" applyOnUpdate="0"/>
+    <default field="ebene" expression="" applyOnUpdate="0"/>
+    <default field="gehoertzubereich_owns" expression="" applyOnUpdate="0"/>
+    <default field="gehoertzubereich_href" expression="" applyOnUpdate="0"/>
+    <default field="gehoertzubereich_title" expression="" applyOnUpdate="0"/>
+    <default field="gehoertzubereich_nilreason" expression="" applyOnUpdate="0"/>
+    <default field="gehoertzubereich_fp_bereich_pkid" expression="" applyOnUpdate="0"/>
+    <default field="startbedingung_pkid" expression="" applyOnUpdate="0"/>
+    <default field="endebedingung_pkid" expression="" applyOnUpdate="0"/>
+    <default field="aufschrift" expression="" applyOnUpdate="0"/>
+    <default field="rechtscharakter" expression="" applyOnUpdate="0"/>
+    <default field="spezifischepraegung_codespace" expression="" applyOnUpdate="0"/>
+    <default field="spezifischepraegung" expression="" applyOnUpdate="0"/>
+    <default field="vongenehmigungausgenommen" expression="" applyOnUpdate="0"/>
+    <default field="flaechenschluss" expression="" applyOnUpdate="0"/>
+    <default field="flussrichtung" expression="" applyOnUpdate="0"/>
+    <default field="nordwinkel_uom" expression="" applyOnUpdate="0"/>
+    <default field="nordwinkel" expression="" applyOnUpdate="0"/>
+    <default field="vormerkung" expression="" applyOnUpdate="0"/>
   </defaults>
   <constraints>
-    <constraint exp_strength="0" unique_strength="1" notnull_strength="1" constraints="3" field="ogc_fid"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="1" constraints="1" field="id"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="description"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="descriptionreference_href"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="descriptionreference_title"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="descriptionreference_nilreason"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="identifier_codespace"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="identifier"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="uuid"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="text"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="rechtsstand"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="gesetzlichegrundlage_codespace"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="gesetzlichegrundlage"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="gliederung1"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="gliederung2"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="ebene"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="gehoertzubereich_owns"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="gehoertzubereich_href"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="gehoertzubereich_title"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="gehoertzubereich_nilreason"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="gehoertzubereich_fp_bereich_pkid"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="startbedingung_pkid"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="endebedingung_pkid"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="aufschrift"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="1" constraints="1" field="rechtscharakter"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="spezifischepraegung_codespace"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="spezifischepraegung"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="vongenehmigungausgenommen"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="flaechenschluss"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="flussrichtung"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="nordwinkel_uom"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="nordwinkel"/>
-    <constraint exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0" field="vormerkung"/>
+    <constraint field="ogc_fid" constraints="3" exp_strength="0" unique_strength="1" notnull_strength="1"/>
+    <constraint field="id" constraints="1" exp_strength="0" unique_strength="0" notnull_strength="1"/>
+    <constraint field="description" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="descriptionreference_href" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="descriptionreference_title" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="descriptionreference_nilreason" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="identifier_codespace" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="identifier" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="uuid" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="text" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="rechtsstand" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="gesetzlichegrundlage_codespace" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="gesetzlichegrundlage" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="gliederung1" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="gliederung2" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="ebene" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="gehoertzubereich_owns" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="gehoertzubereich_href" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="gehoertzubereich_title" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="gehoertzubereich_nilreason" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="gehoertzubereich_fp_bereich_pkid" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="startbedingung_pkid" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="endebedingung_pkid" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="aufschrift" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="rechtscharakter" constraints="1" exp_strength="0" unique_strength="0" notnull_strength="1"/>
+    <constraint field="spezifischepraegung_codespace" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="spezifischepraegung" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="vongenehmigungausgenommen" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="flaechenschluss" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="flussrichtung" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="nordwinkel_uom" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="nordwinkel" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+    <constraint field="vormerkung" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint desc="" exp="" field="ogc_fid"/>
-    <constraint desc="" exp="" field="id"/>
-    <constraint desc="" exp="" field="description"/>
-    <constraint desc="" exp="" field="descriptionreference_href"/>
-    <constraint desc="" exp="" field="descriptionreference_title"/>
-    <constraint desc="" exp="" field="descriptionreference_nilreason"/>
-    <constraint desc="" exp="" field="identifier_codespace"/>
-    <constraint desc="" exp="" field="identifier"/>
-    <constraint desc="" exp="" field="uuid"/>
-    <constraint desc="" exp="" field="text"/>
-    <constraint desc="" exp="" field="rechtsstand"/>
-    <constraint desc="" exp="" field="gesetzlichegrundlage_codespace"/>
-    <constraint desc="" exp="" field="gesetzlichegrundlage"/>
-    <constraint desc="" exp="" field="gliederung1"/>
-    <constraint desc="" exp="" field="gliederung2"/>
-    <constraint desc="" exp="" field="ebene"/>
-    <constraint desc="" exp="" field="gehoertzubereich_owns"/>
-    <constraint desc="" exp="" field="gehoertzubereich_href"/>
-    <constraint desc="" exp="" field="gehoertzubereich_title"/>
-    <constraint desc="" exp="" field="gehoertzubereich_nilreason"/>
-    <constraint desc="" exp="" field="gehoertzubereich_fp_bereich_pkid"/>
-    <constraint desc="" exp="" field="startbedingung_pkid"/>
-    <constraint desc="" exp="" field="endebedingung_pkid"/>
-    <constraint desc="" exp="" field="aufschrift"/>
-    <constraint desc="" exp="" field="rechtscharakter"/>
-    <constraint desc="" exp="" field="spezifischepraegung_codespace"/>
-    <constraint desc="" exp="" field="spezifischepraegung"/>
-    <constraint desc="" exp="" field="vongenehmigungausgenommen"/>
-    <constraint desc="" exp="" field="flaechenschluss"/>
-    <constraint desc="" exp="" field="flussrichtung"/>
-    <constraint desc="" exp="" field="nordwinkel_uom"/>
-    <constraint desc="" exp="" field="nordwinkel"/>
-    <constraint desc="" exp="" field="vormerkung"/>
+    <constraint field="ogc_fid" exp="" desc=""/>
+    <constraint field="id" exp="" desc=""/>
+    <constraint field="description" exp="" desc=""/>
+    <constraint field="descriptionreference_href" exp="" desc=""/>
+    <constraint field="descriptionreference_title" exp="" desc=""/>
+    <constraint field="descriptionreference_nilreason" exp="" desc=""/>
+    <constraint field="identifier_codespace" exp="" desc=""/>
+    <constraint field="identifier" exp="" desc=""/>
+    <constraint field="uuid" exp="" desc=""/>
+    <constraint field="text" exp="" desc=""/>
+    <constraint field="rechtsstand" exp="" desc=""/>
+    <constraint field="gesetzlichegrundlage_codespace" exp="" desc=""/>
+    <constraint field="gesetzlichegrundlage" exp="" desc=""/>
+    <constraint field="gliederung1" exp="" desc=""/>
+    <constraint field="gliederung2" exp="" desc=""/>
+    <constraint field="ebene" exp="" desc=""/>
+    <constraint field="gehoertzubereich_owns" exp="" desc=""/>
+    <constraint field="gehoertzubereich_href" exp="" desc=""/>
+    <constraint field="gehoertzubereich_title" exp="" desc=""/>
+    <constraint field="gehoertzubereich_nilreason" exp="" desc=""/>
+    <constraint field="gehoertzubereich_fp_bereich_pkid" exp="" desc=""/>
+    <constraint field="startbedingung_pkid" exp="" desc=""/>
+    <constraint field="endebedingung_pkid" exp="" desc=""/>
+    <constraint field="aufschrift" exp="" desc=""/>
+    <constraint field="rechtscharakter" exp="" desc=""/>
+    <constraint field="spezifischepraegung_codespace" exp="" desc=""/>
+    <constraint field="spezifischepraegung" exp="" desc=""/>
+    <constraint field="vongenehmigungausgenommen" exp="" desc=""/>
+    <constraint field="flaechenschluss" exp="" desc=""/>
+    <constraint field="flussrichtung" exp="" desc=""/>
+    <constraint field="nordwinkel_uom" exp="" desc=""/>
+    <constraint field="nordwinkel" exp="" desc=""/>
+    <constraint field="vormerkung" exp="" desc=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
+  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
     <columns>
-      <column name="ogc_fid" width="-1" hidden="0" type="field"/>
-      <column name="id" width="-1" hidden="0" type="field"/>
-      <column name="description" width="-1" hidden="0" type="field"/>
-      <column name="descriptionreference_href" width="-1" hidden="0" type="field"/>
-      <column name="descriptionreference_title" width="-1" hidden="0" type="field"/>
-      <column name="descriptionreference_nilreason" width="-1" hidden="0" type="field"/>
-      <column name="identifier_codespace" width="-1" hidden="0" type="field"/>
-      <column name="identifier" width="-1" hidden="0" type="field"/>
-      <column name="uuid" width="-1" hidden="0" type="field"/>
-      <column name="text" width="-1" hidden="0" type="field"/>
-      <column name="rechtsstand" width="-1" hidden="0" type="field"/>
-      <column name="gesetzlichegrundlage_codespace" width="-1" hidden="0" type="field"/>
-      <column name="gesetzlichegrundlage" width="-1" hidden="0" type="field"/>
-      <column name="gliederung1" width="-1" hidden="0" type="field"/>
-      <column name="gliederung2" width="-1" hidden="0" type="field"/>
-      <column name="ebene" width="-1" hidden="0" type="field"/>
-      <column name="gehoertzubereich_owns" width="-1" hidden="0" type="field"/>
-      <column name="gehoertzubereich_href" width="-1" hidden="0" type="field"/>
-      <column name="gehoertzubereich_title" width="-1" hidden="0" type="field"/>
-      <column name="gehoertzubereich_nilreason" width="-1" hidden="0" type="field"/>
-      <column name="gehoertzubereich_fp_bereich_pkid" width="-1" hidden="0" type="field"/>
-      <column name="startbedingung_pkid" width="-1" hidden="0" type="field"/>
-      <column name="endebedingung_pkid" width="-1" hidden="0" type="field"/>
-      <column name="aufschrift" width="-1" hidden="0" type="field"/>
-      <column name="rechtscharakter" width="-1" hidden="0" type="field"/>
-      <column name="spezifischepraegung_codespace" width="-1" hidden="0" type="field"/>
-      <column name="spezifischepraegung" width="-1" hidden="0" type="field"/>
-      <column name="vongenehmigungausgenommen" width="-1" hidden="0" type="field"/>
-      <column name="flaechenschluss" width="-1" hidden="0" type="field"/>
-      <column name="flussrichtung" width="-1" hidden="0" type="field"/>
-      <column name="nordwinkel_uom" width="-1" hidden="0" type="field"/>
-      <column name="nordwinkel" width="-1" hidden="0" type="field"/>
-      <column name="vormerkung" width="-1" hidden="0" type="field"/>
-      <column width="-1" hidden="1" type="actions"/>
+      <column type="field" hidden="0" width="-1" name="ogc_fid"/>
+      <column type="field" hidden="0" width="-1" name="id"/>
+      <column type="field" hidden="0" width="-1" name="description"/>
+      <column type="field" hidden="0" width="-1" name="descriptionreference_href"/>
+      <column type="field" hidden="0" width="-1" name="descriptionreference_title"/>
+      <column type="field" hidden="0" width="-1" name="descriptionreference_nilreason"/>
+      <column type="field" hidden="0" width="-1" name="identifier_codespace"/>
+      <column type="field" hidden="0" width="-1" name="identifier"/>
+      <column type="field" hidden="0" width="-1" name="uuid"/>
+      <column type="field" hidden="0" width="-1" name="text"/>
+      <column type="field" hidden="0" width="-1" name="rechtsstand"/>
+      <column type="field" hidden="0" width="-1" name="gesetzlichegrundlage_codespace"/>
+      <column type="field" hidden="0" width="-1" name="gesetzlichegrundlage"/>
+      <column type="field" hidden="0" width="-1" name="gliederung1"/>
+      <column type="field" hidden="0" width="-1" name="gliederung2"/>
+      <column type="field" hidden="0" width="-1" name="ebene"/>
+      <column type="field" hidden="0" width="-1" name="gehoertzubereich_owns"/>
+      <column type="field" hidden="0" width="-1" name="gehoertzubereich_href"/>
+      <column type="field" hidden="0" width="-1" name="gehoertzubereich_title"/>
+      <column type="field" hidden="0" width="-1" name="gehoertzubereich_nilreason"/>
+      <column type="field" hidden="0" width="-1" name="gehoertzubereich_fp_bereich_pkid"/>
+      <column type="field" hidden="0" width="-1" name="startbedingung_pkid"/>
+      <column type="field" hidden="0" width="-1" name="endebedingung_pkid"/>
+      <column type="field" hidden="0" width="-1" name="aufschrift"/>
+      <column type="field" hidden="0" width="-1" name="rechtscharakter"/>
+      <column type="field" hidden="0" width="-1" name="spezifischepraegung_codespace"/>
+      <column type="field" hidden="0" width="-1" name="spezifischepraegung"/>
+      <column type="field" hidden="0" width="-1" name="vongenehmigungausgenommen"/>
+      <column type="field" hidden="0" width="-1" name="flaechenschluss"/>
+      <column type="field" hidden="0" width="-1" name="flussrichtung"/>
+      <column type="field" hidden="0" width="-1" name="nordwinkel_uom"/>
+      <column type="field" hidden="0" width="-1" name="nordwinkel"/>
+      <column type="field" hidden="0" width="-1" name="vormerkung"/>
+      <column type="actions" hidden="1" width="-1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -840,39 +841,39 @@ def my_form_open(dialog, layer, feature):
     <field name="vormerkung" editable="1"/>
   </editable>
   <labelOnTop>
-    <field name="aufschrift" labelOnTop="0"/>
-    <field name="description" labelOnTop="0"/>
-    <field name="descriptionreference_href" labelOnTop="0"/>
-    <field name="descriptionreference_nilreason" labelOnTop="0"/>
-    <field name="descriptionreference_title" labelOnTop="0"/>
-    <field name="ebene" labelOnTop="0"/>
-    <field name="endebedingung_pkid" labelOnTop="0"/>
-    <field name="flaechenschluss" labelOnTop="0"/>
-    <field name="flussrichtung" labelOnTop="0"/>
-    <field name="gehoertzubereich_fp_bereich_pkid" labelOnTop="0"/>
-    <field name="gehoertzubereich_href" labelOnTop="0"/>
-    <field name="gehoertzubereich_nilreason" labelOnTop="0"/>
-    <field name="gehoertzubereich_owns" labelOnTop="0"/>
-    <field name="gehoertzubereich_title" labelOnTop="0"/>
-    <field name="gesetzlichegrundlage" labelOnTop="0"/>
-    <field name="gesetzlichegrundlage_codespace" labelOnTop="0"/>
-    <field name="gliederung1" labelOnTop="0"/>
-    <field name="gliederung2" labelOnTop="0"/>
-    <field name="id" labelOnTop="0"/>
-    <field name="identifier" labelOnTop="0"/>
-    <field name="identifier_codespace" labelOnTop="0"/>
-    <field name="nordwinkel" labelOnTop="0"/>
-    <field name="nordwinkel_uom" labelOnTop="0"/>
-    <field name="ogc_fid" labelOnTop="0"/>
-    <field name="rechtscharakter" labelOnTop="0"/>
-    <field name="rechtsstand" labelOnTop="0"/>
-    <field name="spezifischepraegung" labelOnTop="0"/>
-    <field name="spezifischepraegung_codespace" labelOnTop="0"/>
-    <field name="startbedingung_pkid" labelOnTop="0"/>
-    <field name="text" labelOnTop="0"/>
-    <field name="uuid" labelOnTop="0"/>
-    <field name="vongenehmigungausgenommen" labelOnTop="0"/>
-    <field name="vormerkung" labelOnTop="0"/>
+    <field labelOnTop="0" name="aufschrift"/>
+    <field labelOnTop="0" name="description"/>
+    <field labelOnTop="0" name="descriptionreference_href"/>
+    <field labelOnTop="0" name="descriptionreference_nilreason"/>
+    <field labelOnTop="0" name="descriptionreference_title"/>
+    <field labelOnTop="0" name="ebene"/>
+    <field labelOnTop="0" name="endebedingung_pkid"/>
+    <field labelOnTop="0" name="flaechenschluss"/>
+    <field labelOnTop="0" name="flussrichtung"/>
+    <field labelOnTop="0" name="gehoertzubereich_fp_bereich_pkid"/>
+    <field labelOnTop="0" name="gehoertzubereich_href"/>
+    <field labelOnTop="0" name="gehoertzubereich_nilreason"/>
+    <field labelOnTop="0" name="gehoertzubereich_owns"/>
+    <field labelOnTop="0" name="gehoertzubereich_title"/>
+    <field labelOnTop="0" name="gesetzlichegrundlage"/>
+    <field labelOnTop="0" name="gesetzlichegrundlage_codespace"/>
+    <field labelOnTop="0" name="gliederung1"/>
+    <field labelOnTop="0" name="gliederung2"/>
+    <field labelOnTop="0" name="id"/>
+    <field labelOnTop="0" name="identifier"/>
+    <field labelOnTop="0" name="identifier_codespace"/>
+    <field labelOnTop="0" name="nordwinkel"/>
+    <field labelOnTop="0" name="nordwinkel_uom"/>
+    <field labelOnTop="0" name="ogc_fid"/>
+    <field labelOnTop="0" name="rechtscharakter"/>
+    <field labelOnTop="0" name="rechtsstand"/>
+    <field labelOnTop="0" name="spezifischepraegung"/>
+    <field labelOnTop="0" name="spezifischepraegung_codespace"/>
+    <field labelOnTop="0" name="startbedingung_pkid"/>
+    <field labelOnTop="0" name="text"/>
+    <field labelOnTop="0" name="uuid"/>
+    <field labelOnTop="0" name="vongenehmigungausgenommen"/>
+    <field labelOnTop="0" name="vormerkung"/>
   </labelOnTop>
   <reuseLastValue>
     <field name="aufschrift" reuseLastValue="0"/>

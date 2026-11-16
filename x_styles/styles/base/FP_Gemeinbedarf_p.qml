@@ -939,7 +939,7 @@
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
     <DiagramCategory backgroundColor="#ffffff" maxScaleDenominator="1e+08" enabled="0" scaleDependency="Area" lineSizeScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" direction="1" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" labelPlacementMethod="XHeight" minimumSize="0" spacing="0" penColor="#000000" penWidth="0" backgroundAlpha="255" spacingUnit="MM" rotationOffset="270" height="15" lineSizeType="MM" showAxis="0" spacingUnitScale="3x:0,0,0,0,0,0" diagramOrientation="Up" opacity="1" minScaleDenominator="0" width="15" penAlpha="255" barWidth="5">
-      <fontProperties style="" bold="0" underline="0" italic="0" strikethrough="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+      <fontProperties style="" bold="0" underline="0" italic="0" strikethrough="0" description="Arial,8.25,-1,5,50,0,0,0,0,0"/>
       <attribute colorOpacity="1" color="#000000" field="" label=""/>
       <axisSymbol>
         <symbol name="" alpha="1" is_animated="0" frame_rate="10" clip_to_extent="1" force_rhr="0" type="line">

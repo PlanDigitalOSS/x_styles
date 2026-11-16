@@ -588,7 +588,7 @@
     <rules key="{eb5680b3-c13b-4abc-b580-ad192a6f7f34}">
       <rule key="{b4c57810-99c4-4889-8cc7-d63ecbfd0e7f}" filter="&quot;artDerFestlegung&quot; ilike '%9999%'">
         <settings calloutType="simple">
-          <text-style fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" textOpacity="1" fontKerning="1" fontWeight="50" fontLetterSpacing="0" previewBkgrdColor="255,255,255,255" fieldName="text" fontStrikeout="0" fontItalic="0" capitalization="0" namedStyle="Standard" fontUnderline="0" fontWordSpacing="0" allowHtml="0" fontFamily="MS Shell Dlg 2" multilineHeight="1" fontSize="10" textColor="0,0,0,255" textOrientation="horizontal" fontSizeUnit="Point" isExpression="0" blendMode="0" legendString="Aa">
+          <text-style fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" textOpacity="1" fontKerning="1" fontWeight="50" fontLetterSpacing="0" previewBkgrdColor="255,255,255,255" fieldName="text" fontStrikeout="0" fontItalic="0" capitalization="0" namedStyle="Standard" fontUnderline="0" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" multilineHeight="1" fontSize="10" textColor="0,0,0,255" textOrientation="horizontal" fontSizeUnit="Point" isExpression="0" blendMode="0" legendString="Aa">
             <families/>
             <text-buffer bufferSize="1" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferDraw="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferJoinStyle="128"/>
             <text-mask maskOpacity="1" maskEnabled="0" maskType="0" maskSizeUnits="MM" maskJoinStyle="128" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSize="1.5" maskedSymbolLayers=""/>
@@ -755,7 +755,7 @@
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
     <DiagramCategory sizeScale="3x:0,0,0,0,0,0" showAxis="0" maxScaleDenominator="1e+08" scaleBasedVisibility="0" minScaleDenominator="0" lineSizeType="MM" minimumSize="0" spacingUnitScale="3x:0,0,0,0,0,0" spacingUnit="MM" scaleDependency="Area" rotationOffset="270" penColor="#000000" enabled="0" direction="1" spacing="0" penAlpha="255" opacity="1" penWidth="0" barWidth="5" sizeType="MM" backgroundAlpha="255" width="15" labelPlacementMethod="XHeight" backgroundColor="#ffffff" height="15" lineSizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up">
-      <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+      <fontProperties description="Arial,7.8,-1,5,50,0,0,0,0,0" style=""/>
       <attribute color="#000000" field="" label=""/>
       <axisSymbol>
         <symbol type="line" name="" alpha="1" clip_to_extent="1" force_rhr="0">
@@ -850,7 +850,7 @@
   </geometryOptions>
   <legend type="default-vector" showLabelLegend="0">
     <text-on-symbol>
-      <text-style fontSizeMapUnitScale="3x:0,0,0,0,0,0" textOpacity="1" fontKerning="1" fontWeight="50" fontLetterSpacing="0" previewBkgrdColor="255,255,255,255" fontStrikeout="0" fontItalic="0" capitalization="0" namedStyle="" fontUnderline="0" fontWordSpacing="0" allowHtml="0" fontFamily="MS Shell Dlg 2" multilineHeight="1" fontSize="10" textColor="0,0,0,255" textOrientation="horizontal" fontSizeUnit="Point" blendMode="0">
+      <text-style fontSizeMapUnitScale="3x:0,0,0,0,0,0" textOpacity="1" fontKerning="1" fontWeight="50" fontLetterSpacing="0" previewBkgrdColor="255,255,255,255" fontStrikeout="0" fontItalic="0" capitalization="0" namedStyle="" fontUnderline="0" fontWordSpacing="0" allowHtml="0" fontFamily="Arial" multilineHeight="1" fontSize="10" textColor="0,0,0,255" textOrientation="horizontal" fontSizeUnit="Point" blendMode="0">
         <families/>
         <text-buffer bufferSize="1" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferDraw="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferJoinStyle="128"/>
         <text-mask maskOpacity="1" maskEnabled="0" maskType="0" maskSizeUnits="MM" maskJoinStyle="128" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSize="1.5" maskedSymbolLayers=""/>

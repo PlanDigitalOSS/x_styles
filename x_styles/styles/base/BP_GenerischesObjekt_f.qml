@@ -232,7 +232,7 @@
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
     <DiagramCategory scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" showAxis="1" lineSizeScale="3x:0,0,0,0,0,0" penAlpha="255" labelPlacementMethod="XHeight" penColor="#000000" width="15" minScaleDenominator="0" backgroundColor="#ffffff" direction="0" height="15" backgroundAlpha="255" minimumSize="0" lineSizeType="MM" spacingUnit="MM" rotationOffset="270" maxScaleDenominator="1e+08" spacing="5" sizeType="MM" diagramOrientation="Up" penWidth="0" scaleBasedVisibility="0" enabled="0" spacingUnitScale="3x:0,0,0,0,0,0" opacity="1" barWidth="5">
-      <fontProperties bold="0" strikethrough="0" underline="0" style="" italic="0" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
+      <fontProperties bold="0" strikethrough="0" underline="0" style="" italic="0" description="Arial,7.8,-1,5,50,0,0,0,0,0"/>
       <axisSymbol>
         <symbol type="line" name="" clip_to_extent="1" alpha="1" is_animated="0" frame_rate="10" force_rhr="0">
           <data_defined_properties>

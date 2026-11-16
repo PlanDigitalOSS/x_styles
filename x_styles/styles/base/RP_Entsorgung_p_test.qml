@@ -316,7 +316,7 @@
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
     <DiagramCategory penWidth="0" penColor="#000000" lineSizeScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" backgroundAlpha="255" sizeScale="3x:0,0,0,0,0,0" width="15" enabled="0" height="15" maxScaleDenominator="1e+08" sizeType="MM" barWidth="5" scaleDependency="Area" labelPlacementMethod="XHeight" lineSizeType="MM" minScaleDenominator="0" minimumSize="0" penAlpha="255" rotationOffset="270" diagramOrientation="Up" opacity="1" backgroundColor="#ffffff">
-      <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+      <fontProperties description="Arial,8.25,-1,5,50,0,0,0,0,0" style=""/>
       <attribute color="#000000" field="" label=""/>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>

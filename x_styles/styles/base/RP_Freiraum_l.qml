@@ -433,7 +433,7 @@
   <layerOpacity>1</layerOpacity>
   <LinearlyInterpolatedDiagramRenderer lowerValue="0" upperWidth="5" lowerHeight="0" classificationAttributeExpression="" upperHeight="5" diagramType="Histogram" attributeLegend="1" upperValue="0" lowerWidth="0">
     <DiagramCategory maxScaleDenominator="1e+08" minScaleDenominator="0" scaleDependency="Area" enabled="0" stackedDiagramSpacing="0" width="15" penWidth="0" diagramOrientation="Up" rotationOffset="270" height="15" opacity="1" lineSizeType="MM" stackedDiagramMode="Horizontal" showAxis="1" direction="0" spacingUnitScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" lineSizeScale="3x:0,0,0,0,0,0" barWidth="5" scaleBasedVisibility="0" sizeType="MM" minimumSize="0" spacingUnit="MM" backgroundAlpha="255" stackedDiagramSpacingUnitScale="3x:0,0,0,0,0,0" stackedDiagramSpacingUnit="MM" penAlpha="255" labelPlacementMethod="XHeight" spacing="5" sizeScale="3x:0,0,0,0,0,0" penColor="#000000">
-      <fontProperties underline="0" style="" bold="0" italic="0" strikethrough="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0"/>
+      <fontProperties underline="0" style="" bold="0" italic="0" strikethrough="0" description="Arial,8.3,-1,5,50,0,0,0,0,0"/>
       <attribute colorOpacity="1" field="" color="#000000" label=""/>
       <axisSymbol>
         <symbol name="" clip_to_extent="1" type="line" force_rhr="0" frame_rate="10" alpha="1" is_animated="0">

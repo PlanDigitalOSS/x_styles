@@ -231,7 +231,7 @@
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
     <DiagramCategory maxScaleDenominator="1e+08" penAlpha="255" backgroundAlpha="255" backgroundColor="#ffffff" height="15" lineSizeType="MM" minimumSize="0" showAxis="0" enabled="0" sizeType="MM" rotationOffset="270" spacing="0" minScaleDenominator="0" penColor="#000000" labelPlacementMethod="XHeight" width="15" penWidth="0" opacity="1" scaleDependency="Area" direction="1" barWidth="5" sizeScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" lineSizeScale="3x:0,0,0,0,0,0" spacingUnitScale="3x:0,0,0,0,0,0" spacingUnit="MM" diagramOrientation="Up">
-      <fontProperties style="" description="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0"/>
+      <fontProperties style="" description="Arial,7.5,-1,5,50,0,0,0,0,0"/>
       <attribute label="" color="#000000" field=""/>
       <axisSymbol>
         <symbol clip_to_extent="1" alpha="1" force_rhr="0" name="" type="line">

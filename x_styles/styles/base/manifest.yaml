@@ -1,5 +1,5 @@
 # manifest.yaml
-# Stand 29.09.2025
+# Stand 09.09.2026
 #
 # Konfiguration des Plugins
 # Voraussetzung ist eine geladene XPlan-GML Datei.
@@ -67,8 +67,14 @@ bp_gebaeudeflaeche:
         path: BP_GebaeudeFlaeche_f.qml
         zIndex: 233        
 bp_generischesobjekt:
-    PolygonGeometry:
+    PointGeometry:
+        path: BP_GenerischesObjekt_p.qml
+        zIndex: 115
+    LineGeometry:
         path: BP_GenerischesObjekt_l.qml
+        zIndex: 121
+    PolygonGeometry:
+        path: BP_GenerischesObjekt_f.qml
         zIndex: 221
 bp_immissionsschutz:
     PointGeometry:
@@ -622,7 +628,14 @@ rp_zentralerort:
     PolygonGeometry:
         path: RP_ZentralerOrt_f.qml
         zIndex: 334
-# Klasse SO (Sonstiger Plan)  
+# Klasse SO (Sonstiger Plan)
+so_bauverbotszone:
+    LineGeometry:
+        path: SO_Bauverbotszone_l.qml
+        zIndex: 222        
+    PolygonGeometry:
+        path: SO_Bauverbotszone_f.qml
+        zIndex: 233
 so_bodenschutzrecht:
     PointGeometry:
         path: SO_Bodenschutzrecht_p.qml

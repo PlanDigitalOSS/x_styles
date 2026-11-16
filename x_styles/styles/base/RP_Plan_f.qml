@@ -795,7 +795,7 @@
   </renderer-v2>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style fontUnderline="0" fontLetterSpacing="0" fontKerning="1" allowHtml="0" multilineHeight="1" capitalization="0" textOpacity="1" previewBkgrdColor="255,255,255,255" fontFamily="MS Shell Dlg 2" fontItalic="0" fieldName="xplan_name" legendString="Aa" fontWeight="50" textOrientation="horizontal" fontSize="7" useSubstitutions="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" blendMode="0" fontSizeUnit="MM" isExpression="0" fontWordSpacing="0" textColor="0,0,0,255" namedStyle="Standard" fontStrikeout="0">
+      <text-style fontUnderline="0" fontLetterSpacing="0" fontKerning="1" allowHtml="0" multilineHeight="1" capitalization="0" textOpacity="1" previewBkgrdColor="255,255,255,255" fontFamily="Arial" fontItalic="0" fieldName="xplan_name" legendString="Aa" fontWeight="50" textOrientation="horizontal" fontSize="7" useSubstitutions="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" blendMode="0" fontSizeUnit="MM" isExpression="0" fontWordSpacing="0" textColor="0,0,0,255" namedStyle="Standard" fontStrikeout="0">
         <families/>
         <text-buffer bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0" bufferColor="255,255,255,255" bufferSize="3" bufferOpacity="1" bufferJoinStyle="128" bufferDraw="1" bufferSizeUnits="MM" bufferNoFill="0"/>
         <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskedSymbolLayers="" maskJoinStyle="128" maskType="0" maskSize="1.5" maskSizeUnits="MM" maskEnabled="0" maskOpacity="1"/>
@@ -959,7 +959,7 @@
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
     <DiagramCategory spacingUnit="MM" scaleDependency="Area" spacing="5" sizeType="MM" diagramOrientation="Up" backgroundAlpha="255" lineSizeType="MM" penWidth="0" minScaleDenominator="0" height="15" lineSizeScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" enabled="0" penColor="#000000" direction="0" opacity="1" minimumSize="0" labelPlacementMethod="XHeight" scaleBasedVisibility="0" maxScaleDenominator="1e+08" width="15" spacingUnitScale="3x:0,0,0,0,0,0" rotationOffset="270" penAlpha="255" barWidth="5" showAxis="1" sizeScale="3x:0,0,0,0,0,0">
-      <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
+      <fontProperties style="" description="Arial,7.8,-1,5,50,0,0,0,0,0"/>
       <attribute field="" label="" color="#000000"/>
       <axisSymbol>
         <symbol alpha="1" clip_to_extent="1" type="line" force_rhr="0" name="">

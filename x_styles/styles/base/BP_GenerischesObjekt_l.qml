@@ -1,89 +1,194 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyDrawingTol="1" labelsEnabled="0" symbologyReferenceScale="-1" readOnly="0" styleCategories="AllStyleCategories" version="3.22.7-Białowieża" minScale="100000000" simplifyAlgorithm="0" simplifyLocal="1" simplifyMaxScale="1" maxScale="0">
+<qgis labelsEnabled="0" simplifyDrawingHints="1" simplifyDrawingTol="1" autoRefreshMode="Disabled" symbologyReferenceScale="-1" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" simplifyAlgorithm="0" version="3.34.13-Prizren" maxScale="0" minScale="100000000" simplifyMaxScale="1" readOnly="0" autoRefreshTime="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal mode="0" startField="" durationField="" accumulate="0" enabled="0" limitMode="0" durationUnit="min" fixedDuration="0" startExpression="" endField="" endExpression="">
+  <temporal mode="0" endExpression="" durationUnit="min" fixedDuration="0" accumulate="0" endField="" durationField="ogc_fid" enabled="0" limitMode="0" startExpression="" startField="">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <renderer-v2 forceraster="0" referencescale="-1" symbollevels="0" enableorderby="0" type="singleSymbol">
-    <symbols>
-      <symbol force_rhr="0" alpha="1" clip_to_extent="1" type="line" name="0">
+  <elevation extrusionEnabled="0" zscale="1" showMarkerSymbolInSurfacePlots="0" respectLayerSymbol="1" zoffset="0" clamping="Terrain" extrusion="0" binding="Centroid" symbology="Line" type="IndividualFeatures">
+    <data-defined-properties>
+      <Option type="Map">
+        <Option value="" name="name" type="QString"/>
+        <Option name="properties"/>
+        <Option value="collection" name="type" type="QString"/>
+      </Option>
+    </data-defined-properties>
+    <profileLineSymbol>
+      <symbol alpha="1" frame_rate="10" is_animated="0" name="" clip_to_extent="1" type="line" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
-            <Option value="" type="QString" name="name"/>
+            <Option value="" name="name" type="QString"/>
             <Option name="properties"/>
-            <Option value="collection" type="QString" name="type"/>
+            <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleLine" enabled="1" pass="0" locked="0">
+        <layer locked="0" enabled="1" pass="0" id="{dd89d752-40ce-4b6a-b35f-145841786db9}" class="SimpleLine">
           <Option type="Map">
-            <Option value="0" type="QString" name="align_dash_pattern"/>
-            <Option value="square" type="QString" name="capstyle"/>
-            <Option value="5;2" type="QString" name="customdash"/>
-            <Option value="3x:0,0,0,0,0,0" type="QString" name="customdash_map_unit_scale"/>
-            <Option value="MapUnit" type="QString" name="customdash_unit"/>
-            <Option value="0" type="QString" name="dash_pattern_offset"/>
-            <Option value="3x:0,0,0,0,0,0" type="QString" name="dash_pattern_offset_map_unit_scale"/>
-            <Option value="MM" type="QString" name="dash_pattern_offset_unit"/>
-            <Option value="0" type="QString" name="draw_inside_polygon"/>
-            <Option value="bevel" type="QString" name="joinstyle"/>
-            <Option value="152,125,183,255" type="QString" name="line_color"/>
-            <Option value="solid" type="QString" name="line_style"/>
-            <Option value="3" type="QString" name="line_width"/>
-            <Option value="MapUnit" type="QString" name="line_width_unit"/>
-            <Option value="0" type="QString" name="offset"/>
-            <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
-            <Option value="MapUnit" type="QString" name="offset_unit"/>
-            <Option value="0" type="QString" name="ring_filter"/>
-            <Option value="0" type="QString" name="trim_distance_end"/>
-            <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_end_map_unit_scale"/>
-            <Option value="MM" type="QString" name="trim_distance_end_unit"/>
-            <Option value="0" type="QString" name="trim_distance_start"/>
-            <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_start_map_unit_scale"/>
-            <Option value="MM" type="QString" name="trim_distance_start_unit"/>
-            <Option value="0" type="QString" name="tweak_dash_pattern_on_corners"/>
-            <Option value="0" type="QString" name="use_custom_dash"/>
-            <Option value="3x:0,0,0,0,0,0" type="QString" name="width_map_unit_scale"/>
+            <Option value="0" name="align_dash_pattern" type="QString"/>
+            <Option value="square" name="capstyle" type="QString"/>
+            <Option value="5;2" name="customdash" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale" type="QString"/>
+            <Option value="MM" name="customdash_unit" type="QString"/>
+            <Option value="0" name="dash_pattern_offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="dash_pattern_offset_unit" type="QString"/>
+            <Option value="0" name="draw_inside_polygon" type="QString"/>
+            <Option value="bevel" name="joinstyle" type="QString"/>
+            <Option value="183,72,75,255" name="line_color" type="QString"/>
+            <Option value="solid" name="line_style" type="QString"/>
+            <Option value="0.6" name="line_width" type="QString"/>
+            <Option value="MM" name="line_width_unit" type="QString"/>
+            <Option value="0" name="offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="offset_unit" type="QString"/>
+            <Option value="0" name="ring_filter" type="QString"/>
+            <Option value="0" name="trim_distance_end" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale" type="QString"/>
+            <Option value="MM" name="trim_distance_end_unit" type="QString"/>
+            <Option value="0" name="trim_distance_start" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale" type="QString"/>
+            <Option value="MM" name="trim_distance_start_unit" type="QString"/>
+            <Option value="0" name="tweak_dash_pattern_on_corners" type="QString"/>
+            <Option value="0" name="use_custom_dash" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="width_map_unit_scale" type="QString"/>
           </Option>
-          <prop k="align_dash_pattern" v="0"/>
-          <prop k="capstyle" v="square"/>
-          <prop k="customdash" v="5;2"/>
-          <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="customdash_unit" v="MapUnit"/>
-          <prop k="dash_pattern_offset" v="0"/>
-          <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="dash_pattern_offset_unit" v="MM"/>
-          <prop k="draw_inside_polygon" v="0"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="line_color" v="152,125,183,255"/>
-          <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="3"/>
-          <prop k="line_width_unit" v="MapUnit"/>
-          <prop k="offset" v="0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MapUnit"/>
-          <prop k="ring_filter" v="0"/>
-          <prop k="trim_distance_end" v="0"/>
-          <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="trim_distance_end_unit" v="MM"/>
-          <prop k="trim_distance_start" v="0"/>
-          <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="trim_distance_start_unit" v="MM"/>
-          <prop k="tweak_dash_pattern_on_corners" v="0"/>
-          <prop k="use_custom_dash" v="0"/>
-          <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileLineSymbol>
+    <profileFillSymbol>
+      <symbol alpha="1" frame_rate="10" is_animated="0" name="" clip_to_extent="1" type="fill" force_rhr="0">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer locked="0" enabled="1" pass="0" id="{b288fe8b-e1a6-4971-9edf-6d1cf2dec72b}" class="SimpleFill">
+          <Option type="Map">
+            <Option value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale" type="QString"/>
+            <Option value="183,72,75,255" name="color" type="QString"/>
+            <Option value="bevel" name="joinstyle" type="QString"/>
+            <Option value="0,0" name="offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="offset_unit" type="QString"/>
+            <Option value="131,51,54,255" name="outline_color" type="QString"/>
+            <Option value="solid" name="outline_style" type="QString"/>
+            <Option value="0.2" name="outline_width" type="QString"/>
+            <Option value="MM" name="outline_width_unit" type="QString"/>
+            <Option value="solid" name="style" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileFillSymbol>
+    <profileMarkerSymbol>
+      <symbol alpha="1" frame_rate="10" is_animated="0" name="" clip_to_extent="1" type="marker" force_rhr="0">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer locked="0" enabled="1" pass="0" id="{2f919cfd-0474-4cda-90d1-391026731167}" class="SimpleMarker">
+          <Option type="Map">
+            <Option value="0" name="angle" type="QString"/>
+            <Option value="square" name="cap_style" type="QString"/>
+            <Option value="183,72,75,255" name="color" type="QString"/>
+            <Option value="1" name="horizontal_anchor_point" type="QString"/>
+            <Option value="bevel" name="joinstyle" type="QString"/>
+            <Option value="diamond" name="name" type="QString"/>
+            <Option value="0,0" name="offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="offset_unit" type="QString"/>
+            <Option value="131,51,54,255" name="outline_color" type="QString"/>
+            <Option value="solid" name="outline_style" type="QString"/>
+            <Option value="0.2" name="outline_width" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
+            <Option value="MM" name="outline_width_unit" type="QString"/>
+            <Option value="diameter" name="scale_method" type="QString"/>
+            <Option value="3" name="size" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="size_map_unit_scale" type="QString"/>
+            <Option value="MM" name="size_unit" type="QString"/>
+            <Option value="1" name="vertical_anchor_point" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </profileMarkerSymbol>
+  </elevation>
+  <renderer-v2 forceraster="0" referencescale="-1" symbollevels="0" type="singleSymbol" enableorderby="0">
+    <symbols>
+      <symbol alpha="1" frame_rate="10" is_animated="0" name="0" clip_to_extent="1" type="line" force_rhr="0">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer locked="0" enabled="1" pass="0" id="{5039d102-5cf9-41bb-b791-f5f421984e48}" class="SimpleLine">
+          <Option type="Map">
+            <Option value="0" name="align_dash_pattern" type="QString"/>
+            <Option value="square" name="capstyle" type="QString"/>
+            <Option value="5;2" name="customdash" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale" type="QString"/>
+            <Option value="MapUnit" name="customdash_unit" type="QString"/>
+            <Option value="0" name="dash_pattern_offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="dash_pattern_offset_unit" type="QString"/>
+            <Option value="0" name="draw_inside_polygon" type="QString"/>
+            <Option value="bevel" name="joinstyle" type="QString"/>
+            <Option value="152,125,183,255" name="line_color" type="QString"/>
+            <Option value="solid" name="line_style" type="QString"/>
+            <Option value="3" name="line_width" type="QString"/>
+            <Option value="MapUnit" name="line_width_unit" type="QString"/>
+            <Option value="0" name="offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+            <Option value="MapUnit" name="offset_unit" type="QString"/>
+            <Option value="0" name="ring_filter" type="QString"/>
+            <Option value="0" name="trim_distance_end" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale" type="QString"/>
+            <Option value="MM" name="trim_distance_end_unit" type="QString"/>
+            <Option value="0" name="trim_distance_start" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale" type="QString"/>
+            <Option value="MM" name="trim_distance_start_unit" type="QString"/>
+            <Option value="0" name="tweak_dash_pattern_on_corners" type="QString"/>
+            <Option value="0" name="use_custom_dash" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="width_map_unit_scale" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -92,12 +197,64 @@
     <rotation/>
     <sizescale/>
   </renderer-v2>
+  <selection mode="Default">
+    <selectionColor invalid="1"/>
+    <selectionSymbol>
+      <symbol alpha="1" frame_rate="10" is_animated="0" name="" clip_to_extent="1" type="line" force_rhr="0">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer locked="0" enabled="1" pass="0" id="{0f1932d1-2baf-40ed-ad92-64a88360b685}" class="SimpleLine">
+          <Option type="Map">
+            <Option value="0" name="align_dash_pattern" type="QString"/>
+            <Option value="square" name="capstyle" type="QString"/>
+            <Option value="5;2" name="customdash" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale" type="QString"/>
+            <Option value="MM" name="customdash_unit" type="QString"/>
+            <Option value="0" name="dash_pattern_offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="dash_pattern_offset_unit" type="QString"/>
+            <Option value="0" name="draw_inside_polygon" type="QString"/>
+            <Option value="bevel" name="joinstyle" type="QString"/>
+            <Option value="35,35,35,255" name="line_color" type="QString"/>
+            <Option value="solid" name="line_style" type="QString"/>
+            <Option value="0.26" name="line_width" type="QString"/>
+            <Option value="MM" name="line_width_unit" type="QString"/>
+            <Option value="0" name="offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="offset_unit" type="QString"/>
+            <Option value="0" name="ring_filter" type="QString"/>
+            <Option value="0" name="trim_distance_end" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale" type="QString"/>
+            <Option value="MM" name="trim_distance_end_unit" type="QString"/>
+            <Option value="0" name="trim_distance_start" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale" type="QString"/>
+            <Option value="MM" name="trim_distance_start_unit" type="QString"/>
+            <Option value="0" name="tweak_dash_pattern_on_corners" type="QString"/>
+            <Option value="0" name="use_custom_dash" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="width_map_unit_scale" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </selectionSymbol>
+  </selection>
   <customproperties>
     <Option type="Map">
-      <Option type="List" name="dualview/previewExpressions">
+      <Option name="dualview/previewExpressions" type="List">
         <Option value="&quot;plan_name&quot;" type="QString"/>
       </Option>
-      <Option value="0" type="int" name="embeddedWidgets/count"/>
+      <Option value="0" name="embeddedWidgets/count" type="int"/>
       <Option name="variableNames"/>
       <Option name="variableValues"/>
     </Option>
@@ -105,80 +262,54 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-    <DiagramCategory showAxis="1" minScaleDenominator="0" backgroundColor="#ffffff" penAlpha="255" maxScaleDenominator="1e+08" width="15" scaleDependency="Area" spacingUnit="MM" barWidth="5" labelPlacementMethod="XHeight" scaleBasedVisibility="0" sizeType="MM" minimumSize="0" backgroundAlpha="255" diagramOrientation="Up" direction="0" lineSizeType="MM" penWidth="0" spacingUnitScale="3x:0,0,0,0,0,0" sizeScale="3x:0,0,0,0,0,0" rotationOffset="270" opacity="1" enabled="0" height="15" spacing="5" penColor="#000000" lineSizeScale="3x:0,0,0,0,0,0">
-      <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+    <DiagramCategory minScaleDenominator="0" backgroundColor="#ffffff" penAlpha="255" lineSizeType="MM" scaleBasedVisibility="0" enabled="0" minimumSize="0" penColor="#000000" sizeType="MM" opacity="1" spacingUnitScale="3x:0,0,0,0,0,0" width="15" sizeScale="3x:0,0,0,0,0,0" height="15" barWidth="5" spacingUnit="MM" scaleDependency="Area" direction="0" penWidth="0" maxScaleDenominator="1e+08" spacing="5" rotationOffset="270" diagramOrientation="Up" showAxis="1" backgroundAlpha="255" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0">
+      <fontProperties underline="0" description="Arial,7.8,-1,5,50,0,0,0,0,0" bold="0" style="" italic="0" strikethrough="0"/>
+      <attribute color="#000000" field="" label="" colorOpacity="1"/>
       <axisSymbol>
-        <symbol force_rhr="0" alpha="1" clip_to_extent="1" type="line" name="">
+        <symbol alpha="1" frame_rate="10" is_animated="0" name="" clip_to_extent="1" type="line" force_rhr="0">
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
-          <layer class="SimpleLine" enabled="1" pass="0" locked="0">
+          <layer locked="0" enabled="1" pass="0" id="{101ccd61-efbe-4d9d-b4fe-4da5c45545fa}" class="SimpleLine">
             <Option type="Map">
-              <Option value="0" type="QString" name="align_dash_pattern"/>
-              <Option value="square" type="QString" name="capstyle"/>
-              <Option value="5;2" type="QString" name="customdash"/>
-              <Option value="3x:0,0,0,0,0,0" type="QString" name="customdash_map_unit_scale"/>
-              <Option value="MM" type="QString" name="customdash_unit"/>
-              <Option value="0" type="QString" name="dash_pattern_offset"/>
-              <Option value="3x:0,0,0,0,0,0" type="QString" name="dash_pattern_offset_map_unit_scale"/>
-              <Option value="MM" type="QString" name="dash_pattern_offset_unit"/>
-              <Option value="0" type="QString" name="draw_inside_polygon"/>
-              <Option value="bevel" type="QString" name="joinstyle"/>
-              <Option value="35,35,35,255" type="QString" name="line_color"/>
-              <Option value="solid" type="QString" name="line_style"/>
-              <Option value="0.26" type="QString" name="line_width"/>
-              <Option value="MM" type="QString" name="line_width_unit"/>
-              <Option value="0" type="QString" name="offset"/>
-              <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
-              <Option value="MM" type="QString" name="offset_unit"/>
-              <Option value="0" type="QString" name="ring_filter"/>
-              <Option value="0" type="QString" name="trim_distance_end"/>
-              <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_end_map_unit_scale"/>
-              <Option value="MM" type="QString" name="trim_distance_end_unit"/>
-              <Option value="0" type="QString" name="trim_distance_start"/>
-              <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_start_map_unit_scale"/>
-              <Option value="MM" type="QString" name="trim_distance_start_unit"/>
-              <Option value="0" type="QString" name="tweak_dash_pattern_on_corners"/>
-              <Option value="0" type="QString" name="use_custom_dash"/>
-              <Option value="3x:0,0,0,0,0,0" type="QString" name="width_map_unit_scale"/>
+              <Option value="0" name="align_dash_pattern" type="QString"/>
+              <Option value="square" name="capstyle" type="QString"/>
+              <Option value="5;2" name="customdash" type="QString"/>
+              <Option value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale" type="QString"/>
+              <Option value="MM" name="customdash_unit" type="QString"/>
+              <Option value="0" name="dash_pattern_offset" type="QString"/>
+              <Option value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale" type="QString"/>
+              <Option value="MM" name="dash_pattern_offset_unit" type="QString"/>
+              <Option value="0" name="draw_inside_polygon" type="QString"/>
+              <Option value="bevel" name="joinstyle" type="QString"/>
+              <Option value="35,35,35,255" name="line_color" type="QString"/>
+              <Option value="solid" name="line_style" type="QString"/>
+              <Option value="0.26" name="line_width" type="QString"/>
+              <Option value="MM" name="line_width_unit" type="QString"/>
+              <Option value="0" name="offset" type="QString"/>
+              <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+              <Option value="MM" name="offset_unit" type="QString"/>
+              <Option value="0" name="ring_filter" type="QString"/>
+              <Option value="0" name="trim_distance_end" type="QString"/>
+              <Option value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale" type="QString"/>
+              <Option value="MM" name="trim_distance_end_unit" type="QString"/>
+              <Option value="0" name="trim_distance_start" type="QString"/>
+              <Option value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale" type="QString"/>
+              <Option value="MM" name="trim_distance_start_unit" type="QString"/>
+              <Option value="0" name="tweak_dash_pattern_on_corners" type="QString"/>
+              <Option value="0" name="use_custom_dash" type="QString"/>
+              <Option value="3x:0,0,0,0,0,0" name="width_map_unit_scale" type="QString"/>
             </Option>
-            <prop k="align_dash_pattern" v="0"/>
-            <prop k="capstyle" v="square"/>
-            <prop k="customdash" v="5;2"/>
-            <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="customdash_unit" v="MM"/>
-            <prop k="dash_pattern_offset" v="0"/>
-            <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="dash_pattern_offset_unit" v="MM"/>
-            <prop k="draw_inside_polygon" v="0"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="line_color" v="35,35,35,255"/>
-            <prop k="line_style" v="solid"/>
-            <prop k="line_width" v="0.26"/>
-            <prop k="line_width_unit" v="MM"/>
-            <prop k="offset" v="0"/>
-            <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="ring_filter" v="0"/>
-            <prop k="trim_distance_end" v="0"/>
-            <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="trim_distance_end_unit" v="MM"/>
-            <prop k="trim_distance_start" v="0"/>
-            <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="trim_distance_start_unit" v="MM"/>
-            <prop k="tweak_dash_pattern_on_corners" v="0"/>
-            <prop k="use_custom_dash" v="0"/>
-            <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
             <data_defined_properties>
               <Option type="Map">
-                <Option value="" type="QString" name="name"/>
+                <Option value="" name="name" type="QString"/>
                 <Option name="properties"/>
-                <Option value="collection" type="QString" name="type"/>
+                <Option value="collection" name="type" type="QString"/>
               </Option>
             </data_defined_properties>
           </layer>
@@ -186,380 +317,268 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings dist="0" placement="2" linePlacementFlags="18" priority="0" zIndex="0" obstacle="0" showAll="1">
+  <DiagramLayerSettings linePlacementFlags="18" priority="0" dist="0" placement="2" obstacle="0" zIndex="0" showAll="1">
     <properties>
       <Option type="Map">
-        <Option value="" type="QString" name="name"/>
+        <Option value="" name="name" type="QString"/>
         <Option name="properties"/>
-        <Option value="collection" type="QString" name="type"/>
+        <Option value="collection" name="type" type="QString"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
   <legend showLabelLegend="0" type="default-vector"/>
   <referencedLayers/>
   <fieldConfiguration>
-    <field configurationFlags="None" name="plan_name">
+    <field name="ogc_fid" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="stelle_id">
+    <field name="id" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="aufschrift">
+    <field name="description" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="created_at">
+    <field name="descriptionreference_href" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="ebene">
+    <field name="descriptionreference_title" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="endebedingung">
+    <field name="descriptionreference_nilreason" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="endebedingung_dt">
+    <field name="identifier_codespace" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="externereferenz">
+    <field name="identifier" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="externereferenz_dt">
+    <field name="uuid" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="flaechenschluss">
+    <field name="text" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="flussrichtung">
+    <field name="rechtsstand" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="gehoertzubereich">
+    <field name="gesetzlichegrundlage_codespace" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="gesetzlichegrundlage">
+    <field name="gesetzlichegrundlage" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="gesetzlichegrundlage_id">
+    <field name="gliederung1" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="gesetzlichegrundlage_text">
+    <field name="gliederung2" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="gliederung1">
+    <field name="ebene" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="gliederung2">
+    <field name="gehoertzubereich_owns" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="gml_id">
+    <field name="gehoertzubereich_href" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="hatgenerattribut">
+    <field name="gehoertzubereich_title" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="hatgenerattribut_dt">
+    <field name="gehoertzubereich_nilreason" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="hoehenangabe">
+    <field name="gehoertzubereich_fp_bereich_pkid" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="hoehenangabe_dt">
+    <field name="startbedingung_pkid" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="konvertierung_id">
+    <field name="endebedingung_pkid" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="laermkontingent">
+    <field name="aufschrift" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="laermkontingent_dt">
+    <field name="rechtscharakter" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="laermkontingentgebiet">
+    <field name="laermkonting_bp_emissionskonlaerm_bp_emissionskontlaerm_pkid" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="laermkontingentgebiet_dt">
+    <field name="laermkonti_bp_emissionsklaerm_bp_emissionskolaermgebiet_pkid" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="nordwinkel">
+    <field name="zusatzkontingent_owns" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rechtscharakter">
+    <field name="zusatzkontingent_href" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rechtscharakter_text">
+    <field name="zusatzkontingent_title" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rechtsstand">
+    <field name="zusatzkontingent_nilreason" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rechtsstand_text">
+    <field name="zusatzkontingent_pkid" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="refbegruendunginhalt">
+    <field name="flaechenschluss" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="reftextinhalt">
+    <field name="flussrichtung" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="richtungssektorgrenze">
+    <field name="nordwinkel_uom" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="startbedingung">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="startbedingung_dt">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="text">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="updated_at">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="user_id">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="uuid">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="wirdausgeglichendurchabe">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="wirdausgeglichendurchflaeche">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="wirdausgeglichendurchmassnahme">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="wirdausgeglichendurchspeflaeche">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="wirdausgeglichendurchspemassnahme">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="wirddargestelltdurch">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="zusatzkontingent">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="zusatzkontingentflaeche">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="zweckbestimmung">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="zweckbestimmung_id">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="zweckbestimmung_text">
+    <field name="nordwinkel" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -568,280 +587,238 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="plan_name" index="0" name=""/>
-    <alias field="stelle_id" index="1" name=""/>
-    <alias field="aufschrift" index="2" name=""/>
-    <alias field="created_at" index="3" name=""/>
-    <alias field="ebene" index="4" name=""/>
-    <alias field="endebedingung" index="5" name=""/>
-    <alias field="endebedingung_dt" index="6" name=""/>
-    <alias field="externereferenz" index="7" name=""/>
-    <alias field="externereferenz_dt" index="8" name=""/>
-    <alias field="flaechenschluss" index="9" name=""/>
-    <alias field="flussrichtung" index="10" name=""/>
-    <alias field="gehoertzubereich" index="11" name=""/>
-    <alias field="gesetzlichegrundlage" index="12" name=""/>
-    <alias field="gesetzlichegrundlage_id" index="13" name=""/>
-    <alias field="gesetzlichegrundlage_text" index="14" name=""/>
-    <alias field="gliederung1" index="15" name=""/>
-    <alias field="gliederung2" index="16" name=""/>
-    <alias field="gml_id" index="17" name=""/>
-    <alias field="hatgenerattribut" index="18" name=""/>
-    <alias field="hatgenerattribut_dt" index="19" name=""/>
-    <alias field="hoehenangabe" index="20" name=""/>
-    <alias field="hoehenangabe_dt" index="21" name=""/>
-    <alias field="konvertierung_id" index="22" name=""/>
-    <alias field="laermkontingent" index="23" name=""/>
-    <alias field="laermkontingent_dt" index="24" name=""/>
-    <alias field="laermkontingentgebiet" index="25" name=""/>
-    <alias field="laermkontingentgebiet_dt" index="26" name=""/>
-    <alias field="nordwinkel" index="27" name=""/>
-    <alias field="rechtscharakter" index="28" name=""/>
-    <alias field="rechtscharakter_text" index="29" name=""/>
-    <alias field="rechtsstand" index="30" name=""/>
-    <alias field="rechtsstand_text" index="31" name=""/>
-    <alias field="refbegruendunginhalt" index="32" name=""/>
-    <alias field="reftextinhalt" index="33" name=""/>
-    <alias field="richtungssektorgrenze" index="34" name=""/>
-    <alias field="startbedingung" index="35" name=""/>
-    <alias field="startbedingung_dt" index="36" name=""/>
-    <alias field="text" index="37" name=""/>
-    <alias field="updated_at" index="38" name=""/>
-    <alias field="user_id" index="39" name=""/>
-    <alias field="uuid" index="40" name=""/>
-    <alias field="wirdausgeglichendurchabe" index="41" name=""/>
-    <alias field="wirdausgeglichendurchflaeche" index="42" name=""/>
-    <alias field="wirdausgeglichendurchmassnahme" index="43" name=""/>
-    <alias field="wirdausgeglichendurchspeflaeche" index="44" name=""/>
-    <alias field="wirdausgeglichendurchspemassnahme" index="45" name=""/>
-    <alias field="wirddargestelltdurch" index="46" name=""/>
-    <alias field="zusatzkontingent" index="47" name=""/>
-    <alias field="zusatzkontingentflaeche" index="48" name=""/>
-    <alias field="zweckbestimmung" index="49" name=""/>
-    <alias field="zweckbestimmung_id" index="50" name=""/>
-    <alias field="zweckbestimmung_text" index="51" name=""/>
+    <alias index="0" field="ogc_fid" name=""/>
+    <alias index="1" field="id" name=""/>
+    <alias index="2" field="description" name=""/>
+    <alias index="3" field="descriptionreference_href" name=""/>
+    <alias index="4" field="descriptionreference_title" name=""/>
+    <alias index="5" field="descriptionreference_nilreason" name=""/>
+    <alias index="6" field="identifier_codespace" name=""/>
+    <alias index="7" field="identifier" name=""/>
+    <alias index="8" field="uuid" name=""/>
+    <alias index="9" field="text" name=""/>
+    <alias index="10" field="rechtsstand" name=""/>
+    <alias index="11" field="gesetzlichegrundlage_codespace" name=""/>
+    <alias index="12" field="gesetzlichegrundlage" name=""/>
+    <alias index="13" field="gliederung1" name=""/>
+    <alias index="14" field="gliederung2" name=""/>
+    <alias index="15" field="ebene" name=""/>
+    <alias index="16" field="gehoertzubereich_owns" name=""/>
+    <alias index="17" field="gehoertzubereich_href" name=""/>
+    <alias index="18" field="gehoertzubereich_title" name=""/>
+    <alias index="19" field="gehoertzubereich_nilreason" name=""/>
+    <alias index="20" field="gehoertzubereich_fp_bereich_pkid" name=""/>
+    <alias index="21" field="startbedingung_pkid" name=""/>
+    <alias index="22" field="endebedingung_pkid" name=""/>
+    <alias index="23" field="aufschrift" name=""/>
+    <alias index="24" field="rechtscharakter" name=""/>
+    <alias index="25" field="laermkonting_bp_emissionskonlaerm_bp_emissionskontlaerm_pkid" name=""/>
+    <alias index="26" field="laermkonti_bp_emissionsklaerm_bp_emissionskolaermgebiet_pkid" name=""/>
+    <alias index="27" field="zusatzkontingent_owns" name=""/>
+    <alias index="28" field="zusatzkontingent_href" name=""/>
+    <alias index="29" field="zusatzkontingent_title" name=""/>
+    <alias index="30" field="zusatzkontingent_nilreason" name=""/>
+    <alias index="31" field="zusatzkontingent_pkid" name=""/>
+    <alias index="32" field="flaechenschluss" name=""/>
+    <alias index="33" field="flussrichtung" name=""/>
+    <alias index="34" field="nordwinkel_uom" name=""/>
+    <alias index="35" field="nordwinkel" name=""/>
   </aliases>
+  <splitPolicies>
+    <policy policy="Duplicate" field="ogc_fid"/>
+    <policy policy="Duplicate" field="id"/>
+    <policy policy="Duplicate" field="description"/>
+    <policy policy="Duplicate" field="descriptionreference_href"/>
+    <policy policy="Duplicate" field="descriptionreference_title"/>
+    <policy policy="Duplicate" field="descriptionreference_nilreason"/>
+    <policy policy="Duplicate" field="identifier_codespace"/>
+    <policy policy="Duplicate" field="identifier"/>
+    <policy policy="Duplicate" field="uuid"/>
+    <policy policy="Duplicate" field="text"/>
+    <policy policy="Duplicate" field="rechtsstand"/>
+    <policy policy="Duplicate" field="gesetzlichegrundlage_codespace"/>
+    <policy policy="Duplicate" field="gesetzlichegrundlage"/>
+    <policy policy="Duplicate" field="gliederung1"/>
+    <policy policy="Duplicate" field="gliederung2"/>
+    <policy policy="Duplicate" field="ebene"/>
+    <policy policy="Duplicate" field="gehoertzubereich_owns"/>
+    <policy policy="Duplicate" field="gehoertzubereich_href"/>
+    <policy policy="Duplicate" field="gehoertzubereich_title"/>
+    <policy policy="Duplicate" field="gehoertzubereich_nilreason"/>
+    <policy policy="Duplicate" field="gehoertzubereich_fp_bereich_pkid"/>
+    <policy policy="Duplicate" field="startbedingung_pkid"/>
+    <policy policy="Duplicate" field="endebedingung_pkid"/>
+    <policy policy="Duplicate" field="aufschrift"/>
+    <policy policy="Duplicate" field="rechtscharakter"/>
+    <policy policy="Duplicate" field="laermkonting_bp_emissionskonlaerm_bp_emissionskontlaerm_pkid"/>
+    <policy policy="Duplicate" field="laermkonti_bp_emissionsklaerm_bp_emissionskolaermgebiet_pkid"/>
+    <policy policy="Duplicate" field="zusatzkontingent_owns"/>
+    <policy policy="Duplicate" field="zusatzkontingent_href"/>
+    <policy policy="Duplicate" field="zusatzkontingent_title"/>
+    <policy policy="Duplicate" field="zusatzkontingent_nilreason"/>
+    <policy policy="Duplicate" field="zusatzkontingent_pkid"/>
+    <policy policy="Duplicate" field="flaechenschluss"/>
+    <policy policy="Duplicate" field="flussrichtung"/>
+    <policy policy="Duplicate" field="nordwinkel_uom"/>
+    <policy policy="Duplicate" field="nordwinkel"/>
+  </splitPolicies>
   <defaults>
-    <default field="plan_name" expression="" applyOnUpdate="0"/>
-    <default field="stelle_id" expression="" applyOnUpdate="0"/>
-    <default field="aufschrift" expression="" applyOnUpdate="0"/>
-    <default field="created_at" expression="" applyOnUpdate="0"/>
-    <default field="ebene" expression="" applyOnUpdate="0"/>
-    <default field="endebedingung" expression="" applyOnUpdate="0"/>
-    <default field="endebedingung_dt" expression="" applyOnUpdate="0"/>
-    <default field="externereferenz" expression="" applyOnUpdate="0"/>
-    <default field="externereferenz_dt" expression="" applyOnUpdate="0"/>
-    <default field="flaechenschluss" expression="" applyOnUpdate="0"/>
-    <default field="flussrichtung" expression="" applyOnUpdate="0"/>
-    <default field="gehoertzubereich" expression="" applyOnUpdate="0"/>
-    <default field="gesetzlichegrundlage" expression="" applyOnUpdate="0"/>
-    <default field="gesetzlichegrundlage_id" expression="" applyOnUpdate="0"/>
-    <default field="gesetzlichegrundlage_text" expression="" applyOnUpdate="0"/>
-    <default field="gliederung1" expression="" applyOnUpdate="0"/>
-    <default field="gliederung2" expression="" applyOnUpdate="0"/>
-    <default field="gml_id" expression="" applyOnUpdate="0"/>
-    <default field="hatgenerattribut" expression="" applyOnUpdate="0"/>
-    <default field="hatgenerattribut_dt" expression="" applyOnUpdate="0"/>
-    <default field="hoehenangabe" expression="" applyOnUpdate="0"/>
-    <default field="hoehenangabe_dt" expression="" applyOnUpdate="0"/>
-    <default field="konvertierung_id" expression="" applyOnUpdate="0"/>
-    <default field="laermkontingent" expression="" applyOnUpdate="0"/>
-    <default field="laermkontingent_dt" expression="" applyOnUpdate="0"/>
-    <default field="laermkontingentgebiet" expression="" applyOnUpdate="0"/>
-    <default field="laermkontingentgebiet_dt" expression="" applyOnUpdate="0"/>
-    <default field="nordwinkel" expression="" applyOnUpdate="0"/>
-    <default field="rechtscharakter" expression="" applyOnUpdate="0"/>
-    <default field="rechtscharakter_text" expression="" applyOnUpdate="0"/>
-    <default field="rechtsstand" expression="" applyOnUpdate="0"/>
-    <default field="rechtsstand_text" expression="" applyOnUpdate="0"/>
-    <default field="refbegruendunginhalt" expression="" applyOnUpdate="0"/>
-    <default field="reftextinhalt" expression="" applyOnUpdate="0"/>
-    <default field="richtungssektorgrenze" expression="" applyOnUpdate="0"/>
-    <default field="startbedingung" expression="" applyOnUpdate="0"/>
-    <default field="startbedingung_dt" expression="" applyOnUpdate="0"/>
-    <default field="text" expression="" applyOnUpdate="0"/>
-    <default field="updated_at" expression="" applyOnUpdate="0"/>
-    <default field="user_id" expression="" applyOnUpdate="0"/>
-    <default field="uuid" expression="" applyOnUpdate="0"/>
-    <default field="wirdausgeglichendurchabe" expression="" applyOnUpdate="0"/>
-    <default field="wirdausgeglichendurchflaeche" expression="" applyOnUpdate="0"/>
-    <default field="wirdausgeglichendurchmassnahme" expression="" applyOnUpdate="0"/>
-    <default field="wirdausgeglichendurchspeflaeche" expression="" applyOnUpdate="0"/>
-    <default field="wirdausgeglichendurchspemassnahme" expression="" applyOnUpdate="0"/>
-    <default field="wirddargestelltdurch" expression="" applyOnUpdate="0"/>
-    <default field="zusatzkontingent" expression="" applyOnUpdate="0"/>
-    <default field="zusatzkontingentflaeche" expression="" applyOnUpdate="0"/>
-    <default field="zweckbestimmung" expression="" applyOnUpdate="0"/>
-    <default field="zweckbestimmung_id" expression="" applyOnUpdate="0"/>
-    <default field="zweckbestimmung_text" expression="" applyOnUpdate="0"/>
+    <default expression="" applyOnUpdate="0" field="ogc_fid"/>
+    <default expression="" applyOnUpdate="0" field="id"/>
+    <default expression="" applyOnUpdate="0" field="description"/>
+    <default expression="" applyOnUpdate="0" field="descriptionreference_href"/>
+    <default expression="" applyOnUpdate="0" field="descriptionreference_title"/>
+    <default expression="" applyOnUpdate="0" field="descriptionreference_nilreason"/>
+    <default expression="" applyOnUpdate="0" field="identifier_codespace"/>
+    <default expression="" applyOnUpdate="0" field="identifier"/>
+    <default expression="" applyOnUpdate="0" field="uuid"/>
+    <default expression="" applyOnUpdate="0" field="text"/>
+    <default expression="" applyOnUpdate="0" field="rechtsstand"/>
+    <default expression="" applyOnUpdate="0" field="gesetzlichegrundlage_codespace"/>
+    <default expression="" applyOnUpdate="0" field="gesetzlichegrundlage"/>
+    <default expression="" applyOnUpdate="0" field="gliederung1"/>
+    <default expression="" applyOnUpdate="0" field="gliederung2"/>
+    <default expression="" applyOnUpdate="0" field="ebene"/>
+    <default expression="" applyOnUpdate="0" field="gehoertzubereich_owns"/>
+    <default expression="" applyOnUpdate="0" field="gehoertzubereich_href"/>
+    <default expression="" applyOnUpdate="0" field="gehoertzubereich_title"/>
+    <default expression="" applyOnUpdate="0" field="gehoertzubereich_nilreason"/>
+    <default expression="" applyOnUpdate="0" field="gehoertzubereich_fp_bereich_pkid"/>
+    <default expression="" applyOnUpdate="0" field="startbedingung_pkid"/>
+    <default expression="" applyOnUpdate="0" field="endebedingung_pkid"/>
+    <default expression="" applyOnUpdate="0" field="aufschrift"/>
+    <default expression="" applyOnUpdate="0" field="rechtscharakter"/>
+    <default expression="" applyOnUpdate="0" field="laermkonting_bp_emissionskonlaerm_bp_emissionskontlaerm_pkid"/>
+    <default expression="" applyOnUpdate="0" field="laermkonti_bp_emissionsklaerm_bp_emissionskolaermgebiet_pkid"/>
+    <default expression="" applyOnUpdate="0" field="zusatzkontingent_owns"/>
+    <default expression="" applyOnUpdate="0" field="zusatzkontingent_href"/>
+    <default expression="" applyOnUpdate="0" field="zusatzkontingent_title"/>
+    <default expression="" applyOnUpdate="0" field="zusatzkontingent_nilreason"/>
+    <default expression="" applyOnUpdate="0" field="zusatzkontingent_pkid"/>
+    <default expression="" applyOnUpdate="0" field="flaechenschluss"/>
+    <default expression="" applyOnUpdate="0" field="flussrichtung"/>
+    <default expression="" applyOnUpdate="0" field="nordwinkel_uom"/>
+    <default expression="" applyOnUpdate="0" field="nordwinkel"/>
   </defaults>
   <constraints>
-    <constraint field="plan_name" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="stelle_id" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="aufschrift" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="created_at" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="ebene" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="endebedingung" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="endebedingung_dt" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="externereferenz" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="externereferenz_dt" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="flaechenschluss" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="flussrichtung" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="gehoertzubereich" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="gesetzlichegrundlage" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="gesetzlichegrundlage_id" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="gesetzlichegrundlage_text" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="gliederung1" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="gliederung2" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="gml_id" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="hatgenerattribut" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="hatgenerattribut_dt" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="hoehenangabe" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="hoehenangabe_dt" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="konvertierung_id" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="laermkontingent" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="laermkontingent_dt" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="laermkontingentgebiet" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="laermkontingentgebiet_dt" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="nordwinkel" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="rechtscharakter" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="rechtscharakter_text" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="rechtsstand" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="rechtsstand_text" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="refbegruendunginhalt" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="reftextinhalt" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="richtungssektorgrenze" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="startbedingung" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="startbedingung_dt" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="text" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="updated_at" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="user_id" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="uuid" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="wirdausgeglichendurchabe" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="wirdausgeglichendurchflaeche" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="wirdausgeglichendurchmassnahme" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="wirdausgeglichendurchspeflaeche" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="wirdausgeglichendurchspemassnahme" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="wirddargestelltdurch" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="zusatzkontingent" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="zusatzkontingentflaeche" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="zweckbestimmung" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="zweckbestimmung_id" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint field="zweckbestimmung_text" constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="1" exp_strength="0" field="ogc_fid" constraints="3" notnull_strength="1"/>
+    <constraint unique_strength="0" exp_strength="0" field="id" constraints="1" notnull_strength="1"/>
+    <constraint unique_strength="0" exp_strength="0" field="description" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="descriptionreference_href" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="descriptionreference_title" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="descriptionreference_nilreason" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="identifier_codespace" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="identifier" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="uuid" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="text" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="rechtsstand" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="gesetzlichegrundlage_codespace" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="gesetzlichegrundlage" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="gliederung1" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="gliederung2" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="ebene" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="gehoertzubereich_owns" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="gehoertzubereich_href" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="gehoertzubereich_title" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="gehoertzubereich_nilreason" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="gehoertzubereich_fp_bereich_pkid" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="startbedingung_pkid" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="endebedingung_pkid" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="aufschrift" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="rechtscharakter" constraints="1" notnull_strength="1"/>
+    <constraint unique_strength="0" exp_strength="0" field="laermkonting_bp_emissionskonlaerm_bp_emissionskontlaerm_pkid" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="laermkonti_bp_emissionsklaerm_bp_emissionskolaermgebiet_pkid" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="zusatzkontingent_owns" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="zusatzkontingent_href" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="zusatzkontingent_title" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="zusatzkontingent_nilreason" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="zusatzkontingent_pkid" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="flaechenschluss" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="flussrichtung" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="nordwinkel_uom" constraints="0" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" field="nordwinkel" constraints="0" notnull_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="plan_name" desc="" exp=""/>
-    <constraint field="stelle_id" desc="" exp=""/>
-    <constraint field="aufschrift" desc="" exp=""/>
-    <constraint field="created_at" desc="" exp=""/>
-    <constraint field="ebene" desc="" exp=""/>
-    <constraint field="endebedingung" desc="" exp=""/>
-    <constraint field="endebedingung_dt" desc="" exp=""/>
-    <constraint field="externereferenz" desc="" exp=""/>
-    <constraint field="externereferenz_dt" desc="" exp=""/>
-    <constraint field="flaechenschluss" desc="" exp=""/>
-    <constraint field="flussrichtung" desc="" exp=""/>
-    <constraint field="gehoertzubereich" desc="" exp=""/>
-    <constraint field="gesetzlichegrundlage" desc="" exp=""/>
-    <constraint field="gesetzlichegrundlage_id" desc="" exp=""/>
-    <constraint field="gesetzlichegrundlage_text" desc="" exp=""/>
-    <constraint field="gliederung1" desc="" exp=""/>
-    <constraint field="gliederung2" desc="" exp=""/>
-    <constraint field="gml_id" desc="" exp=""/>
-    <constraint field="hatgenerattribut" desc="" exp=""/>
-    <constraint field="hatgenerattribut_dt" desc="" exp=""/>
-    <constraint field="hoehenangabe" desc="" exp=""/>
-    <constraint field="hoehenangabe_dt" desc="" exp=""/>
-    <constraint field="konvertierung_id" desc="" exp=""/>
-    <constraint field="laermkontingent" desc="" exp=""/>
-    <constraint field="laermkontingent_dt" desc="" exp=""/>
-    <constraint field="laermkontingentgebiet" desc="" exp=""/>
-    <constraint field="laermkontingentgebiet_dt" desc="" exp=""/>
-    <constraint field="nordwinkel" desc="" exp=""/>
-    <constraint field="rechtscharakter" desc="" exp=""/>
-    <constraint field="rechtscharakter_text" desc="" exp=""/>
-    <constraint field="rechtsstand" desc="" exp=""/>
-    <constraint field="rechtsstand_text" desc="" exp=""/>
-    <constraint field="refbegruendunginhalt" desc="" exp=""/>
-    <constraint field="reftextinhalt" desc="" exp=""/>
-    <constraint field="richtungssektorgrenze" desc="" exp=""/>
-    <constraint field="startbedingung" desc="" exp=""/>
-    <constraint field="startbedingung_dt" desc="" exp=""/>
-    <constraint field="text" desc="" exp=""/>
-    <constraint field="updated_at" desc="" exp=""/>
-    <constraint field="user_id" desc="" exp=""/>
-    <constraint field="uuid" desc="" exp=""/>
-    <constraint field="wirdausgeglichendurchabe" desc="" exp=""/>
-    <constraint field="wirdausgeglichendurchflaeche" desc="" exp=""/>
-    <constraint field="wirdausgeglichendurchmassnahme" desc="" exp=""/>
-    <constraint field="wirdausgeglichendurchspeflaeche" desc="" exp=""/>
-    <constraint field="wirdausgeglichendurchspemassnahme" desc="" exp=""/>
-    <constraint field="wirddargestelltdurch" desc="" exp=""/>
-    <constraint field="zusatzkontingent" desc="" exp=""/>
-    <constraint field="zusatzkontingentflaeche" desc="" exp=""/>
-    <constraint field="zweckbestimmung" desc="" exp=""/>
-    <constraint field="zweckbestimmung_id" desc="" exp=""/>
-    <constraint field="zweckbestimmung_text" desc="" exp=""/>
+    <constraint desc="" field="ogc_fid" exp=""/>
+    <constraint desc="" field="id" exp=""/>
+    <constraint desc="" field="description" exp=""/>
+    <constraint desc="" field="descriptionreference_href" exp=""/>
+    <constraint desc="" field="descriptionreference_title" exp=""/>
+    <constraint desc="" field="descriptionreference_nilreason" exp=""/>
+    <constraint desc="" field="identifier_codespace" exp=""/>
+    <constraint desc="" field="identifier" exp=""/>
+    <constraint desc="" field="uuid" exp=""/>
+    <constraint desc="" field="text" exp=""/>
+    <constraint desc="" field="rechtsstand" exp=""/>
+    <constraint desc="" field="gesetzlichegrundlage_codespace" exp=""/>
+    <constraint desc="" field="gesetzlichegrundlage" exp=""/>
+    <constraint desc="" field="gliederung1" exp=""/>
+    <constraint desc="" field="gliederung2" exp=""/>
+    <constraint desc="" field="ebene" exp=""/>
+    <constraint desc="" field="gehoertzubereich_owns" exp=""/>
+    <constraint desc="" field="gehoertzubereich_href" exp=""/>
+    <constraint desc="" field="gehoertzubereich_title" exp=""/>
+    <constraint desc="" field="gehoertzubereich_nilreason" exp=""/>
+    <constraint desc="" field="gehoertzubereich_fp_bereich_pkid" exp=""/>
+    <constraint desc="" field="startbedingung_pkid" exp=""/>
+    <constraint desc="" field="endebedingung_pkid" exp=""/>
+    <constraint desc="" field="aufschrift" exp=""/>
+    <constraint desc="" field="rechtscharakter" exp=""/>
+    <constraint desc="" field="laermkonting_bp_emissionskonlaerm_bp_emissionskontlaerm_pkid" exp=""/>
+    <constraint desc="" field="laermkonti_bp_emissionsklaerm_bp_emissionskolaermgebiet_pkid" exp=""/>
+    <constraint desc="" field="zusatzkontingent_owns" exp=""/>
+    <constraint desc="" field="zusatzkontingent_href" exp=""/>
+    <constraint desc="" field="zusatzkontingent_title" exp=""/>
+    <constraint desc="" field="zusatzkontingent_nilreason" exp=""/>
+    <constraint desc="" field="zusatzkontingent_pkid" exp=""/>
+    <constraint desc="" field="flaechenschluss" exp=""/>
+    <constraint desc="" field="flussrichtung" exp=""/>
+    <constraint desc="" field="nordwinkel_uom" exp=""/>
+    <constraint desc="" field="nordwinkel" exp=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
   <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
     <columns>
-      <column width="-1" type="field" name="plan_name" hidden="0"/>
-      <column width="-1" type="field" name="stelle_id" hidden="0"/>
-      <column width="-1" type="field" name="aufschrift" hidden="0"/>
-      <column width="-1" type="field" name="created_at" hidden="0"/>
-      <column width="-1" type="field" name="ebene" hidden="0"/>
-      <column width="-1" type="field" name="endebedingung" hidden="0"/>
-      <column width="-1" type="field" name="endebedingung_dt" hidden="0"/>
-      <column width="-1" type="field" name="externereferenz" hidden="0"/>
-      <column width="-1" type="field" name="externereferenz_dt" hidden="0"/>
-      <column width="-1" type="field" name="flaechenschluss" hidden="0"/>
-      <column width="-1" type="field" name="flussrichtung" hidden="0"/>
-      <column width="-1" type="field" name="gehoertzubereich" hidden="0"/>
-      <column width="-1" type="field" name="gesetzlichegrundlage" hidden="0"/>
-      <column width="-1" type="field" name="gesetzlichegrundlage_id" hidden="0"/>
-      <column width="-1" type="field" name="gesetzlichegrundlage_text" hidden="0"/>
-      <column width="-1" type="field" name="gliederung1" hidden="0"/>
-      <column width="-1" type="field" name="gliederung2" hidden="0"/>
-      <column width="-1" type="field" name="gml_id" hidden="0"/>
-      <column width="-1" type="field" name="hatgenerattribut" hidden="0"/>
-      <column width="-1" type="field" name="hatgenerattribut_dt" hidden="0"/>
-      <column width="-1" type="field" name="hoehenangabe" hidden="0"/>
-      <column width="-1" type="field" name="hoehenangabe_dt" hidden="0"/>
-      <column width="-1" type="field" name="konvertierung_id" hidden="0"/>
-      <column width="-1" type="field" name="laermkontingent" hidden="0"/>
-      <column width="-1" type="field" name="laermkontingent_dt" hidden="0"/>
-      <column width="-1" type="field" name="laermkontingentgebiet" hidden="0"/>
-      <column width="-1" type="field" name="laermkontingentgebiet_dt" hidden="0"/>
-      <column width="-1" type="field" name="nordwinkel" hidden="0"/>
-      <column width="-1" type="field" name="rechtscharakter" hidden="0"/>
-      <column width="-1" type="field" name="rechtscharakter_text" hidden="0"/>
-      <column width="-1" type="field" name="rechtsstand" hidden="0"/>
-      <column width="-1" type="field" name="rechtsstand_text" hidden="0"/>
-      <column width="-1" type="field" name="refbegruendunginhalt" hidden="0"/>
-      <column width="-1" type="field" name="reftextinhalt" hidden="0"/>
-      <column width="-1" type="field" name="richtungssektorgrenze" hidden="0"/>
-      <column width="-1" type="field" name="startbedingung" hidden="0"/>
-      <column width="-1" type="field" name="startbedingung_dt" hidden="0"/>
-      <column width="-1" type="field" name="text" hidden="0"/>
-      <column width="-1" type="field" name="updated_at" hidden="0"/>
-      <column width="-1" type="field" name="user_id" hidden="0"/>
-      <column width="-1" type="field" name="uuid" hidden="0"/>
-      <column width="-1" type="field" name="wirdausgeglichendurchabe" hidden="0"/>
-      <column width="-1" type="field" name="wirdausgeglichendurchflaeche" hidden="0"/>
-      <column width="-1" type="field" name="wirdausgeglichendurchmassnahme" hidden="0"/>
-      <column width="-1" type="field" name="wirdausgeglichendurchspeflaeche" hidden="0"/>
-      <column width="-1" type="field" name="wirdausgeglichendurchspemassnahme" hidden="0"/>
-      <column width="-1" type="field" name="wirddargestelltdurch" hidden="0"/>
-      <column width="-1" type="field" name="zusatzkontingent" hidden="0"/>
-      <column width="-1" type="field" name="zusatzkontingentflaeche" hidden="0"/>
-      <column width="-1" type="field" name="zweckbestimmung" hidden="0"/>
-      <column width="-1" type="field" name="zweckbestimmung_id" hidden="0"/>
-      <column width="-1" type="field" name="zweckbestimmung_text" hidden="0"/>
-      <column width="-1" type="actions" hidden="1"/>
+      <column hidden="0" width="-1" name="aufschrift" type="field"/>
+      <column hidden="0" width="-1" name="ebene" type="field"/>
+      <column hidden="0" width="-1" name="flaechenschluss" type="field"/>
+      <column hidden="0" width="-1" name="flussrichtung" type="field"/>
+      <column hidden="0" width="-1" name="gesetzlichegrundlage" type="field"/>
+      <column hidden="0" width="-1" name="gliederung1" type="field"/>
+      <column hidden="0" width="-1" name="gliederung2" type="field"/>
+      <column hidden="0" width="-1" name="nordwinkel" type="field"/>
+      <column hidden="0" width="-1" name="rechtscharakter" type="field"/>
+      <column hidden="0" width="-1" name="rechtsstand" type="field"/>
+      <column hidden="0" width="-1" name="text" type="field"/>
+      <column hidden="0" width="-1" name="uuid" type="field"/>
+      <column hidden="0" width="-1" name="ogc_fid" type="field"/>
+      <column hidden="0" width="-1" name="id" type="field"/>
+      <column hidden="0" width="-1" name="description" type="field"/>
+      <column hidden="0" width="-1" name="descriptionreference_href" type="field"/>
+      <column hidden="0" width="-1" name="descriptionreference_title" type="field"/>
+      <column hidden="0" width="-1" name="descriptionreference_nilreason" type="field"/>
+      <column hidden="0" width="-1" name="identifier_codespace" type="field"/>
+      <column hidden="0" width="-1" name="identifier" type="field"/>
+      <column hidden="0" width="-1" name="gesetzlichegrundlage_codespace" type="field"/>
+      <column hidden="0" width="-1" name="gehoertzubereich_owns" type="field"/>
+      <column hidden="0" width="-1" name="gehoertzubereich_href" type="field"/>
+      <column hidden="0" width="-1" name="gehoertzubereich_title" type="field"/>
+      <column hidden="0" width="-1" name="gehoertzubereich_nilreason" type="field"/>
+      <column hidden="0" width="-1" name="gehoertzubereich_fp_bereich_pkid" type="field"/>
+      <column hidden="0" width="-1" name="startbedingung_pkid" type="field"/>
+      <column hidden="0" width="-1" name="endebedingung_pkid" type="field"/>
+      <column hidden="0" width="-1" name="laermkonting_bp_emissionskonlaerm_bp_emissionskontlaerm_pkid" type="field"/>
+      <column hidden="0" width="-1" name="laermkonti_bp_emissionsklaerm_bp_emissionskolaermgebiet_pkid" type="field"/>
+      <column hidden="0" width="-1" name="zusatzkontingent_owns" type="field"/>
+      <column hidden="0" width="-1" name="zusatzkontingent_href" type="field"/>
+      <column hidden="0" width="-1" name="zusatzkontingent_title" type="field"/>
+      <column hidden="0" width="-1" name="zusatzkontingent_nilreason" type="field"/>
+      <column hidden="0" width="-1" name="zusatzkontingent_pkid" type="field"/>
+      <column hidden="0" width="-1" name="nordwinkel_uom" type="field"/>
+      <column hidden="1" width="-1" type="actions"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -873,15 +850,26 @@ def my_form_open(dialog, layer, feature):
   <editable>
     <field editable="1" name="aufschrift"/>
     <field editable="1" name="created_at"/>
+    <field editable="1" name="description"/>
+    <field editable="1" name="descriptionreference_href"/>
+    <field editable="1" name="descriptionreference_nilreason"/>
+    <field editable="1" name="descriptionreference_title"/>
     <field editable="1" name="ebene"/>
     <field editable="1" name="endebedingung"/>
     <field editable="1" name="endebedingung_dt"/>
+    <field editable="1" name="endebedingung_pkid"/>
     <field editable="1" name="externereferenz"/>
     <field editable="1" name="externereferenz_dt"/>
     <field editable="1" name="flaechenschluss"/>
     <field editable="1" name="flussrichtung"/>
     <field editable="1" name="gehoertzubereich"/>
+    <field editable="1" name="gehoertzubereich_fp_bereich_pkid"/>
+    <field editable="1" name="gehoertzubereich_href"/>
+    <field editable="1" name="gehoertzubereich_nilreason"/>
+    <field editable="1" name="gehoertzubereich_owns"/>
+    <field editable="1" name="gehoertzubereich_title"/>
     <field editable="1" name="gesetzlichegrundlage"/>
+    <field editable="1" name="gesetzlichegrundlage_codespace"/>
     <field editable="1" name="gesetzlichegrundlage_id"/>
     <field editable="1" name="gesetzlichegrundlage_text"/>
     <field editable="1" name="gliederung1"/>
@@ -891,12 +879,19 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="hatgenerattribut_dt"/>
     <field editable="1" name="hoehenangabe"/>
     <field editable="1" name="hoehenangabe_dt"/>
+    <field editable="1" name="id"/>
+    <field editable="1" name="identifier"/>
+    <field editable="1" name="identifier_codespace"/>
     <field editable="1" name="konvertierung_id"/>
+    <field editable="1" name="laermkonti_bp_emissionsklaerm_bp_emissionskolaermgebiet_pkid"/>
+    <field editable="1" name="laermkonting_bp_emissionskonlaerm_bp_emissionskontlaerm_pkid"/>
     <field editable="1" name="laermkontingent"/>
     <field editable="1" name="laermkontingent_dt"/>
     <field editable="1" name="laermkontingentgebiet"/>
     <field editable="1" name="laermkontingentgebiet_dt"/>
     <field editable="1" name="nordwinkel"/>
+    <field editable="1" name="nordwinkel_uom"/>
+    <field editable="1" name="ogc_fid"/>
     <field editable="1" name="plan_name"/>
     <field editable="1" name="rechtscharakter"/>
     <field editable="1" name="rechtscharakter_text"/>
@@ -907,6 +902,7 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="richtungssektorgrenze"/>
     <field editable="1" name="startbedingung"/>
     <field editable="1" name="startbedingung_dt"/>
+    <field editable="1" name="startbedingung_pkid"/>
     <field editable="1" name="stelle_id"/>
     <field editable="1" name="text"/>
     <field editable="1" name="updated_at"/>
@@ -919,6 +915,11 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="wirdausgeglichendurchspemassnahme"/>
     <field editable="1" name="wirddargestelltdurch"/>
     <field editable="1" name="zusatzkontingent"/>
+    <field editable="1" name="zusatzkontingent_href"/>
+    <field editable="1" name="zusatzkontingent_nilreason"/>
+    <field editable="1" name="zusatzkontingent_owns"/>
+    <field editable="1" name="zusatzkontingent_pkid"/>
+    <field editable="1" name="zusatzkontingent_title"/>
     <field editable="1" name="zusatzkontingentflaeche"/>
     <field editable="1" name="zweckbestimmung"/>
     <field editable="1" name="zweckbestimmung_id"/>
@@ -927,15 +928,26 @@ def my_form_open(dialog, layer, feature):
   <labelOnTop>
     <field labelOnTop="0" name="aufschrift"/>
     <field labelOnTop="0" name="created_at"/>
+    <field labelOnTop="0" name="description"/>
+    <field labelOnTop="0" name="descriptionreference_href"/>
+    <field labelOnTop="0" name="descriptionreference_nilreason"/>
+    <field labelOnTop="0" name="descriptionreference_title"/>
     <field labelOnTop="0" name="ebene"/>
     <field labelOnTop="0" name="endebedingung"/>
     <field labelOnTop="0" name="endebedingung_dt"/>
+    <field labelOnTop="0" name="endebedingung_pkid"/>
     <field labelOnTop="0" name="externereferenz"/>
     <field labelOnTop="0" name="externereferenz_dt"/>
     <field labelOnTop="0" name="flaechenschluss"/>
     <field labelOnTop="0" name="flussrichtung"/>
     <field labelOnTop="0" name="gehoertzubereich"/>
+    <field labelOnTop="0" name="gehoertzubereich_fp_bereich_pkid"/>
+    <field labelOnTop="0" name="gehoertzubereich_href"/>
+    <field labelOnTop="0" name="gehoertzubereich_nilreason"/>
+    <field labelOnTop="0" name="gehoertzubereich_owns"/>
+    <field labelOnTop="0" name="gehoertzubereich_title"/>
     <field labelOnTop="0" name="gesetzlichegrundlage"/>
+    <field labelOnTop="0" name="gesetzlichegrundlage_codespace"/>
     <field labelOnTop="0" name="gesetzlichegrundlage_id"/>
     <field labelOnTop="0" name="gesetzlichegrundlage_text"/>
     <field labelOnTop="0" name="gliederung1"/>
@@ -945,12 +957,19 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="hatgenerattribut_dt"/>
     <field labelOnTop="0" name="hoehenangabe"/>
     <field labelOnTop="0" name="hoehenangabe_dt"/>
+    <field labelOnTop="0" name="id"/>
+    <field labelOnTop="0" name="identifier"/>
+    <field labelOnTop="0" name="identifier_codespace"/>
     <field labelOnTop="0" name="konvertierung_id"/>
+    <field labelOnTop="0" name="laermkonti_bp_emissionsklaerm_bp_emissionskolaermgebiet_pkid"/>
+    <field labelOnTop="0" name="laermkonting_bp_emissionskonlaerm_bp_emissionskontlaerm_pkid"/>
     <field labelOnTop="0" name="laermkontingent"/>
     <field labelOnTop="0" name="laermkontingent_dt"/>
     <field labelOnTop="0" name="laermkontingentgebiet"/>
     <field labelOnTop="0" name="laermkontingentgebiet_dt"/>
     <field labelOnTop="0" name="nordwinkel"/>
+    <field labelOnTop="0" name="nordwinkel_uom"/>
+    <field labelOnTop="0" name="ogc_fid"/>
     <field labelOnTop="0" name="plan_name"/>
     <field labelOnTop="0" name="rechtscharakter"/>
     <field labelOnTop="0" name="rechtscharakter_text"/>
@@ -961,6 +980,7 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="richtungssektorgrenze"/>
     <field labelOnTop="0" name="startbedingung"/>
     <field labelOnTop="0" name="startbedingung_dt"/>
+    <field labelOnTop="0" name="startbedingung_pkid"/>
     <field labelOnTop="0" name="stelle_id"/>
     <field labelOnTop="0" name="text"/>
     <field labelOnTop="0" name="updated_at"/>
@@ -973,6 +993,11 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="wirdausgeglichendurchspemassnahme"/>
     <field labelOnTop="0" name="wirddargestelltdurch"/>
     <field labelOnTop="0" name="zusatzkontingent"/>
+    <field labelOnTop="0" name="zusatzkontingent_href"/>
+    <field labelOnTop="0" name="zusatzkontingent_nilreason"/>
+    <field labelOnTop="0" name="zusatzkontingent_owns"/>
+    <field labelOnTop="0" name="zusatzkontingent_pkid"/>
+    <field labelOnTop="0" name="zusatzkontingent_title"/>
     <field labelOnTop="0" name="zusatzkontingentflaeche"/>
     <field labelOnTop="0" name="zweckbestimmung"/>
     <field labelOnTop="0" name="zweckbestimmung_id"/>
@@ -981,15 +1006,26 @@ def my_form_open(dialog, layer, feature):
   <reuseLastValue>
     <field reuseLastValue="0" name="aufschrift"/>
     <field reuseLastValue="0" name="created_at"/>
+    <field reuseLastValue="0" name="description"/>
+    <field reuseLastValue="0" name="descriptionreference_href"/>
+    <field reuseLastValue="0" name="descriptionreference_nilreason"/>
+    <field reuseLastValue="0" name="descriptionreference_title"/>
     <field reuseLastValue="0" name="ebene"/>
     <field reuseLastValue="0" name="endebedingung"/>
     <field reuseLastValue="0" name="endebedingung_dt"/>
+    <field reuseLastValue="0" name="endebedingung_pkid"/>
     <field reuseLastValue="0" name="externereferenz"/>
     <field reuseLastValue="0" name="externereferenz_dt"/>
     <field reuseLastValue="0" name="flaechenschluss"/>
     <field reuseLastValue="0" name="flussrichtung"/>
     <field reuseLastValue="0" name="gehoertzubereich"/>
+    <field reuseLastValue="0" name="gehoertzubereich_fp_bereich_pkid"/>
+    <field reuseLastValue="0" name="gehoertzubereich_href"/>
+    <field reuseLastValue="0" name="gehoertzubereich_nilreason"/>
+    <field reuseLastValue="0" name="gehoertzubereich_owns"/>
+    <field reuseLastValue="0" name="gehoertzubereich_title"/>
     <field reuseLastValue="0" name="gesetzlichegrundlage"/>
+    <field reuseLastValue="0" name="gesetzlichegrundlage_codespace"/>
     <field reuseLastValue="0" name="gesetzlichegrundlage_id"/>
     <field reuseLastValue="0" name="gesetzlichegrundlage_text"/>
     <field reuseLastValue="0" name="gliederung1"/>
@@ -999,12 +1035,19 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="hatgenerattribut_dt"/>
     <field reuseLastValue="0" name="hoehenangabe"/>
     <field reuseLastValue="0" name="hoehenangabe_dt"/>
+    <field reuseLastValue="0" name="id"/>
+    <field reuseLastValue="0" name="identifier"/>
+    <field reuseLastValue="0" name="identifier_codespace"/>
     <field reuseLastValue="0" name="konvertierung_id"/>
+    <field reuseLastValue="0" name="laermkonti_bp_emissionsklaerm_bp_emissionskolaermgebiet_pkid"/>
+    <field reuseLastValue="0" name="laermkonting_bp_emissionskonlaerm_bp_emissionskontlaerm_pkid"/>
     <field reuseLastValue="0" name="laermkontingent"/>
     <field reuseLastValue="0" name="laermkontingent_dt"/>
     <field reuseLastValue="0" name="laermkontingentgebiet"/>
     <field reuseLastValue="0" name="laermkontingentgebiet_dt"/>
     <field reuseLastValue="0" name="nordwinkel"/>
+    <field reuseLastValue="0" name="nordwinkel_uom"/>
+    <field reuseLastValue="0" name="ogc_fid"/>
     <field reuseLastValue="0" name="plan_name"/>
     <field reuseLastValue="0" name="rechtscharakter"/>
     <field reuseLastValue="0" name="rechtscharakter_text"/>
@@ -1015,6 +1058,7 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="richtungssektorgrenze"/>
     <field reuseLastValue="0" name="startbedingung"/>
     <field reuseLastValue="0" name="startbedingung_dt"/>
+    <field reuseLastValue="0" name="startbedingung_pkid"/>
     <field reuseLastValue="0" name="stelle_id"/>
     <field reuseLastValue="0" name="text"/>
     <field reuseLastValue="0" name="updated_at"/>
@@ -1027,6 +1071,11 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="wirdausgeglichendurchspemassnahme"/>
     <field reuseLastValue="0" name="wirddargestelltdurch"/>
     <field reuseLastValue="0" name="zusatzkontingent"/>
+    <field reuseLastValue="0" name="zusatzkontingent_href"/>
+    <field reuseLastValue="0" name="zusatzkontingent_nilreason"/>
+    <field reuseLastValue="0" name="zusatzkontingent_owns"/>
+    <field reuseLastValue="0" name="zusatzkontingent_pkid"/>
+    <field reuseLastValue="0" name="zusatzkontingent_title"/>
     <field reuseLastValue="0" name="zusatzkontingentflaeche"/>
     <field reuseLastValue="0" name="zweckbestimmung"/>
     <field reuseLastValue="0" name="zweckbestimmung_id"/>
@@ -1035,6 +1084,6 @@ def my_form_open(dialog, layer, feature):
   <dataDefinedFieldProperties/>
   <widgets/>
   <previewExpression>"plan_name"</previewExpression>
-  <mapTip></mapTip>
+  <mapTip enabled="1"></mapTip>
   <layerGeometryType>1</layerGeometryType>
 </qgis>
