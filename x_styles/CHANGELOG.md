@@ -11,19 +11,45 @@ und dieses Projekt hält sich an [Semantic Versioning](https://semver.org/lang/d
 
 ## [Unreleased]
 
+### Geplant
+- Automatische Aktualisierung von Styles bei Layer-Änderungen
+- Import/Export von Style-Konfigurationen
+- Batch-Processing für mehrere Projekte
+- REST-API Integration für Online-Style-Repository
+
+## [1.3.0] - 2026-11-16
+
+### Hinzugefügt
+- Modusabhängige Darstellungsreihenfolge (`zIndex_by_mode` für `rp` und `fnp`) in `manifest.yaml` (z. B. für `rp_rohstoff`)
+- Neue QML-Styles und Manifest-Einträge für `SO_Bauverbotszone` (`_f` und `_l`)
+- Neuer Linien-Style für `FP_Wasserwirtschaft_l`
+- FNP-spezifischer Style `styles/fp/RP_Rohstoff_f.qml`
+- Zusätzliche Planzeichen (Sondergebiete) und Attributwerte in `XP_PPO`
+- Neue Symbole und bisher nicht erfasste Attributwerte für `FP_VerEntsorgung` (`_l` und `_a`)
+- Statusmeldung in der QGIS MessageBar / StatusBar bei Änderung des aktiven Darstellungsmodus oder der Layer-Reihenfolge
+
+### Geändert
+- Überarbeitung von Styles und Symbolik für `SO_Bodenschutzrecht`, `BP_GenerischesObjekt`, `FP_GenerischesObjekt_l`, `FP_Kennzeichnung_l`, `FP_SpielSportanlage_f`, `FP_UnverbindlicheVormerkung` (`_p`, `_l`, `_f`), `FP_Waldflaeche` (`_p`, `_l`, `_f`), `RP_Landwirtschaft_f`, `RP_NaturLandschaft_f` und `RP_Rohstoff_f`
+- Optimierung der Filterbedingungen für `FP_VerEntsorgung`
+- Ersetzung von Windows-Schriftarten durch `Arial` in den QML-Styles
+
 ### Behoben
+- Korrekte aufsteigende Sortierung nach `zIndex` für die QGIS Custom Layer Order inkl. automatischem Refresh des Layer-Order-Panels
+- Korrektur der Geometrie-Zuordnungen (`PointGeometry`, `LineGeometry`, `PolygonGeometry`) für `bp_generischesobjekt` in `manifest.yaml`
+
+### Hinweis
+- Bei der Weiterentwicklung des Plugins, der Aufbereitung der Style-Anpassungen und der Erstellung der Dokumentation wurden KI-Programmierassistenten (AI Coding Assistants) eingesetzt.
+
+## [1.2.3] - 2026-10-01
+
+### Behoben
+- Garbage Collection des Einstellungs-Dropdown-Menüs (`QMenu`) unter QGIS 4 / PyQt6 verhindert.
 - Den Qt-6-kompatiblen Dialogaufruf `QDialog.exec()` verwendet.
 - QGIS-4-kompatible Scoped Enums für Meldungslevel, Layer-Typen und Geometrietypen verwendet.
 - Den `QAction`-Import für Qt 5 und Qt 6 kompatibel gemacht.
 
 ### Geändert
 - Unterstützung für QGIS 3.2 bis 4.x durch die QGIS-PyQt-Kompatibilitätsschicht für Qt 5 und Qt 6.
-
-### Geplant
-- Automatische Aktualisierung von Styles bei Layer-Änderungen
-- Import/Export von Style-Konfigurationen
-- Batch-Processing für mehrere Projekte
-- REST-API Integration für Online-Style-Repository
 
 ## [1.1.0] - 2026-01-29
 
@@ -119,7 +145,9 @@ Das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/):
 
 ---
 
-[Unreleased]: https://github.com/PlanDigitalOSS/x_styles/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/PlanDigitalOSS/x_styles/compare/1.3.0...HEAD
+[1.3.0]: https://github.com/PlanDigitalOSS/x_styles/compare/1.2.3...1.3.0
+[1.2.3]: https://github.com/PlanDigitalOSS/x_styles/compare/v1.1.0...1.2.3
 [1.1.0]: https://github.com/PlanDigitalOSS/x_styles/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/PlanDigitalOSS/x_styles/releases/tag/v1.0.0
 [0.1]: https://github.com/PlanDigitalOSS/x_styles/releases/tag/v0.1

@@ -6,7 +6,7 @@
 
 [![QGIS](https://img.shields.io/badge/QGIS-3.2--4.x-green.svg)](https://qgis.org)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.2.2-orange.svg)](metadata.txt)
+[![Version](https://img.shields.io/badge/version-1.3.0-orange.svg)](x_styles/metadata.txt)
 
 > **Automatische Zuweisung von standardisierten Zeichenvorschriften für XPlanGML-Daten in QGIS**
 
@@ -191,6 +191,15 @@ bp_anpflanzungbindungerhaltung:
     PolygonGeometry:
         path: BP_AnpflanzungBindungErhaltung_f.qml
         zIndex: 131
+
+# Optional: Modusabhängiger zIndex (FNP vs. RP)
+rp_rohstoff:
+    PolygonGeometry:
+        path: RP_Rohstoff_f.qml
+        zIndex: 333
+        zIndex_by_mode:
+            rp: 305
+            fnp: 231
 ```
 
 ### z-Index Konventionen
@@ -410,5 +419,5 @@ Siehe [LICENSE](LICENSE) Datei für vollständige Details.
 
 <p align="center">
   Entwickelt mit ❤️ für die QGIS Community<br>
-  <sub>© 2024 Cornelio Hopmann Lopez | X_STYLES v1.1.0</sub>
+  <sub>© 2024 Cornelio Hopmann Lopez | X_STYLES v1.3.0</sub>
 </p>

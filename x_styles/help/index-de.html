@@ -90,7 +90,7 @@
 </head>
 <body>
     <h1>X_STYLES - QGIS Plugin</h1>
-    <p class="version">Version 1.0.0</p>
+    <p class="version">Version 1.3.0</p>
 
     <h2 id="uebersicht">Übersicht</h2>
     <p>
@@ -218,6 +218,14 @@ bp_anpflanzungbindungerhaltung:
     PolygonGeometry:
         path: BP_AnpflanzungBindungErhaltung_f.qml
         zIndex: 131
+
+rp_rohstoff:
+    PolygonGeometry:
+        path: RP_Rohstoff_f.qml
+        zIndex: 333
+        zIndex_by_mode:
+            rp: 305
+            fnp: 231
     </pre>
 
     <h4>Parameter-Erklärung</h4>
@@ -226,6 +234,7 @@ bp_anpflanzungbindungerhaltung:
         <li><strong>Geometrie-Typ</strong>: <code>PointGeometry</code>, <code>LineGeometry</code> oder <code>PolygonGeometry</code></li>
         <li><strong>path</strong>: Relativer Pfad zur QML-Datei</li>
         <li><strong>zIndex</strong>: Darstellungsreihenfolge (niedrige Werte = Vordergrund, hohe Werte = Hintergrund)</li>
+        <li><strong>zIndex_by_mode</strong> (optional): Modusabhängige Darstellungsreihenfolge für <code>fnp</code> (Flächennutzungsplan) und <code>rp</code> (Regionalplan)</li>
     </ul>
 
     <h3>z-Index Konventionen</h3>
@@ -400,7 +409,7 @@ x_styles/
 
     <hr>
     <p style="text-align: center; color: #666; font-size: 0.9em;">
-        © 2024 Cornelio Hopmann Lopez | X_STYLES v1.0.0
+        © 2024 Cornelio Hopmann Lopez | X_STYLES v1.3.0
     </p>
 </body>
 </html>

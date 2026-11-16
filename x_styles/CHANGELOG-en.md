@@ -11,19 +11,45 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Planned
+- Automatic style updates on layer changes
+- Import/Export of style configurations
+- Batch processing for multiple projects
+- REST-API integration for online style repository
+
+## [1.3.0] - 2026-11-16
+
+### Added
+- Mode-dependent rendering order (`zIndex_by_mode` for `rp` and `fnp`) in `manifest.yaml` (e.g. for `rp_rohstoff`)
+- New QML styles and manifest entries for `SO_Bauverbotszone` (`_f` and `_l`)
+- New line style for `FP_Wasserwirtschaft_l`
+- FNP-specific style override `styles/fp/RP_Rohstoff_f.qml`
+- Additional plan symbols (special areas / Sondergebiete) and attribute values in `XP_PPO`
+- New symbols and previously uncovered attribute values for `FP_VerEntsorgung` (`_l` and `_a`)
+- Status notification in the QGIS MessageBar / StatusBar when the active mode or layer order changes
+
+### Changed
+- Revised styles and symbology for `SO_Bodenschutzrecht`, `BP_GenerischesObjekt`, `FP_GenerischesObjekt_l`, `FP_Kennzeichnung_l`, `FP_SpielSportanlage_f`, `FP_UnverbindlicheVormerkung` (`_p`, `_l`, `_f`), `FP_Waldflaeche` (`_p`, `_l`, `_f`), `RP_Landwirtschaft_f`, `RP_NaturLandschaft_f`, and `RP_Rohstoff_f`
+- Optimized filter conditions for `FP_VerEntsorgung`
+- Replaced Windows-specific fonts with `Arial` across QML style files
+
 ### Fixed
+- Ascending `zIndex` sorting for the QGIS Custom Layer Order with automatic Layer Order panel refresh
+- Fixed geometry mappings (`PointGeometry`, `LineGeometry`, `PolygonGeometry`) for `bp_generischesobjekt` in `manifest.yaml`
+
+### Note
+- AI Coding Assistants were used in developing the plugin improvements, processing the style updates, and preparing the documentation.
+
+## [1.2.3] - 2026-10-01
+
+### Fixed
+- Prevented garbage collection of the settings dropdown `QMenu` on QGIS 4 / PyQt6.
 - Used the Qt 6-compatible `QDialog.exec()` dialog call.
 - Used QGIS 4-compatible scoped enums for message levels, layer types, and geometry types.
 - Made the `QAction` import compatible with Qt 5 and Qt 6.
 
 ### Changed
 - Added support for QGIS 3.2 through 4.x through the QGIS PyQt compatibility shim for Qt 5 and Qt 6.
-
-### Planned
-- Automatic style updates on layer changes
-- Import/Export of style configurations
-- Batch processing for multiple projects
-- REST-API integration for online style repository
 
 ## [1.0.0] - 2024-11-07
 
@@ -98,6 +124,8 @@ The project follows [Semantic Versioning](https://semver.org/):
 
 ---
 
-[Unreleased]: https://github.com/PlanDigitalOSS/x_styles/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/PlanDigitalOSS/x_styles/compare/1.3.0...HEAD
+[1.3.0]: https://github.com/PlanDigitalOSS/x_styles/compare/1.2.3...1.3.0
+[1.2.3]: https://github.com/PlanDigitalOSS/x_styles/compare/v1.0.0...1.2.3
 [1.0.0]: https://github.com/PlanDigitalOSS/x_styles/releases/tag/v1.0.0
 [0.1]: https://github.com/PlanDigitalOSS/x_styles/releases/tag/v0.1

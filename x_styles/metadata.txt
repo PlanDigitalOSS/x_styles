@@ -13,7 +13,7 @@ name=X_STYLES
 qgisMinimumVersion=3.2
 qgisMaximumVersion=4.99
 description=Automatische Zuweisung von Zeichenvorschriften für XPlanGML-Daten
-version=1.2.2
+version=1.3.0
 author=Cornelio Hopmann Lopez
 email=plandigitaloss@proton.me
 
@@ -30,7 +30,16 @@ repository=https://github.com/PlanDigitalOSS/x_styles
 
 # Recommended items:
 
-changelog=1.2.2 - Qt-6-kompatibler Dialogaufruf
+changelog=1.3.0 - Modusabhängige Layer-Reihenfolge (zIndex_by_mode) und umfangreiche Style-Aktualisierungen
+    - Modusabhängige Steuerung der Darstellungsreihenfolge über zIndex_by_mode (rp / fnp) in manifest.yaml
+    - Aufsteigende Sortierung der Custom Layer Order nach zIndex inkl. Panel-Refresh und Statusmeldung
+    - Neue Styles und Manifest-Einträge für SO_Bauverbotszone (Fläche/Linie), FP_Wasserwirtschaft (Linie) und RP_Rohstoff (FP)
+    - Umfangreiche Überarbeitung der Styles für FP_VerEntsorgung, XP_PPO, SO_Bodenschutzrecht, BP/FP_GenerischesObjekt, FP_Kennzeichnung, FP_SpielSportanlage, FP_UnverbindlicheVormerkung, FP_Waldflaeche, RP_Landwirtschaft, RP_NaturLandschaft und RP_Rohstoff
+    - Ersetzung von Windows-spezifischen Schriftarten durch Arial in den QML-Style-Dateien
+    - Einsatz von KI-Programmierassistenten (AI Coding Assistants) bei Code-, Style- und Dokumentationsanpassungen
+    1.2.3 - Dropdown-Menü-Korrektur für QGIS 4 / Qt 6
+    - Verhindert Garbage Collection des QMenu-Dropdowns in PyQt6
+    1.2.2 - Qt-6-kompatibler Dialogaufruf
     - Verwendet QDialog.exec() statt des Qt-5-spezifischen exec_()
     1.2.1 - Fehlerbehebungen für QGIS 4
     - Umstellung auf QGIS-4-kompatible Scoped Enums

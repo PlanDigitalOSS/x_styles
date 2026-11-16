@@ -83,12 +83,17 @@ new_layer_name:
     PolygonGeometry:
         path: New_Layer_f.qml
         zIndex: 131
+        # Optional: Mode-dependent zIndex (FNP vs. RP)
+        zIndex_by_mode:
+            rp: 305
+            fnp: 231
 ```
 
 **Important:**
 - Layer key must appear in layer name (case-insensitive)
 - Not all geometry types need to be defined
-- zIndex determines rendering order
+- `zIndex` determines rendering order (sorted ascending: lowest `zIndex` sits on top)
+- `zIndex_by_mode` optionally overrides `zIndex` depending on the active mode (`fnp` or `rp`)
 
 ### 3. Test
 
